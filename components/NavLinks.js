@@ -9,7 +9,7 @@ const NavLinks = () => (
       <a>Portfolio</a>
     </Link>
     <Link activeClassName="active" href="/about">
-      <a> About Me</a>
+      <a> About</a>
     </Link>
     <Link activeClassName="active" href="/contact">
       <a>Contact</a>

@@ -99,7 +99,13 @@ const HomeStyles = styled.div`
       justify-items: center;
       align-items: center;
       margin: 0 25px;
-      .individual-project {
+      @media (max-width: 769px) {
+        grid-template-columns: repeat(7, calc(60% - 40px));
+      }
+      @media (max-width: 450px) {
+        grid-template-columns: repeat(7, calc(85% - 40px));
+      }
+      .individual-project a {
         height: 250px;
         display: grid;
         grid-template-rows: 4fr 1fr 1fr 1fr;
@@ -109,6 +115,7 @@ const HomeStyles = styled.div`
         h3 {
           color: ${props => props.theme.blue};
           margin: 5px 0;
+          font-size: 1.7rem;
         }
         h4 {
           color: ${props => props.theme.white};
@@ -121,6 +128,12 @@ const HomeStyles = styled.div`
         h3,
         h4 {
           font-family: ${props => props.theme.raleFont};
+        }
+        i.fas,
+        i.far {
+          font-size: 8rem;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: ${props => props.theme.blue};
         }
       }
       &:last-child {
@@ -135,11 +148,14 @@ const HomeStyles = styled.div`
     margin: 0;
     text-align: center;
     font-family: ${props => props.theme.raleFont};
-    padding: 10px 0;
+    padding: 10px;
     font-size: 1.5rem;
     color: ${props => props.theme.white};
     background: ${props => props.theme.darkBlack};
     border-bottom: 3px solid ${props => props.theme.blue};
+  }
+  .active-link {
+    color: ${props => props.theme.white};
   }
 `;
 
@@ -162,9 +178,13 @@ const Home = () => {
             <h3>
               See some of{' '}
               <Link href="/portfolio">
-                <a>my work</a>
+                <a>my code</a>
               </Link>{' '}
-              and check out my code.
+              and learn more{' '}
+              <Link href="/about">
+                <a>about me</a>
+              </Link>
+              .
             </h3>
             <div className="splash-icons">
               <a href="https://github.com/theranbrig" target="_blank" rel="noopener noreferrer">
@@ -184,9 +204,7 @@ const Home = () => {
           <p>Click more on a project below to see the process, read the code, and use the deploy.</p>
           <div className="project-list">
             {data.map(project => (
-              <a href={`/${project.slug}`}>
-                <ProjectCard project={project} key={project.title} />
-              </a>
+              <ProjectCard project={project} />
             ))}
           </div>
         </div>
