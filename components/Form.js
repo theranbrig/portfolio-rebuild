@@ -31,7 +31,7 @@ const ContactForm = () => {
       <h2>Send A Quick Message Directly</h2>
       <Form onSubmit={handleSubmit} inverted>
         <Form.Group>
-          <Form.Field stackable width={8}>
+          <Form.Field stackable="true" width={8}>
             <label>Name</label>
             <input
               name="name"
@@ -41,7 +41,7 @@ const ContactForm = () => {
               value={name}
             />
           </Form.Field>
-          <Form.Field stackable width={8}>
+          <Form.Field stackable="true" width={8}>
             <label>Email</label>
             <input
               name="email"

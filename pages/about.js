@@ -4,15 +4,33 @@ import Layout from '../components/Layout';
 import GraphQLImage from '../static/graphql.svg';
 
 const AboutStyles = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr 5fr;
   grid-template-rows: 1fr;
   justify-items: center;
+  align-items: center;
   padding: 50px 30px;
   background-color: ${props => props.theme.black};
+  @media (max-width: 900px) {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr minmax(500px, 3fr);
+    padding: 10px;
+  }
+  @media (max-width: 450px) {
+    grid-template-rows: 1fr minmax(500px, 5fr);
+  }
   .about-sidebar {
+    width: 100%;
+    align-self: start;
+    @media (max-width: 900px) {
+      align-self: center;
+    }
     img {
       border-radius: 50%;
+      width: 150px;
+      margin-left: calc(50% - 75px);
     }
     .sidebar-links {
       a {
@@ -21,11 +39,21 @@ const AboutStyles = styled.div`
         font-size: 1.5rem;
         display: block;
         padding: 20px 0;
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+      }
+    }
+    h1 {
+      @media (min-width: 900px) {
+        display: none;
       }
     }
   }
   .about-main {
+    width: 100%;
     color: ${props => props.theme.white};
+    padding-bottom: 50px;
     h1,
     h2 {
       color: ${props => props.theme.blue};
@@ -38,12 +66,21 @@ const AboutStyles = styled.div`
       font-family: ${props => props.theme.raleFont};
       text-align: center;
     }
+    h1 {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
     p {
       font-size: 1.3rem;
       font-family: ${props => props.theme.raleFont};
       color: ${props => props.theme.white};
       line-height: 2rem;
       letter-spacing: 0.05rem;
+      @media (max-width: 900px) {
+        width: 95%;
+        margin-left: 2.5%;
+      }
     }
     h2 {
       font-size: 1.9rem;
@@ -55,15 +92,20 @@ const AboutStyles = styled.div`
       list-style-type: none;
       padding: 0;
     }
-    .daily-list,
-    .secondary-skills {
+    .daily-list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-gap: 20px;
       justify-items: center;
       align-items: center;
       text-align: center;
+      @media (max-width: 450px) {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+      }
       i {
         font-size: 4rem;
       }
@@ -71,10 +113,26 @@ const AboutStyles = styled.div`
         font-size: 1.4rem;
       }
     }
-    .secondary-skills {
+    ul.secondary-skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      @media (max-width: 450px) {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        padding: 10px;
+      }
+
       li {
         font-size: 1.4rem;
       }
+    }
+    .secondary-skills {
     }
     .skills-to-learn {
       p {
@@ -82,13 +140,19 @@ const AboutStyles = styled.div`
       }
     }
   }
+  h1 {
+    text-align: center;
+    color: ${props => props.theme.blue};
+    font-family: ${props => props.theme.raleFont};
+  }
 `;
 
 const About = () => (
   <Layout>
     <AboutStyles>
-      <sidebar className="about-sidebar">
-        <img size="small" src="/static/IMG_1880.jpg" alt="theran brigowatz logo" circular className="wow fadeIn" />
+      <div className="about-sidebar">
+        <h1>Theran Briowatz</h1>
+        <img src="/static/IMG_1880.jpg" alt="theran brigowatz logo" className="wow fadeIn" />
         <div className="sidebar-links">
           <Link href="/contact">
             <a>
@@ -102,6 +166,9 @@ const About = () => (
           >
             Resume <i className="far fa-file" />
           </a>
+          <a href="https://github.com/theranbrig" target="_blank" rel="noopener noreferrer">
+            GitHub Code <i className="fab fa-github" />
+          </a>
           <a href="https://twitter.com/wellBuilt" target="_blank" rel="noopener noreferrer">
             Twitter Musings <i className="fab fa-twitter" />
           </a>
@@ -109,7 +176,7 @@ const About = () => (
             Medium Blog <i className="fab fa-medium" />
           </a>
         </div>
-      </sidebar>
+      </div>
       <div className="about-main">
         <h1>Theran Brigowatz</h1>
         <h2>About Me</h2>

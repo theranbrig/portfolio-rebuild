@@ -10,15 +10,27 @@ const ProjectStyles = styled.div`
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: min-max(180px, 1fr) 9fr;
+  @media (max-width: 900px) {
+    padding: 20px;
+  }
   .project-info {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
+    @media (max-width: 900px) {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-max(180px, 1fr) 9fr;
+    }
     a {
       display: block;
       padding: 10px 0;
       color: ${props => props.theme.blue};
+      font-family: ${props => props.theme.raleFont};
+      @media (max-width: 900px) {
+        text-align: center;
+      }
     }
   }
   .project-images {
@@ -32,6 +44,9 @@ const ProjectStyles = styled.div`
     img {
       width: 80%;
       justify-self: end;
+      @media (max-width: 900px) {
+        justify-self: center;
+      }
     }
   }
   .project-title {
@@ -39,12 +54,14 @@ const ProjectStyles = styled.div`
     text-align: center;
     h1 {
       font-size: 5rem;
+      font-family: ${props => props.theme.raleFont};
       i {
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: ${props => props.theme.white};
       }
     }
     p {
+      font-family: ${props => props.theme.raleFont};
       font-size: 1.5rem;
     }
     .project-icons {
@@ -119,10 +136,10 @@ const ProjectLayout = props => {
         <div className="project-info">
           <div className="project-left">
             <div className="project-links">
-              <a href={deployLink}>
+              <a href={deployLink} target="_blank" rel="noopener noreferrer">
                 Deployed Version <i className="fas fa-external-link-square-alt" />
               </a>
-              <a href={gitLink}>
+              <a href={gitLink} target="_blank" rel="noopener noreferrer">
                 See The Code <i className="fab fa-github" />
               </a>
             </div>

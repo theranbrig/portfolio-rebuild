@@ -61,7 +61,7 @@ const HomeStyles = styled.div`
       width: 60%;
       margin: 20px auto 0;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       align-items: center;
       justify-items: center;
@@ -112,6 +112,7 @@ const HomeStyles = styled.div`
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        text-align: center;
         h3 {
           color: ${props => props.theme.blue};
           margin: 5px 0;
@@ -123,7 +124,24 @@ const HomeStyles = styled.div`
         }
         i {
           color: ${props => props.theme.white};
-          padding: 3px;
+        }
+        .project-icons {
+          i {
+            color: ${props => props.theme.white};
+            padding: 3px;
+            @media (max-width: 900px) {
+              font-size: 1.3rem;
+            }
+          }
+          img.graphql-logo {
+            width: 40px;
+            @media (max-width: 900px) {
+              height: 22px !important;
+              width: 30px;
+              padding: 1px;
+              margin-bottom: -4px !important;
+            }
+          }
         }
         h3,
         h4 {
@@ -193,6 +211,9 @@ const Home = () => {
               <a href="https://twitter.com/wellBuilt" target="_blank" rel="noopener noreferrer">
                 <Icon name="twitter" />
               </a>
+              <a href="https://medium.com/@theran.brigowatz" target="_blank" rel="noopener noreferrer">
+                <Icon name="medium" />
+              </a>
               <a href="https://linkedin.com/in/theran-brigowatz" target="_blank" rel="noopener noreferrer">
                 <Icon name="linkedin" />
               </a>
@@ -204,7 +225,7 @@ const Home = () => {
           <p>Click more on a project below to see the process, read the code, and use the deploy.</p>
           <div className="project-list">
             {data.map(project => (
-              <ProjectCard project={project} />
+              <ProjectCard project={project} key={project.title} />
             ))}
           </div>
         </div>
