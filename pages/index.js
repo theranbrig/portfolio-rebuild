@@ -1,0 +1,198 @@
+/* eslint-disable no-console */
+/* eslint-disable react/no-unescaped-entities */
+import Link from 'next/link';
+import Particles from 'react-particles-js';
+import React from 'react';
+import styled from 'styled-components';
+import { Icon } from 'semantic-ui-react';
+import ParticleParams from '../data/ParticleParams.json';
+import Layout from '../components/Layout';
+import data from '../static/data';
+import ProjectCard from '../components/ProjectCard';
+
+const HomeStyles = styled.div`
+  background: ${props => props.theme.black};
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 600px;
+    img {
+      width: 25%;
+      margin-left: 37.5%;
+    }
+    a {
+      color: ${props => props.theme.blue};
+    }
+  }
+  .particle-canvas {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 83px;
+    border-bottom: 3px solid ${props => props.theme.blue};
+    background-color: ${props => props.theme.black};
+  }
+
+  .splash-box {
+    background-color: #13131390;
+    width: 80%;
+    padding: 30px 60px;
+    z-index: 100;
+    border: 3px solid ${props => props.theme.white};
+    border-radius: 5px;
+    color: ${props => props.theme.white};
+    h1 {
+      color: ${props => props.theme.blue};
+      font-size: 5rem;
+      text-align: center;
+      font-family: ${props => props.theme.raleFont};
+    }
+    @media (max-width: 760px) {
+      width: 90%;
+      padding: 20px 10px;
+    }
+    .splash-icons {
+      width: 60%;
+      margin: 20px auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-items: center;
+      i {
+        font-size: 3rem;
+      }
+    }
+    h2,
+    h3 {
+      text-align: center;
+      font-family: ${props => props.theme.raleFont};
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+  .projects {
+    background-color: ${props => props.theme.black};
+    height: 100%;
+    width: 100%;
+    img {
+      width: 120px;
+      height: 100px;
+    }
+    .graphql-logo {
+      width: 40px;
+    }
+    .project-list {
+      overflow-x: scroll;
+      display: grid;
+      height: 300px;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(7, calc(30% - 40px));
+      grid-gap: 25px;
+      justify-items: center;
+      align-items: center;
+      margin: 0 25px;
+      .individual-project {
+        height: 250px;
+        display: grid;
+        grid-template-rows: 4fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        h3 {
+          color: ${props => props.theme.blue};
+          margin: 5px 0;
+        }
+        h4 {
+          color: ${props => props.theme.white};
+          margin: 5px 0;
+        }
+        i {
+          color: ${props => props.theme.white};
+          padding: 3px;
+        }
+        h3,
+        h4 {
+          font-family: ${props => props.theme.raleFont};
+        }
+      }
+      &:last-child {
+        margin-right: 20px;
+      }
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .projects p {
+    margin: 0;
+    text-align: center;
+    font-family: ${props => props.theme.raleFont};
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: ${props => props.theme.white};
+    background: ${props => props.theme.darkBlack};
+    border-bottom: 3px solid ${props => props.theme.blue};
+  }
+`;
+
+const Home = () => {
+  console.log('Welcome to the the Console.  Hopefully you see no red.');
+  console.log('Thanks for checking out my site.  Check out my github @ https://github.com/theranbrig');
+  return (
+    <Layout>
+      <HomeStyles>
+        <div className="main-content">
+          <div className="splash-box">
+            <img
+              src="https://res.cloudinary.com/dq7uyauun/image/upload/v1551529192/theran-logo.png"
+              id="mainLogoImage"
+              className="wow fadeIn"
+              alt="Theran Brigowatz Logo"
+            />
+            <h1>HI. I'M THERAN.</h1>
+            <h2>I'm a Full-Stack Web Developer. Check out some of the cool stuff I've made.*</h2>
+            <h3>
+              See some of{' '}
+              <Link href="/portfolio">
+                <a>my work</a>
+              </Link>{' '}
+              and check out my code.
+            </h3>
+            <div className="splash-icons">
+              <a href="https://github.com/theranbrig" target="_blank" rel="noopener noreferrer">
+                <Icon name="github" />
+              </a>
+              <a href="https://twitter.com/wellBuilt" target="_blank" rel="noopener noreferrer">
+                <Icon name="twitter" />
+              </a>
+              <a href="https://linkedin.com/in/theran-brigowatz" target="_blank" rel="noopener noreferrer">
+                <Icon name="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <Particles className="particle-canvas" params={ParticleParams} />
+        <div className="projects">
+          <p>Click more on a project below to see the process, read the code, and use the deploy.</p>
+          <div className="project-list">
+            {data.map(project => (
+              <a href={`/${project.slug}`}>
+                <ProjectCard project={project} key={project.title} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </HomeStyles>
+    </Layout>
+  );
+};
+
+export default Home;
