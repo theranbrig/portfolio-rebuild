@@ -131,7 +131,7 @@ const Contact = () => (
           </li>
           <li>
             <a href="https://medium.com/@theran.brigowatz" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-medium" />
+              <i className="fab fa-medium-m" />
               <h5>Theran Brigowatz</h5>
             </a>
           </li>

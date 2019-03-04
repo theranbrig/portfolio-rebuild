@@ -59,7 +59,7 @@ const HomeStyles = styled.div`
     }
     .splash-icons {
       width: 60%;
-      margin: 20px auto 0;
+      margin-left: 20%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
@@ -67,6 +67,7 @@ const HomeStyles = styled.div`
       justify-items: center;
       i {
         font-size: 3rem;
+        margin: 0;
       }
     }
     h2,
@@ -75,7 +76,7 @@ const HomeStyles = styled.div`
       font-family: ${props => props.theme.raleFont};
     }
     h3 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
   .projects {
@@ -206,16 +207,16 @@ const Home = () => {
             </h3>
             <div className="splash-icons">
               <a href="https://github.com/theranbrig" target="_blank" rel="noopener noreferrer">
-                <Icon name="github" />
+                <i className="fab fa-github" />
               </a>
               <a href="https://twitter.com/wellBuilt" target="_blank" rel="noopener noreferrer">
-                <Icon name="twitter" />
+                <i className="fab fa-twitter" />
               </a>
               <a href="https://medium.com/@theran.brigowatz" target="_blank" rel="noopener noreferrer">
-                <Icon name="medium" />
+                <i className="fab fa-medium-m" />
               </a>
               <a href="https://linkedin.com/in/theran-brigowatz" target="_blank" rel="noopener noreferrer">
-                <Icon name="linkedin" />
+                <i className="fab fa-linkedin-in" />
               </a>
             </div>
           </div>
