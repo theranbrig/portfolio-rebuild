@@ -36,11 +36,21 @@ const HomeStyles = styled.div`
     left: 0;
     top: 83px;
     border-bottom: 3px solid ${props => props.theme.blue};
-    background-color: ${props => props.theme.black};
+    background: ${props => props.theme.blue}; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      #2a7692,
+      ${props => props.theme.blue},
+      #2a7692
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      #2a7692,
+      ${props => props.theme.blue},
+      #2a7692
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .splash-box {
-    background-color: #13131390;
+    background-color: #13131394;
     width: 80%;
     padding: 30px 60px;
     z-index: 100;
