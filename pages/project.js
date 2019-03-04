@@ -7,7 +7,6 @@ const Project = props => {
 
   useEffect(() => {
     data.forEach(item => {
-      console.log(item);
       if (item.slug === props.query.name) {
         setProject({ ...item });
       }
