@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 import GraphQLImage from '../static/graphql.svg';
 
 const ProjectCard = props => {
-  const { title, description, tech, logo, slug, icon } = props.project;
+  const { title, description, tech, slug, icon } = props.project;
 
   return (
     <div className="individual-project">
-      <Link href={{ pathname: '/project', query: { name: slug } }}>
+      <Link href={{ pathname: '/project', query: { name: slug } }} prefetch>
         <a>
           <i className={icon} />
           <h3>{title}</h3>
@@ -32,6 +33,10 @@ const ProjectCard = props => {
       </Link>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequired,
 };
 
 export default ProjectCard;

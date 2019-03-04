@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Layout from './Layout';
 import GraphQLImage from '../static/graphql.svg';
 
@@ -83,7 +84,7 @@ const ProjectStyles = styled.div`
     p {
       font-size: 1.3rem;
       color: ${props => props.theme.white};
-      font-family: ${props => props.theme.robFont};
+      font-family: ${props => props.theme.raleFont};
       line-height: 2rem;
       letter-spacing: 0.05rem;
     }
@@ -100,8 +101,6 @@ const ProjectLayout = props => {
     created,
     description,
     extendedDescription,
-    image,
-    logo,
     icon,
     screenShots,
     tech,
@@ -155,12 +154,18 @@ const ProjectLayout = props => {
             </div>
           </div>
           <div className="project-right">
-            <div className="project-images">{screenShots && screenShots.map(photo => <img src={photo} />)}</div>
+            <div className="project-images">
+              {screenShots && screenShots.map(photo => <img src={photo} alt={photo} />)}
+            </div>
           </div>
         </div>
       </ProjectStyles>
     </Layout>
   );
+};
+
+ProjectLayout.propTypes = {
+  project: PropTypes.object.isRequired,
 };
 
 export default ProjectLayout;

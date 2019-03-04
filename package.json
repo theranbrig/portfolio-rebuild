@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "next": "^8.0.3",
+    "next-ga": "^2.3.4",
     "next-images": "^1.0.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-animated-burgers": "^1.2.6",
     "react-dom": "^16.8.3",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
     "eslint": "^5.15.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",

@@ -92,7 +92,7 @@ const HomeStyles = styled.div`
     .project-list {
       overflow-x: scroll;
       display: grid;
-      height: 300px;
+      height: 320px;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(7, calc(30% - 40px));
       grid-gap: 25px;

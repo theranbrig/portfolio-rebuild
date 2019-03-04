@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import React from 'react';
+import PropTypes from 'prop-types';
 import Nav from './Nav';
 import Footer from './Footer';
 
@@ -23,10 +24,14 @@ const Layout = props => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <GlobalStyle />
-      <Nav children={props.children} />
+      <Nav>{props.children}</Nav>
       <Footer />
     </React.Fragment>
   </ThemeProvider>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;

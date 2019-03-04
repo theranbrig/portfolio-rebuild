@@ -1,8 +1,10 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
+import Router from 'next/router';
+import withGA from 'next-ga';
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     // Step 1: Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
@@ -21,11 +23,10 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <meta name="theme-color" content="#000000" />
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+          <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
           <link
             rel="stylesheet"
             href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -37,9 +38,8 @@ export default class MyDocument extends Document {
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
             crossOrigin="anonymous"
           />
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
-          <link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet" />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+          {this.props.styleTags}
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -54,3 +54,5 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+export default withGA('UA-127054970-1', Router)(MyDocument);

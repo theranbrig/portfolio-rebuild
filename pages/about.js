@@ -39,9 +39,11 @@ const AboutStyles = styled.div`
         font-size: 1.5rem;
         display: block;
         padding: 20px 0;
-        text-align: center;
         width: 60%;
         margin-left: 20%;
+        @media (max-width: 900px) {
+          text-align: center;
+        }
       }
     }
     h1 {
@@ -87,6 +89,7 @@ const AboutStyles = styled.div`
     }
     h3 {
       font-size: 1.7rem;
+      color: ${props => props.theme.blue};
     }
     ul {
       list-style-type: none;
@@ -111,6 +114,7 @@ const AboutStyles = styled.div`
       }
       p {
         font-size: 1.4rem;
+        padding: 5px;
       }
     }
     ul.secondary-skills {
@@ -132,11 +136,10 @@ const AboutStyles = styled.div`
         font-size: 1.4rem;
       }
     }
-    .secondary-skills {
-    }
     .skills-to-learn {
       p {
         text-align: center;
+        padding: 3px;
       }
     }
   }
