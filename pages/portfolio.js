@@ -11,6 +11,7 @@ const PortfolioStyles = styled.div`
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  padding: 30px 0 0;
   .project-list {
     justify-items: center;
     align-items: center;
@@ -73,9 +74,11 @@ const PortfolioStyles = styled.div`
     }
   }
   h1 {
+    text-transform: uppercase;
     color: ${props => props.theme.blue};
     font-family: ${props => props.theme.raleFont};
     padding: 10px 0;
+    font-size: 3rem;
   }
   h2 {
     color: ${props => props.theme.white};

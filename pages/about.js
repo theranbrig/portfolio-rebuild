@@ -10,7 +10,7 @@ const AboutStyles = styled.div`
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
-  padding: 50px 30px;
+  padding: 40px 30px;
   background-color: ${props => props.theme.black};
   @media (max-width: 900px) {
     width: 100%;
@@ -147,6 +147,8 @@ const AboutStyles = styled.div`
     text-align: center;
     color: ${props => props.theme.blue};
     font-family: ${props => props.theme.raleFont};
+    font-size: 3rem;
+    text-transform: uppercase;
   }
 `;
 
