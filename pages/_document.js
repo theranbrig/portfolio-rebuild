@@ -40,6 +40,7 @@ class MyDocument extends Document {
           />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
           {this.props.styleTags}
+          <title>Theran Brigowatz | Web Developer</title>
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
