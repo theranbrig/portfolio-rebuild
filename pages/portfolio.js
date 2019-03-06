@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import data from '../static/data';
 import ProjectCard from '../components/ProjectCard';
-import Link from '../components/Link';
 
 const PortfolioStyles = styled.div`
   background-color: ${props => props.theme.black};

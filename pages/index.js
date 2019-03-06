@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Particles from 'react-particles-js';
 import React from 'react';
 import styled from 'styled-components';
-import { Icon } from 'semantic-ui-react';
 import ParticleParams from '../data/ParticleParams.json';
 import Layout from '../components/Layout';
 import data from '../static/data';
@@ -206,11 +205,11 @@ const Home = () => {
             <h2>I'm a Full-Stack Web Developer. Check out some of the cool stuff I've made.*</h2>
             <h3>
               See some of{' '}
-              <Link href="/portfolio">
+              <Link href="/portfolio" prefetch>
                 <a>my code</a>
               </Link>{' '}
               and learn more{' '}
-              <Link href="/about">
+              <Link href="/about" prefetch>
                 <a>about me</a>
               </Link>
               .

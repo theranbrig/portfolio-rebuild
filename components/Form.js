@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, TextArea, Button, Input } from 'semantic-ui-react';
+import { Form, TextArea, Button } from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const SuccessStyles = styled.div`
@@ -8,7 +8,6 @@ const SuccessStyles = styled.div`
     font-size: 18px;
     color: ${props => props.theme.blue};
   }
-
 `;
 
 const encode = data =>

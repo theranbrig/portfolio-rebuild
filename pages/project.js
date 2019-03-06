@@ -1,4 +1,4 @@
-import React, { setState, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectLayout from '../components/ProjectLayout';
 import data from '../static/data';
 
