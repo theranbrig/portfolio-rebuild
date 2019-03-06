@@ -100,6 +100,9 @@ const ContactPageStyles = styled.div`
       margin: 0;
       margin-left: 5%;
     }
+    label::after {
+      color: ${props => props.theme.blue} !important;
+    }
   }
 `;
 

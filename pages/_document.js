@@ -24,7 +24,7 @@ class MyDocument extends Document {
       <html lang="en">
         <Head>
           <meta charset="utf-8" />
-          <meta name="description" content="Theran Brigowatz - Web Developer Portfolio Site" />
+          <meta name="description" content="Theran Briogwatz - Web Developer Portfolio Site" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
           <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />

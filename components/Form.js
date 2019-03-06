@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, TextArea, Button } from 'semantic-ui-react';
+import { Form, TextArea, Button, Input } from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const SuccessStyles = styled.div`
@@ -8,6 +8,7 @@ const SuccessStyles = styled.div`
     font-size: 18px;
     color: ${props => props.theme.blue};
   }
+
 `;
 
 const encode = data =>
@@ -40,30 +41,28 @@ const ContactForm = () => {
     <div className="contact-form">
       <h2>Send A Quick Message Directly</h2>
       <Form onSubmit={handleSubmit} inverted>
-        <Form.Group>
+        <Form.Group widths="equal">
           <Form.Field stackable="true" width={8}>
-            <label htmlFor="name">
-              Name
-              <input
-                name="name"
-                type="text"
-                placeholder="Enter Name"
-                onChange={e => setName(e.target.value)}
-                value={name}
-              />
-            </label>
+            <Form.Input
+              name="name"
+              type="text"
+              placeholder="Enter Name"
+              onChange={e => setName(e.target.value)}
+              value={name}
+              required
+              label="Name"
+            />
           </Form.Field>
           <Form.Field stackable="true" width={8}>
-            <label htmlFor="email">
-              Email
-              <input
-                name="email"
-                type="email"
-                placeholder="Enter Email Address"
-                onChange={e => setEmail(e.target.value)}
-                value={email}
-              />
-            </label>
+            <Form.Input
+              name="email"
+              type="email"
+              placeholder="Enter Email Address"
+              onChange={e => setEmail(e.target.value)}
+              value={email}
+              label="Email Address"
+              required
+            />
           </Form.Field>
         </Form.Group>
         <Form.Group>
@@ -75,6 +74,7 @@ const ContactForm = () => {
             width={16}
             onChange={e => setMessage(e.target.value)}
             value={message}
+            required
           />
         </Form.Group>
         <Button inverted type="submit">
