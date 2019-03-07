@@ -205,11 +205,11 @@ const Home = () => {
             <h2>I'm a Full-Stack Web Developer. Check out some of the cool stuff I've made.*</h2>
             <h3>
               See some of{' '}
-              <Link href="/portfolio" prefetch>
+              <Link href="/portfolio">
                 <a>my code</a>
               </Link>{' '}
               and learn more{' '}
-              <Link href="/about" prefetch>
+              <Link href="/about">
                 <a>about me</a>
               </Link>
               .

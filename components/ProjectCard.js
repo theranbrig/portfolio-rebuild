@@ -8,7 +8,7 @@ const ProjectCard = props => {
 
   return (
     <div className="individual-project">
-      <Link href={{ pathname: '/project', query: { name: slug } }} prefetch>
+      <Link href={{ pathname: '/project', query: { name: slug } }}>
         <a>
           <i className={icon} />
           <h3>{title}</h3>

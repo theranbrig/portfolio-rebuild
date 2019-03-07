@@ -2,16 +2,16 @@ import Link from './Link';
 
 const NavLinks = () => (
   <>
-    <Link activeClassName="active" href="/" prefetch>
+    <Link activeClassName="active" href="/">
       <a>Home</a>
     </Link>
-    <Link activeClassName="active" href="/portfolio" prefetch>
+    <Link activeClassName="active" href="/portfolio">
       <a>Portfolio</a>
     </Link>
-    <Link activeClassName="active" href="/about" prefetch>
-      <a> About</a>
+    <Link activeClassName="active" href="/about">
+      <a> About Me</a>
     </Link>
-    <Link activeClassName="active" href="/contact" prefetch>
+    <Link activeClassName="active" href="/contact">
       <a>Contact</a>
     </Link>
   </>
