@@ -157,7 +157,10 @@ const About = () => (
     <AboutStyles>
       <div className="about-sidebar">
         <h1>Theran Briowatz</h1>
-        <img src="/static/IMG_1880.jpg" alt="theran brigowatz logo" className="wow fadeIn" />
+        <img
+          src="https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg"
+          alt="Theran Brigowatz Profile"
+        />
         <div className="sidebar-links">
           <Link href="/contact">
             <a>

@@ -72,7 +72,7 @@ const Footer = () => (
   <FooterStyles>
     <div className="footer-left">
       <img
-        src="https://res.cloudinary.com/dq7uyauun/image/upload/v1551529192/theran-logo.png"
+        src="https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_150/v1551529192/theran-logo.png"
         alt="Theran Brigowatz Logo"
       />
       <div className="footer-nav-links">

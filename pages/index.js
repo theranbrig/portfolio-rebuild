@@ -196,7 +196,7 @@ const Home = () => {
         <div className="main-content">
           <div className="splash-box">
             <img
-              src="https://res.cloudinary.com/dq7uyauun/image/upload/v1551529192/theran-logo.png"
+              src="https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551529192/theran-logo.png"
               id="mainLogoImage"
               className="wow fadeIn"
               alt="Theran Brigowatz Logo"

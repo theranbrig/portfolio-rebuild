@@ -34,6 +34,7 @@ class MyDocument extends Document {
             href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
             prefetch
           />
+          <link rel="icon" type="image/x-icon" href="../static/favicon.ico" prefetch />
           <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto" rel="stylesheet" prefetch />
           <link
             rel="stylesheet"
