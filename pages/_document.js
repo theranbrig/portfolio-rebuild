@@ -26,7 +26,6 @@ class MyDocument extends Document {
           <meta charset="utf-8" />
           <meta name="description" content="Theran Briogwatz - Web Developer Portfolio Site" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" prefetch />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" prefetch />
           <link
@@ -44,7 +43,6 @@ class MyDocument extends Document {
             prefetch
           />
           {this.props.styleTags}
-          <title>Theran Brigowatz | Web Developer</title>
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import GraphQLImage from '../static/graphql.svg';
 
@@ -154,6 +155,9 @@ const AboutStyles = styled.div`
 
 const About = () => (
   <Layout>
+    <Head>
+      <title>Theran Brigowatz | About Me</title>
+    </Head>
     <AboutStyles>
       <div className="about-sidebar">
         <h1>Theran Briowatz</h1>

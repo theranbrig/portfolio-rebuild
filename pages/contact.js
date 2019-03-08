@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import Form from '../components/Form';
 
@@ -108,6 +109,9 @@ const ContactPageStyles = styled.div`
 
 const Contact = () => (
   <Layout>
+    <Head>
+      <title>Theran Brigowatz | Contact</title>
+    </Head>
     <ContactPageStyles>
       <div className="contact-title">
         <img

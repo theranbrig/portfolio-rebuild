@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Particles from 'react-particles-js';
 import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import ParticleParams from '../data/ParticleParams.json';
 import Layout from '../components/Layout';
 import data from '../static/data';
@@ -192,6 +193,9 @@ const Home = () => {
   console.log('Thanks for checking out my site.  Check out my github @ https://github.com/theranbrig');
   return (
     <Layout>
+      <Head>
+        <title>Theran Brigowatz | Web Developer</title>
+      </Head>
       <HomeStyles>
         <div className="main-content">
           <div className="splash-box">

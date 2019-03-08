@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import data from '../static/data';
 import ProjectCard from '../components/ProjectCard';
@@ -89,6 +90,9 @@ const PortfolioStyles = styled.div`
 
 const Portfolio = () => (
   <Layout>
+    <Head>
+      <title>Theran Brigowatz | Portfolio</title>
+    </Head>
     <PortfolioStyles>
       <h1>Portfolio</h1>
       <h2>Check out the projects to read more about the build process, code, and deploys.</h2>

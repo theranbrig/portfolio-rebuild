@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 import Layout from './Layout';
 import GraphQLImage from '../static/graphql.svg';
 
@@ -108,6 +109,9 @@ const ProjectLayout = props => {
   console.log(screenShots);
   return (
     <Layout>
+      <Head>
+        <title>Theran Brigowatz | {title}</title>
+      </Head>
       <ProjectStyles>
         <div className="project-title">
           <h1>
