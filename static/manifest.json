@@ -1,8 +1,7 @@
 {
-  “name”: “Theran Brigowatz”,
-  “short_name”: “TBD Web Dev”,
-  “start_url”: “/”,
-  “display”: “fullscreen”,
-  “theme_color”: “#40a4c8”,
-  “background_color”: “#EEE”
+  "short_name": "Brigowatz",
+  "name": "Theran Brigowtz - WebDeveloper",
+  "start_url": "/",
+  "background_color": "#131313",
+  "theme_color": "#40a4c8"
 }

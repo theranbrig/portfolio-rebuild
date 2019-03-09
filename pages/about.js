@@ -1,166 +1,19 @@
 import Link from 'next/link';
-import styled from 'styled-components';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import GraphQLImage from '../static/graphql.svg';
-
-const AboutStyles = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 40px 30px;
-  background-color: ${props => props.theme.black};
-  @media (max-width: 900px) {
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr minmax(500px, 3fr);
-    padding: 10px;
-  }
-  @media (max-width: 450px) {
-    grid-template-rows: 1fr minmax(500px, 5fr);
-  }
-  .about-sidebar {
-    width: 100%;
-    align-self: start;
-    @media (max-width: 900px) {
-      align-self: center;
-    }
-    img {
-      border-radius: 50%;
-      width: 150px;
-      margin-left: calc(50% - 75px);
-    }
-    .sidebar-links {
-      a {
-        font-family: ${props => props.theme.raleFont};
-        color: ${props => props.theme.blue};
-        font-size: 1.5rem;
-        display: block;
-        padding: 20px 0;
-        width: 60%;
-        margin-left: 20%;
-        @media (max-width: 900px) {
-          text-align: center;
-        }
-      }
-    }
-    h1 {
-      @media (min-width: 900px) {
-        display: none;
-      }
-    }
-  }
-  .about-main {
-    width: 100%;
-    color: ${props => props.theme.white};
-    padding-bottom: 50px;
-    h1,
-    h2 {
-      color: ${props => props.theme.blue};
-      text-align: center;
-    }
-    h1,
-    h2,
-    h3,
-    li {
-      font-family: ${props => props.theme.raleFont};
-      text-align: center;
-    }
-    h1 {
-      @media (max-width: 900px) {
-        display: none;
-      }
-    }
-    p {
-      font-size: 1.3rem;
-      font-family: ${props => props.theme.raleFont};
-      color: ${props => props.theme.white};
-      line-height: 2rem;
-      letter-spacing: 0.05rem;
-      @media (max-width: 900px) {
-        width: 95%;
-        margin-left: 2.5%;
-      }
-    }
-    h2 {
-      font-size: 1.9rem;
-    }
-    h3 {
-      font-size: 1.7rem;
-      color: ${props => props.theme.blue};
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .daily-list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 20px;
-      justify-items: center;
-      align-items: center;
-      text-align: center;
-      @media (max-width: 450px) {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        padding: 10px;
-      }
-      i {
-        font-size: 4rem;
-      }
-      p {
-        font-size: 1.4rem;
-        padding: 5px;
-      }
-    }
-    ul.secondary-skills {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 20px;
-      justify-items: center;
-      align-items: center;
-      text-align: center;
-      @media (max-width: 450px) {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        padding: 10px;
-      }
-
-      li {
-        font-size: 1.4rem;
-      }
-    }
-    .skills-to-learn {
-      p {
-        text-align: center;
-        padding: 3px;
-      }
-    }
-  }
-  h1 {
-    text-align: center;
-    color: ${props => props.theme.blue};
-    font-family: ${props => props.theme.raleFont};
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-`;
+import AboutPageStyles from '../components/styles/AboutPageStyles';
+import { icons, skills } from '../static/data';
+import IconLink from '../components/IconLink';
 
 const About = () => (
   <Layout>
     <Head>
       <title>Theran Brigowatz | About Me</title>
     </Head>
-    <AboutStyles>
+    <AboutPageStyles>
       <div className="about-sidebar">
-        <h1>Theran Briowatz</h1>
+        <h1>Theran Brigowatz</h1>
         <img
           src="https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg"
           alt="Theran Brigowatz Profile"
@@ -171,22 +24,15 @@ const About = () => (
               Contact Me <i className="fas fa-comment" />
             </a>
           </Link>
-          <a
-            href="https://docs.google.com/document/d/1SUCN4YnYe4dDmCRN1bB_HOuhL9MsZyJNGaQaea3TJtY/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume <i className="far fa-file" />
-          </a>
-          <a href="https://github.com/theranbrig" target="_blank" rel="noopener noreferrer">
-            GitHub Code <i className="fab fa-github" />
-          </a>
-          <a href="https://twitter.com/wellBuilt" target="_blank" rel="noopener noreferrer">
-            Twitter Musings <i className="fab fa-twitter" />
-          </a>
-          <a href="https://medium.com/@theran.brigowatz" target="_blank" rel="noopener noreferrer">
-            Medium Blog <i className="fab fa-medium" />
-          </a>
+          <IconLink
+            name="Resume "
+            link="https://docs.google.com/document/d/1SUCN4YnYe4dDmCRN1bB_HOuhL9MsZyJNGaQaea3TJtY/edit?usp=sharing"
+            icon="far fa-file"
+          />
+          <IconLink name="GitHub Code " link="https://github.com/theranbrig" icon="fab fa-github" />
+          <IconLink name="Twitter Musings " link="https://twitter.com/wellBuilt" icon="fab fa-twitter" />
+          <IconLink name="Medium Blog " link="https://medium.com/@theran.brigowatz" icon="fab fa-medium-m" />
+          <IconLink name="Linked In " link="https://linkedin.com/in/theran-brigowatz" icon="fab fa-linkedin" />
         </div>
       </div>
       <div className="about-main">
@@ -215,34 +61,12 @@ const About = () => (
           <div className="skill-list">
             <h3>Daily Use:</h3>
             <ul className="daily-list">
-              <li>
-                <i className="devicon-html5-plain" />
-                <p>HTML</p>
-              </li>
-              <li>
-                <i className="devicon-css3-plain" />
-                <p>CSS</p>
-              </li>
-              <li>
-                <i className="devicon-javascript-plain" />
-                <p>JavaScript</p>
-              </li>
-              <li>
-                <i className="devicon-react-original" />
-                <p>React</p>
-              </li>
-              <li>
-                <i className="devicon-nodejs-plain" />
-                <p>Node</p>
-              </li>
-              <li>
-                <i className="devicon-github-plain" />
-                <p>Git</p>
-              </li>
-              <li>
-                <i className="devicon-postgresql-plain" />
-                <p>PostgreSQL</p>
-              </li>
+              {icons.map(icon => (
+                <li>
+                  <i className={icon.icon} />
+                  <p>{icon.skill}</p>
+                </li>
+              ))}
               <li>
                 <img src={GraphQLImage} alt="graphql" style={{ height: '55px' }} />
                 <p>GraphQL</p>
@@ -252,28 +76,19 @@ const About = () => (
           <div className="skills-i-know">
             <h3>No Slouch With:</h3>
             <ul className="secondary-skills">
-              <li>Express</li>
-              <li>MVC Architecture</li>
-              <li>Jasmine</li>
-              <li>Jest</li>
-              <li>Mongo</li>
-              <li>Sass</li>
-              <li>Styled Components</li>
-              <li>Semantic UI</li>
-              <li>Bootstrap</li>
-              <li>Material UI</li>
-              <li>Heroku</li>
-              <li>Photoshop</li>
+              {skills.map(skill => (
+                <li>{skill}</li>
+              ))}
             </ul>
           </div>
           <h3>Skills In the Pipeline:</h3>
           <div className="skills-to-learn">
             <p>Give me your best shot. I'll take on anything else you throw at me.*</p>
-            <p>*Also Sausage Making and Chacuterie.</p>
+            <p>*Also Sausage Making and Charcuterie.</p>
           </div>
         </div>
       </div>
-    </AboutStyles>
+    </AboutPageStyles>
   </Layout>
 );
 

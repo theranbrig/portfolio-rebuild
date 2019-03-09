@@ -151,3 +151,28 @@ export default [
     tech: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
 ];
+
+export const icons = [
+  { skill: 'HTML', icon: 'devicon-html5-plain' },
+  { skill: 'CSS', icon: 'devicon-css3-plain' },
+  { skill: 'JavaScript', icon: 'devicon-javascript-plain' },
+  { skill: 'React', icon: 'devicon-react-original' },
+  { skill: 'Node.js', icon: 'devicon-nodejs-plain' },
+  { skill: 'Git', icon: 'devicon-github-plain' },
+  { skill: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+];
+
+export const skills = [
+  'Express',
+  'MVC Architecture',
+  'Jasmine',
+  'Jest',
+  'MongoDB',
+  'Sass',
+  'Styled Components',
+  'Semantic UI',
+  'Bootstrap',
+  'Material UI',
+  'Heroku',
+  'Photoshop',
+];
