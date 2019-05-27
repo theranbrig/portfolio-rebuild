@@ -54,6 +54,10 @@ const ContactPageStyles = styled.div`
       i {
         font-size: 5rem;
         color: ${props => props.theme.blue};
+        &:hover {
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: ${props => props.theme.white};
+        }
       }
     }
   }

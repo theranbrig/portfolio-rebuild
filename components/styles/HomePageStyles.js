@@ -68,6 +68,10 @@ const HomePageStyles = styled.div`
       i {
         font-size: 3rem;
         margin: 0;
+        &:hover {
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: ${props => props.theme.white};
+        }
       }
     }
     h2,
@@ -134,6 +138,7 @@ const HomePageStyles = styled.div`
               font-size: 1.3rem;
             }
           }
+
           img.graphql-logo {
             width: 40px;
             @media (max-width: 900px) {
