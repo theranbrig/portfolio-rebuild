@@ -5,7 +5,6 @@ import GraphQLImage from '../static/graphql.svg';
 import ProjectStyles from './styles/ProjectStyles';
 
 const ProjectLayout = props => {
-  console.log(props);
   const {
     title,
     technology,
@@ -18,7 +17,6 @@ const ProjectLayout = props => {
     screenShots,
     tech,
   } = props.project;
-  console.log(screenShots);
   return (
     <Layout>
       <Head>

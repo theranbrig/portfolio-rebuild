@@ -5,7 +5,6 @@ import GraphQLImage from '../static/graphql.svg';
 
 const ProjectCard = props => {
   const { title, description, tech, slug, icon } = props.project;
-
   return (
     <div className="individual-project">
       <Link href={{ pathname: '/project', query: { name: slug } }}>
