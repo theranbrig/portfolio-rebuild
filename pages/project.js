@@ -4,6 +4,8 @@ import { Browser } from 'react-kawaii';
 import ProjectLayout from '../components/ProjectLayout';
 import data from '../static/data';
 import ErrorPage from './_error';
+import Layout from '../components/Layout';
+import LoadingStyles from '../components/styles/LoadingStyles';
 
 const Project = ({ query }) => {
   const [project, setProject] = useState({});
@@ -16,11 +18,25 @@ const Project = ({ query }) => {
         setProject({ ...item });
       }
     });
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   }, []);
-  if (loading) return <Browser size={200} mood="blissful" color="#40a4c8" />;
-  if (!loading && !Object.keys(project).length) return <ErrorPage />;
-  return <ProjectLayout project={project} />;
+  if (!Object.keys(project).length) return <ErrorPage />;
+  if (loading)
+    return (
+      <LoadingStyles>
+        <div>
+          <Browser size={400} mood="blissful" color="#40a4c8" />
+          <h1>Loading...</h1>
+        </div>
+      </LoadingStyles>
+    );
+  return (
+    <>
+      <ProjectLayout project={project} />
+    </>
+  );
 };
 
 Project.propTypes = {

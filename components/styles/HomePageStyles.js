@@ -99,7 +99,7 @@ const HomePageStyles = styled.div`
       display: grid;
       height: 320px;
       grid-template-rows: 1fr;
-      grid-template-columns: repeat(7, calc(30% - 40px));
+      grid-template-columns: repeat(8, calc(30% - 40px));
       grid-gap: 25px;
       justify-items: center;
       align-items: center;

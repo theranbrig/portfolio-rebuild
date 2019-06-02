@@ -99,6 +99,32 @@ export default [
     tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
   {
+    title: 'NintenDB',
+    technology: 'React, Firebase, Node, Express',
+    created: 'Spring 2019',
+    description: 'IGDB.com API Project',
+    slug: 'nintendb',
+    image: 'https://i.imgur.com/0cvRvQK.png',
+    logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Cloud.png',
+    extendedDescription:
+      "This was built to utilize IGDB.com's APIcalyse and their API.  It is a simple express app on the backend that pulls in data from their API.  All views are done using React on the frontend and it is styled with NES.css for a bit of old school 8-bit styling.  Users may save games after going through random classic games.  User authentication and the database layer is built using Google Firebase for rapid development.",
+    gitLink: 'https://github.com/theranbrig/igdb-project',
+    screenShots: [
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_74,w_689/v1559473764/Screen_Shot_2019-06-02_at_8.06.50_PM.png',
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_662/v1559473764/Screen_Shot_2019-06-02_at_8.07.55_PM.png',
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_741/v1559473764/Screen_Shot_2019-06-02_at_8.06.40_PM.png',
+    ],
+    icon: 'fas fa-gamepad',
+    tech: [
+      'devicon-javascript-plain',
+      'devicon-react-original',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+      'devicon-nodejs-plain',
+      'devicon-heroku-plain',
+    ],
+  },
+  {
     title: 'Bloc Jams',
     technology: 'React, SemanticUI',
     created: 'Spring 2018',
