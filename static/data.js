@@ -12,8 +12,9 @@ export default [
     gitLink: 'https://github.com/theranbrig/grouper',
     deployLink: 'https://grouper-frontend.herokuapp.com/',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_500/v1551967916/BwIfJ5m.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_500/v1551967916/Sa8VlMo.png',
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_New_Home.png',
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_List.png',
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_Add_Item.png',
     ],
     icon: 'fas fa-fish',
     tech: [
