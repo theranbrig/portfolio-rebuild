@@ -1,6 +1,7 @@
+
 import Link from './Link';
 
-const NavLinks = () => (
+const NavLinks = ({ toggleDarkMode }) => (
   <>
     <Link activeClassName="active" href="/">
       <a>Home</a>
@@ -14,6 +15,7 @@ const NavLinks = () => (
     <Link activeClassName="active" href="/contact">
       <a>Contact</a>
     </Link>
+
   </>
 );
 

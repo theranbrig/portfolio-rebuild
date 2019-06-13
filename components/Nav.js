@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { OffCanvas, OffCanvasMenu, OffCanvasBody } from 'react-offcanvas';
 import { HamburgerSqueeze } from 'react-animated-burgers';
 import PropTypes from 'prop-types';
+import Toggle from 'react-toggle';
 import Link from './Link';
 import NavLinks from './NavLinks';
 import NavStyles from './styles/NavStyles';
 
-const Nav = props => {
+const Nav = ({ children, toggleDarkMode, darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -21,7 +22,8 @@ const Nav = props => {
               />
             </Link>
             <div className="desktop-nav-links">
-              <NavLinks />
+              <NavLinks toggleDarkMode={toggleDarkMode} />
+              <Toggle checked={darkMode} onChange={() => toggleDarkMode()} />
             </div>
             <HamburgerSqueeze
               isActive={isOpen}
@@ -30,11 +32,11 @@ const Nav = props => {
               className="hamburger-button"
             />
           </div>
-          {props.children}
+          {children}
         </OffCanvasBody>
         <OffCanvasMenu className="off-menu">
           <div className="nav-links">
-            <NavLinks />
+            <NavLinks toggleDarkMode={toggleDarkMode} />
           </div>
         </OffCanvasMenu>
       </OffCanvas>
