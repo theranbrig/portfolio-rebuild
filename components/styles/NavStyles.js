@@ -121,14 +121,14 @@ const NavStyles = styled.div`
     height: 24px;
     padding: 0;
     border-radius: 30px;
-    background-color: #4d4d4d;
+    background-color: ${props => props.theme.black};
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
   .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background-color: #000000;
+    background-color: ${props => props.theme.black};
   }
 
   .react-toggle--checked .react-toggle-track {
@@ -217,6 +217,14 @@ const NavStyles = styled.div`
     -webkit-box-shadow: 0px 0px 5px 5px #0099e0;
     -moz-box-shadow: 0px 0px 5px 5px #0099e0;
     box-shadow: 0px 0px 5px 5px #0099e0;
+  }
+  .react-toggle-track-check i,
+  .react-toggle-track-x i {
+    font-size: 15px;
+  }
+  .react-toggle-track-check,
+  .react-toggle-track-x {
+    margin-top: 5px;
   }
 `;
 

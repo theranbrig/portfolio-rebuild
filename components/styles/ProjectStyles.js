@@ -47,6 +47,10 @@ const ProjectStyles = styled.div`
       }
     }
   }
+  div.project-images img {
+    border: 2px solid ${props => props.theme.blue};
+    padding: 10px;
+  }
   .project-title {
     color: ${props => props.theme.blue};
     text-align: center;

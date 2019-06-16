@@ -17,13 +17,24 @@ const Nav = ({ children, toggleDarkMode, darkMode }) => {
           <div className="navigation">
             <Link href="/">
               <img
-                src="https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_200/v1551529192/theran-logo.png"
+                src={
+                  darkMode
+                    ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_200/v1551529192/theran-logo.png'
+                    : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_200/v1551529192/theran-logo-Original-dark.png'
+                }
                 alt="Theran Brigowatz Logo"
               />
             </Link>
             <div className="desktop-nav-links">
               <NavLinks toggleDarkMode={toggleDarkMode} />
-              <Toggle checked={darkMode} onChange={() => toggleDarkMode()} />
+              <Toggle
+                checked={darkMode}
+                onChange={() => toggleDarkMode()}
+                icons={{
+                  checked: <i className="far fa-lightbulb"></i>,
+                  unchecked: <i className="fas fa-lightbulb"></i>,
+                }}
+              />
             </div>
             <HamburgerSqueeze
               isActive={isOpen}

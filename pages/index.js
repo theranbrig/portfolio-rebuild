@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
 import Particles from 'react-particles-js';
-import React from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
 import ParticleParams from '../static/ParticleParams.json';
 import Layout from '../components/Layout';
@@ -10,8 +10,10 @@ import data from '../static/data';
 import ProjectCard from '../components/ProjectCard';
 import IconLink from '../components/IconLink';
 import HomePageStyles from '../components/styles/HomePageStyles';
+import { DarkContext } from '../components/context/DarkContext';
 
 const Home = () => {
+  const { darkMode } = useContext(DarkContext);
   console.log('Welcome to the the Console.  Hopefully you see no red.');
   console.log('Thanks for checking out my site.  Check out my github @ https://github.com/theranbrig');
   return (
@@ -23,7 +25,11 @@ const Home = () => {
         <div className="main-content">
           <div className="splash-box">
             <img
-              src="https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551529192/theran-logo.png"
+              src={
+                darkMode
+                  ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo.png'
+                  : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo-Original-dark.png'
+              }
               alt="Theran Brigowatz Logo"
             />
             <h1>HI. I'M THERAN.</h1>

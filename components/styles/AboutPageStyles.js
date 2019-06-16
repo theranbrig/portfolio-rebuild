@@ -16,7 +16,7 @@ const AboutPageStyles = styled.div`
     padding: 10px;
   }
   @media (max-width: 450px) {
-    grid-template-rows: 1fr minmax(500px, 5fr);
+    grid-template-rows: 1fr minmax(500px, 3fr);
   }
   .about-sidebar {
     width: 100%;

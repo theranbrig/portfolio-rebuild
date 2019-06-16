@@ -1,11 +1,15 @@
 import NavLinks from './NavLinks';
 import FooterStyles from './styles/FooterStyles';
 
-const Footer = () => (
+const Footer = ({ darkMode }) => (
   <FooterStyles>
     <div className="footer-left">
       <img
-        src="https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_150/v1551529192/theran-logo.png"
+        src={
+          darkMode
+            ? 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_200/v1551529192/theran-logo.png'
+            : 'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_200/v1551529192/theran-logo-Original-dark.png'
+        }
         alt="Theran Brigowatz Logo"
       />
       <div className="footer-nav-links">

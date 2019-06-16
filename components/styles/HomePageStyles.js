@@ -40,7 +40,7 @@ const HomePageStyles = styled.div`
   }
 
   .splash-box {
-    background-color: #13131394;
+    background-color: ${props => props.theme.transparent};
     width: 80%;
     padding: 30px 60px;
     z-index: 100;

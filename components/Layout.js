@@ -1,14 +1,16 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Nav from './Nav';
 import Footer from './Footer';
+import { DarkContext } from './context/DarkContext';
 
 const darkTheme = {
   darkBlack: '#131313',
   black: '#232323',
   white: 'gainsboro',
   blue: '#40a4c8',
+  transparent: '#13131394',
   raleFont: 'Raleway',
   robFont: 'Roboto',
 };
@@ -17,6 +19,7 @@ const lightTheme = {
   black: 'white',
   white: '#232323',
   blue: '#40a4c8',
+  transparent: '#f3f3f394',
   raleFont: 'Raleway',
   robFont: 'Roboto',
 };
@@ -29,11 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
 // later in your app
 const Layout = props => {
-  const [darkMode, setDarkMode] = useState(true);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const { darkMode, toggleDarkMode } = useContext(DarkContext);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
@@ -42,11 +41,12 @@ const Layout = props => {
         <Nav toggleDarkMode={toggleDarkMode} darkMode={darkMode}>
           {props.children}
         </Nav>
-        <Footer />
+        <Footer darkMode={darkMode} />
       </React.Fragment>
     </ThemeProvider>
   );
 };
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
