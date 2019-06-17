@@ -14,10 +14,10 @@ const ActiveLink = ({ router, children, ...props }) => {
 };
 
 ActiveLink.propTypes = {
-  router: PropTypes.string.isRequired,
+  router: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
-  activeClassName: PropTypes.string.isRequired,
+  activeClassName: PropTypes.string,
 };
 
 export default withRouter(ActiveLink);

@@ -84,7 +84,7 @@ const ProjectLayout = props => {
           </div>
           <div className="project-right">
             <div className="project-images">
-              {screenShots && screenShots.map(photo => <img src={photo} alt={photo} />)}
+              {screenShots && screenShots.map(photo => <img src={photo} alt={photo} key={photo} />)}
             </div>
           </div>
         </div>

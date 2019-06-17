@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Form, TextArea, Button } from 'semantic-ui-react';
 import styled from 'styled-components';
+import { DarkContext } from './context/DarkContext';
 
 const SuccessStyles = styled.div`
   height: 20px;
@@ -21,6 +22,8 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState(null);
 
+  const { darkMode } = useContext(DarkContext);
+
   function handleSubmit(e) {
     fetch('/', {
       method: 'POST',
@@ -39,7 +42,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form">
       <h2>Send A Quick Message Directly</h2>
-      <Form onSubmit={handleSubmit} inverted>
+      <Form onSubmit={handleSubmit} inverted={darkMode}>
         <Form.Group widths="equal">
           <Form.Field stackable="true" width={8}>
             <Form.Input
@@ -76,7 +79,7 @@ const ContactForm = () => {
             required
           />
         </Form.Group>
-        <Button inverted type="submit">
+        <Button inverted={darkMode} type="submit">
           Submit!
         </Button>
       </Form>

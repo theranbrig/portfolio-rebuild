@@ -23,7 +23,7 @@ const Contact = () => {
             }
             alt="Theran Brigowatz Logo"
           />
-          <h1>Contact Theran</h1>
+          <h1>CONTACT THERAN</h1>
           <p>Get a hold of me for any questions you may have.</p>
         </div>
         <div className="social-icons">

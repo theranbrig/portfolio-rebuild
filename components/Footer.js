@@ -1,5 +1,5 @@
-import NavLinks from './NavLinks';
 import FooterStyles from './styles/FooterStyles';
+import Link from './Link';
 
 const Footer = ({ darkMode }) => (
   <FooterStyles>
@@ -13,7 +13,18 @@ const Footer = ({ darkMode }) => (
         alt="Theran Brigowatz Logo"
       />
       <div className="footer-nav-links">
-        <NavLinks />
+        <Link activeClassName="active" href="/">
+          <a>Home</a>
+        </Link>
+        <Link activeClassName="active" href="/portfolio">
+          <a>Portfolio</a>
+        </Link>
+        <Link activeClassName="active" href="/about">
+          <a> About Me</a>
+        </Link>
+        <Link activeClassName="active" href="/contact">
+          <a>Contact</a>
+        </Link>
       </div>
     </div>
     <div className="footer-right">

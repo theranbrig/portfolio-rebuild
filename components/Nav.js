@@ -27,14 +27,6 @@ const Nav = ({ children, toggleDarkMode, darkMode }) => {
             </Link>
             <div className="desktop-nav-links">
               <NavLinks toggleDarkMode={toggleDarkMode} />
-              <Toggle
-                checked={darkMode}
-                onChange={() => toggleDarkMode()}
-                icons={{
-                  checked: <i className="far fa-lightbulb"></i>,
-                  unchecked: <i className="fas fa-lightbulb"></i>,
-                }}
-              />
             </div>
             <HamburgerSqueeze
               isActive={isOpen}

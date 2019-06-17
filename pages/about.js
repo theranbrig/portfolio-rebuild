@@ -67,7 +67,7 @@ const About = () => {
               <h3>Daily Use:</h3>
               <ul className="daily-list">
                 {icons.map(icon => (
-                  <li>
+                  <li key={icon.icon}>
                     <i className={icon.icon} />
                     <p>{icon.skill}</p>
                   </li>

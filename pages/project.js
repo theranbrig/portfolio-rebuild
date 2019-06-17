@@ -40,7 +40,7 @@ const Project = ({ query }) => {
 };
 
 Project.propTypes = {
-  query: PropTypes.string.isRequired,
+  query: PropTypes.object.isRequired,
 };
 
 export default Project;
