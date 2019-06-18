@@ -11,7 +11,7 @@ const ContactPageStyles = styled.div`
   @media (max-width: 900px) {
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 3fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr 2fr 3fr;
   }
   .contact-title {
     img {

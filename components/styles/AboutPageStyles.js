@@ -12,7 +12,7 @@ const AboutPageStyles = styled.div`
   @media (max-width: 900px) {
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr minmax(500px, 3fr);
+    grid-template-rows: 1fr minmax(500px, 2fr);
     padding: 10px;
   }
   @media (max-width: 450px) {

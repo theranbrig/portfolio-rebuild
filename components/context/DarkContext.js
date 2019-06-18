@@ -4,9 +4,11 @@ export const DarkContext = React.createContext();
 
 const DarkProvider = props => {
   const [darkMode, setDarkMode] = useState(true);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
   return (
     <DarkContext.Provider
       value={{

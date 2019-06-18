@@ -86,7 +86,7 @@ const About = () => {
               <h3>No Slouch With:</h3>
               <ul className="secondary-skills">
                 {skills.map(skill => (
-                  <li>{skill}</li>
+                  <li key={skill}>{skill}</li>
                 ))}
               </ul>
             </div>

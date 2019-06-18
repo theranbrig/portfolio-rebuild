@@ -58,8 +58,8 @@ const HomePageStyles = styled.div`
       padding: 20px 10px;
     }
     .splash-icons {
-      width: 60%;
-      margin-left: 20%;
+      width: 80%;
+      margin-left: 10%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;

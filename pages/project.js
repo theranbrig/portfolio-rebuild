@@ -27,7 +27,7 @@ const Project = ({ query }) => {
     return (
       <LoadingStyles>
         <div>
-          <Browser size={400} mood="blissful" color="#40a4c8" />
+          <Browser size={"80%"} mood="blissful" color="#40a4c8" />
           <h1>Loading...</h1>
         </div>
       </LoadingStyles>

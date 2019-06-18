@@ -14,6 +14,7 @@ const ErrorStyles = styled.div`
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   align-items: center;
+  padding: 15px;
   h2,
   h1 {
     font-family: 'Raleway', sans-serif;
@@ -24,9 +25,6 @@ const ErrorStyles = styled.div`
   }
   h2 {
     color: gainsboro;
-  }
-  div .main-content {
-    background: green;
   }
 `;
 
