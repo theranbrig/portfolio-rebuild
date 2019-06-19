@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Head from 'next/head';
 import { Ghost } from 'react-kawaii';
 import React, { useState } from 'react';
@@ -15,6 +14,10 @@ const ErrorStyles = styled.div`
   grid-template-columns: 1fr;
   align-items: center;
   padding: 15px;
+  button {
+    background: #232323;
+    border: none;
+  }
   h2,
   h1 {
     font-family: 'Raleway', sans-serif;
@@ -28,7 +31,7 @@ const ErrorStyles = styled.div`
   }
 `;
 
-const ErrorPage = props => {
+const ErrorPage = () => {
   const [isHappy, setIsHappy] = useState(false);
   return (
     <ErrorStyles>
@@ -40,7 +43,8 @@ const ErrorPage = props => {
         <h1>Are you sure you're in the right place?</h1>
         <h2>This is Hank. He is feeling blue that you are in the wrong place.</h2>
         <h2>However if you poke his belly you can cheer him up and he might take you back home.</h2>
-        <div
+        <button
+          type="button"
           onClick={() => {
             setIsHappy(true);
             setTimeout(() => {
@@ -49,7 +53,7 @@ const ErrorPage = props => {
           }}
         >
           <Ghost size={200} mood={isHappy ? 'blissful' : 'sad'} color={isHappy ? 'Gainsboro' : '#40a4c8'} />
-        </div>
+        </button>
       </div>
     </ErrorStyles>
   );

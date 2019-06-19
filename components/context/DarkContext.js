@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export const DarkContext = React.createContext();
 
@@ -19,6 +20,10 @@ const DarkProvider = props => {
       {props.children}
     </DarkContext.Provider>
   );
+};
+
+DarkProvider.propTypes = {
+  children: PropTypes.object.isRequired,
 };
 
 export default DarkProvider;

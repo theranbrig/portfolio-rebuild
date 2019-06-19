@@ -3,8 +3,8 @@ import React, { useContext } from 'react';
 import Link from './Link';
 import { DarkContext } from './context/DarkContext';
 
-const NavLinks = ({ toggleDarkMode }) => {
-  const { darkMode } = useContext(DarkContext);
+const NavLinks = () => {
+  const { darkMode, toggleDarkMode } = useContext(DarkContext);
   return (
     <>
       <Link activeClassName="active" href="/">

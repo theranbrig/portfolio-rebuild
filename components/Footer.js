@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import FooterStyles from './styles/FooterStyles';
 import Link from './Link';
 
@@ -36,5 +37,9 @@ const Footer = ({ darkMode }) => (
     </div>
   </FooterStyles>
 );
+
+Footer.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+};
 
 export default Footer;

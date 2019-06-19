@@ -4,7 +4,6 @@ import { Browser } from 'react-kawaii';
 import ProjectLayout from '../components/ProjectLayout';
 import data from '../static/data';
 import ErrorPage from './_error';
-import Layout from '../components/Layout';
 import LoadingStyles from '../components/styles/LoadingStyles';
 
 const Project = ({ query }) => {
@@ -27,7 +26,7 @@ const Project = ({ query }) => {
     return (
       <LoadingStyles>
         <div>
-          <Browser size={"80%"} mood="blissful" color="#40a4c8" />
+          <Browser size="80%" mood="blissful" color="#40a4c8" />
           <h1>Loading...</h1>
         </div>
       </LoadingStyles>
