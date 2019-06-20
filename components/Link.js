@@ -10,7 +10,11 @@ const ActiveLink = ({ router, children, ...props }) => {
     className = `${className !== null ? className : ''} ${props.activeClassName}`.trim();
   }
   delete props.activeClassName;
-  return <Link {...props}>{React.cloneElement(child, { className })}</Link>;
+  return (
+    <Link {...props} prefetch>
+      {React.cloneElement(child, { className })}
+    </Link>
+  );
 };
 
 ActiveLink.propTypes = {
