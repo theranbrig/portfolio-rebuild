@@ -3,7 +3,6 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import Router from 'next/router';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
-import withGA from 'next-ga';
 
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -24,27 +23,27 @@ class MyDocument extends Document {
     return (
       <html lang='en'>
         <Head>
-          <meta charset='utf-8' />
+          <meta charSet='utf-8' />
           <meta name='description' content='Theran Briogwatz - Web Developer Portfolio Site' />
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='/static/manifest.json' />
           <link
             rel='stylesheet'
             href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'
-            prefetch
+            prefetch='true'
           />
           <link rel='icon' type='image/x-icon' href='../static/favicon.ico' prefetch />
           <link
-            href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Major+Mono+Display&family=Raleway:wght@100;300&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;300&family=Major+Mono+Display&family=Raleway:wght@100;300&display=swap'
             rel='stylesheet'
-            prefetch
+            prefetch='true'
           />
           <link
             rel='stylesheet'
             href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
             integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr'
             crossOrigin='anonymous'
-            prefetch
+            prefetch='true'
           />
           {this.props.styleTags}
         </Head>

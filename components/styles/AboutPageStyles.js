@@ -63,7 +63,7 @@ const AboutPageStyles = styled.div`
       font-family: ${(props) => props.theme.firaFont};
       color: ${(props) => props.theme.white};
       line-height: 2rem;
-
+      font-weight: 300;
       @media (max-width: 900px) {
         width: 95%;
         margin-left: 2.5%;

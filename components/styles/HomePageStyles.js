@@ -35,7 +35,7 @@ const HomePageStyles = styled.div`
     .typed-content span {
       font-family: ${(props) => props.theme.firaFont};
       color: ${(props) => props.theme.white};
-      font-weight: 300;
+      font-weight: 100;
       max-width: 100%;
       margin-top: 15px;
       font-size: 2rem;
