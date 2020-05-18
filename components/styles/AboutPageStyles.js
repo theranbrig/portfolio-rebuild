@@ -1,38 +1,20 @@
 import styled from 'styled-components';
 
 const AboutPageStyles = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 40px 30px;
-  background-color: ${props => props.theme.black};
-  @media (max-width: 900px) {
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr minmax(500px, 2fr);
-    padding: 10px;
-  }
-  @media (max-width: 450px) {
-    grid-template-rows: 1fr minmax(500px, 3fr);
-  }
+  background-color: ${(props) => props.theme.black};
+  padding: 10px 0 10vh;
+  max-width: 95%;
+  margin: 0 auto;
   .about-sidebar {
     width: 100%;
     align-self: start;
     @media (max-width: 900px) {
       align-self: center;
     }
-    img {
-      border-radius: 50%;
-      width: 150px;
-      margin-left: calc(50% - 75px);
-    }
     .sidebar-links {
       a {
-        font-family: ${props => props.theme.raleFont};
-        color: ${props => props.theme.blue};
+        font-family: ${(props) => props.theme.raleFont};
+        color: ${(props) => props.theme.blue};
         font-size: 1.5rem;
         display: block;
         padding: 20px 0;
@@ -50,32 +32,38 @@ const AboutPageStyles = styled.div`
     }
   }
   .about-main {
+    img {
+      border-radius: 50%;
+      width: 150px;
+      margin-left: calc(50% - 75px);
+    }
     width: 100%;
-    color: ${props => props.theme.white};
+    color: ${(props) => props.theme.white};
     padding-bottom: 50px;
     h1,
     h2 {
-      color: ${props => props.theme.blue};
+      color: ${(props) => props.theme.blue};
       text-align: center;
     }
-    h1,
+
     h2,
     h3,
     li {
-      font-family: ${props => props.theme.raleFont};
+      font-family: ${(props) => props.theme.raleFont};
       text-align: center;
     }
     h1 {
+      font-family: ${(props) => props.theme.spaceFont};
       @media (max-width: 900px) {
         display: none;
       }
     }
     p {
       font-size: 1.3rem;
-      font-family: ${props => props.theme.raleFont};
-      color: ${props => props.theme.white};
+      font-family: ${(props) => props.theme.firaFont};
+      color: ${(props) => props.theme.white};
       line-height: 2rem;
-      letter-spacing: 0.05rem;
+
       @media (max-width: 900px) {
         width: 95%;
         margin-left: 2.5%;
@@ -83,14 +71,17 @@ const AboutPageStyles = styled.div`
     }
     h2 {
       font-size: 1.9rem;
+      margin-top: 50px;
     }
     h3 {
       font-size: 1.7rem;
-      color: ${props => props.theme.blue};
+      color: ${(props) => props.theme.blue};
+      margin: 50px 0 30px;
     }
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
     .daily-list {
       display: grid;
@@ -131,6 +122,7 @@ const AboutPageStyles = styled.div`
 
       li {
         font-size: 1.4rem;
+        font-family: ${(props) => props.theme.firaFont};
       }
     }
     .skills-to-learn {
@@ -142,10 +134,9 @@ const AboutPageStyles = styled.div`
   }
   h1 {
     text-align: center;
-    color: ${props => props.theme.blue};
-    font-family: ${props => props.theme.raleFont};
+    color: ${(props) => props.theme.blue};
+    font-family: ${(props) => props.theme.raleFont};
     font-size: 3rem;
-    text-transform: uppercase;
   }
 `;
 

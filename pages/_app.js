@@ -1,6 +1,6 @@
-import React from 'react';
 import App, { Container } from 'next/app';
-import DarkProvider from '../components/context/DarkContext';
+
+import React from 'react';
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -17,11 +17,9 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <DarkProvider>
-        <Container>
-          <Component {...pageProps} />
-        </Container>
-      </DarkProvider>
+      <Container>
+        <Component {...pageProps} />
+      </Container>
     );
   }
 }

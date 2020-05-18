@@ -11,7 +11,7 @@ const LoadingStyles = styled.div`
   h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     color: gainsboro;
   }
 `;

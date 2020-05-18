@@ -98,7 +98,6 @@ const ProjectStyles = styled.div`
       font-family: ${(props) => props.theme.firaFont};
       font-weight: 100;
       line-height: 2rem;
-      letter-spacing: 0.05rem;
     }
   }
   .project-links {

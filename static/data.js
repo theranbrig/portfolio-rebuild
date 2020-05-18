@@ -67,7 +67,9 @@ export default [
       'Full RESTful API site for wiki collaboration.  Users are able to upgrade to premium features through Stripe payments.  There is full authentication and crediential checking for premium feature users.  The entire app has been unit and integration tested with Jasmine.  There are full CRUD capabilities for both users and Wikis.  It uses a markdown editor with uniform styling.  I also worked to make sure that the Wiki styling is both clean, modern and stylish; something that is often missing from most Wiki sites.  Though it is primarily meant to be used as a full desktop site, it is mobile responsive.  This was primarily an back-end project to build a complete REST app.  All back-end components are modular and separated for easy scaling and feature addition.  It uses PostgreSQL as a database for wikis and users, with validation that is handled by Passport',
     gitLink: 'https://github.com/theranbrig/wiki-what',
     deployLink: 'https://wikiwhat-theranbrig.herokuapp.com/',
-    screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967917/MKnPtcn.jpg'],
+    screenShots: [
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967917/MKnPtcn.jpg',
+    ],
     icon: 'fas fa-globe',
     tech: [
       'devicon-javascript-plain',
@@ -97,7 +99,12 @@ export default [
       'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967961/2_-_rSS6yu3.png',
     ],
     icon: 'fas fa-cloud-sun-rain',
-    tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain'],
+    tech: [
+      'devicon-javascript-plain',
+      'devicon-react-original',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+    ],
   },
   // {
   //   title: 'NintenDB',
@@ -143,7 +150,12 @@ export default [
       'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969059/3_-_p9Pd8c9.png',
     ],
     icon: 'fas fa-headphones-alt',
-    tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain'],
+    tech: [
+      'devicon-javascript-plain',
+      'devicon-react-original',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+    ],
   },
   {
     title: 'Bloc Chat',
@@ -157,9 +169,16 @@ export default [
       'Bloc Chat was built as my second project using React. This was part of my curriculum with Bloc.io and was a great experience in learning the concepts of how to build a React app. The app was first built by creating a list of chat rooms that dynamically updates when a user adds a new chat room. After that, displayed messages for each chat room were generated. In order to create messages as a registered user, Firebase was added for user authentication and to save messages for each user. All messages only display within the given chat room in which they were created. Messages and chat rooms may be deleted and edited when necessary. The page was styled using Material UI. It is mobile responsive, though it is best used on a desktop platform. This was my first time using a database with React and it was a good experience in further learning React and showing the power that it has when used with a dynamic database like Firebase.',
     gitLink: 'https://github.com/theranbrig/bloc-chat',
     deployLink: 'https://bloc-chat-theran.netlify.com',
-    screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551968890/xTD2VWq.png'],
+    screenShots: [
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551968890/xTD2VWq.png',
+    ],
     icon: 'far fa-comment-alt',
-    tech: ['devicon-javascript-plain', 'devicon-react-original', 'devicon-css3-plain', 'devicon-html5-plain'],
+    tech: [
+      'devicon-javascript-plain',
+      'devicon-react-original',
+      'devicon-css3-plain',
+      'devicon-html5-plain',
+    ],
   },
   {
     title: 'News Bites',
@@ -173,7 +192,9 @@ export default [
       'The purpose of this assignment was to use an API for the first time and display it on a page. I used the fetch method to make AJAX requests and built the site using HTML, CSS, and Vanilla JavaScript. I used News API to get headlines from major news categories and the page can be updated and viewed easily. It was my first time using an API in conjunction with HTML. I plan on refactoring some of the code in the future, adding a search function, and making a few design tweeks along the way.',
     gitLink: 'https://github.com/theranbrig/api_news_bites',
     deployLink: 'https://news-bites.netlify.com',
-    screenShots: ['https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_600/v1551967917/oBIjR9C.png'],
+    screenShots: [
+      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_600/v1551967917/oBIjR9C.png',
+    ],
     icon: 'fas fa-utensils',
     tech: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
   },
@@ -190,7 +211,12 @@ export const icons = [
 ];
 
 export const skills = [
+  'Python',
+  'Dart',
   'Express',
+  'Flutter',
+  'Firebase',
+  'CS Fundamentals',
   'MVC Architecture',
   'Jasmine',
   'Jest',
@@ -201,5 +227,4 @@ export const skills = [
   'Bootstrap',
   'Material UI',
   'Heroku',
-  'Photoshop',
 ];

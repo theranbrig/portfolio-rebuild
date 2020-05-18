@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 
-import { DarkContext } from './context/DarkContext';
 import GraphQLImage from '../static/graphql.svg';
 import GraphQLImageDark from '../static/graphqldark.svg';
 import Head from 'next/head';
@@ -21,7 +20,7 @@ const ProjectLayout = (props) => {
     screenShots,
     tech,
   } = props.project;
-  const { darkMode } = useContext(DarkContext);
+
   return (
     <Layout>
       <Head>
@@ -45,20 +44,9 @@ const ProjectLayout = (props) => {
             {tech &&
               tech.map((el) => {
                 if (el === 'graphql') {
-                  if (darkMode) {
-                    return (
-                      <img
-                        src={GraphQLImage}
-                        alt='graphql'
-                        className='graphql-logo'
-                        style={{ padding: '0 7px 0 5px', height: '28px' }}
-                        key={el}
-                      />
-                    );
-                  }
                   return (
                     <img
-                      src={GraphQLImageDark}
+                      src={GraphQLImage}
                       alt='graphql'
                       className='graphql-logo'
                       style={{ padding: '0 7px 0 5px', height: '28px' }}

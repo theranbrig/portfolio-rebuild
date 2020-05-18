@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
-import { DarkContext } from './context/DarkContext';
-import Footer from './Footer';
 import Nav from './Nav';
 import PropTypes from 'prop-types';
 
