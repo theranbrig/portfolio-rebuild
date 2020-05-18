@@ -35,8 +35,9 @@ class MyDocument extends Document {
           />
           <link rel='icon' type='image/x-icon' href='../static/favicon.ico' prefetch />
           <link
-            href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Major+Mono+Display&family=Raleway:wght@300;400&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Major+Mono+Display&family=Raleway:wght@100;300&display=swap'
             rel='stylesheet'
+            prefetch
           />
           <link
             rel='stylesheet'

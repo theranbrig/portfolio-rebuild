@@ -23,6 +23,7 @@ const Project = ({ query }) => {
       setLoading(false);
     }, 1000);
   }, []);
+  
   if (loading)
     return (
       <LoadingStyles>
@@ -35,7 +36,7 @@ const Project = ({ query }) => {
             {/* <Browser size='80%' mood='blissful' color='#40a4c8' /> */}
             <h1>Loading...</h1>
           </div>
-        </motion.div> 
+        </motion.div>
       </LoadingStyles>
     );
   if (!Object.keys(project).length) return <ErrorPage />;

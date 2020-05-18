@@ -40,7 +40,7 @@ const ContactForm = () => {
   return (
     <div className='contact-form'>
       <h2>Send A Quick Message Directly</h2>
-      <Form onSubmit={handleSubmit} inverted={darkMode}>
+      <Form onSubmit={handleSubmit}>
         <Form.Group widths='equal'>
           <Form.Field stackable='true' width={8}>
             <Form.Input
@@ -77,9 +77,7 @@ const ContactForm = () => {
             required
           />
         </Form.Group>
-        <Button inverted={darkMode} type='submit'>
-          Submit!
-        </Button>
+        <Button type='submit'>Submit!</Button>
       </Form>
       <SuccessStyles>{successMessage && <p>{successMessage}</p>}</SuccessStyles>
     </div>
