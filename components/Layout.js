@@ -1,18 +1,21 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import Nav from './Nav';
-import Footer from './Footer';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+
 import { DarkContext } from './context/DarkContext';
+import Footer from './Footer';
+import Nav from './Nav';
+import PropTypes from 'prop-types';
 
 const darkTheme = {
   darkBlack: '#131313',
-  black: '#232323',
+  black: '#181818',
   white: 'gainsboro',
   blue: '#40a4c8',
   transparent: '#13131394',
   raleFont: 'Raleway',
   robFont: 'Roboto',
+  spaceFont: "'Major Mono Display', monospace",
+  firaFont: "'Fira Code', monospace",
 };
 const lightTheme = {
   darkBlack: 'gainsboro',
@@ -27,11 +30,12 @@ const lightTheme = {
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0 auto;
+    min-height: 100vh;
   }
 `;
 
 // later in your app
-const Layout = props => {
+const Layout = (props) => {
   const { darkMode, toggleDarkMode } = useContext(DarkContext);
 
   return (
@@ -41,7 +45,6 @@ const Layout = props => {
         <Nav toggleDarkMode={toggleDarkMode} darkMode={darkMode}>
           {props.children}
         </Nav>
-        <Footer darkMode={darkMode} />
       </React.Fragment>
     </ThemeProvider>
   );
