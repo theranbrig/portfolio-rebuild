@@ -20,12 +20,8 @@ const Contact = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='contact-title'>
-            <img
-              src='https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_320/v1551529192/theran-logo.png'
-              alt='Theran Brigowatz Logo'
-            />
-            <h1>CONTACT THERAN</h1>
-            <p>Get a hold of me for any questions you may have.</p>
+            <h1>Contact Info</h1>
+            <p>Find me at the following places:</p>
           </div>
           <div className='social-icons'>
             <ContactLink
