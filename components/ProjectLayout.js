@@ -24,7 +24,7 @@ const ProjectLayout = (props) => {
   return (
     <Layout>
       <Head>
-        <title>Theran Brigowatz | {title}</title>
+        <title>Theran Brigowatz | Project</title>
       </Head>
       <ProjectStyles>
         <div className='project-title'>
