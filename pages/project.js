@@ -8,7 +8,7 @@ import data from '../static/data';
 import { motion } from 'framer-motion';
 
 const Project = ({ query, projectInfo }) => {
-  const [project, setProject] = useState(projectInfo);
+  const [project, setProject] = useState(projectInfo ? projectInfo : {});
   const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
@@ -38,7 +38,8 @@ const Project = ({ query, projectInfo }) => {
   //       </motion.div>
   //     </LoadingStyles>
   //   );
-  // if (!Object.keys(project).length) return <ErrorPage />;
+  if (!projectInfo) return <ErrorPage />;
+
   return (
     <motion.div
       exit={{ opacity: 0, x: '100vw' }}
