@@ -34,8 +34,6 @@ const GlobalStyle = createGlobalStyle`
 
 // later in your app
 const Layout = (props) => {
-  const { darkMode, toggleDarkMode } = useContext(DarkContext);
-
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <React.Fragment>

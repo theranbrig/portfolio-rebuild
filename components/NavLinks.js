@@ -1,11 +1,7 @@
-import React, { useContext } from 'react';
-
-import { DarkContext } from './context/DarkContext';
 import Link from './Link';
-import Toggle from 'react-toggle';
+import React from 'react';
 
 const NavLinks = () => {
-  const { darkMode, toggleDarkMode } = useContext(DarkContext);
   return (
     <>
       <Link activeClassName='active' href='/'>

@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
 import { icons, skills } from '../static/data';
 
 import AboutPageStyles from '../components/styles/AboutPageStyles';
 import GraphQLImage from '../static/graphql.svg';
-import GraphQLImageDark from '../static/graphqldark.svg';
 import Head from 'next/head';
-import IconLink from '../components/IconLink';
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import React from 'react';
 
 const About = () => {
   return (
