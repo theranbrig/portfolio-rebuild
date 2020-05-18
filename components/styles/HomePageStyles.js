@@ -2,17 +2,13 @@ import styled from 'styled-components';
 
 const HomePageStyles = styled.div`
   background: ${(props) => props.theme.black};
-  max-width: 100vw;
-  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 90vh;
+  max-width: 95%;
+  margin: 0 auto;
   .main-content {
-    img {
-      width: 25%;
-      display: block;
-      margin: 0 auto;
-    }
     a {
       color: ${(props) => props.theme.blue};
     }
@@ -27,8 +23,9 @@ const HomePageStyles = styled.div`
       text-align: center;
       font-family: ${(props) => props.theme.spaceFont};
       font-weight: 100;
+      margin-top: 0px;
       @media (max-width: 760px) {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
       }
     }
     @media (max-width: 760px) {
@@ -43,7 +40,7 @@ const HomePageStyles = styled.div`
       margin-top: 15px;
       font-size: 2rem;
       @media (max-width: 760px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 3rem;
       }
     }

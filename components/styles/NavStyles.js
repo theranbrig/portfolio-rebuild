@@ -20,6 +20,9 @@ const NavStyles = styled.div`
       font-size: 1.3rem;
       color: ${(props) => props.theme.blue};
       text-decoration: none;
+      @media (max-width: 760px) {
+        font-size: 1.1rem;
+      }
     }
     .active {
       color: ${(props) => props.theme.white};
