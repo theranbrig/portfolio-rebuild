@@ -16,6 +16,7 @@ const ContactPageStyles = styled.div`
       font-size: 3rem;
       color: ${(props) => props.theme.blue};
       font-family: ${(props) => props.theme.raleFont};
+      font-weight: 100;
     }
     p {
       font-size: 1.5rem;

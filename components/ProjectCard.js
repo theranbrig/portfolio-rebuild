@@ -1,4 +1,4 @@
-import GraphQLImageDark from '../static/graphqldark.svg';
+import GraphQLImage from '../static/graphql.svg';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
                 if (el === 'graphql') {
                   return (
                     <img
-                      src={GraphQLImageDark}
+                      src={GraphQLImage}
                       alt='graphql'
                       className='graphql-logo'
                       style={{ padding: '0 7px 0 5px', height: '28px' }}
