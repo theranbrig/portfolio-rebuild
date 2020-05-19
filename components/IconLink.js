@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 
 const IconLink = ({ link, icon, name }) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
-    {name}
+  <a href={link} target='_blank' rel='noopener noreferrer' aria-label={name}>
     <i className={icon} />
   </a>
 );

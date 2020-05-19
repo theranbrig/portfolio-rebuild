@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ContactLink = ({ link, icon, name }) => (
-  <a href={link} target="_blank" rel="noopener noreferrer">
+  <a href={link} target='_blank' rel='noopener noreferrer' aria-label={name}>
     <i className={icon} />
     <p>{name}</p>
   </a>

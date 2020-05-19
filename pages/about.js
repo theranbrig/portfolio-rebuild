@@ -4,7 +4,6 @@ import AboutPageStyles from '../components/styles/AboutPageStyles';
 import GraphQLImage from '../static/graphql.svg';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 

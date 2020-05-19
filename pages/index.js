@@ -44,10 +44,18 @@ const Home = () => {
                 <span className='typed' ref={typedRef} style={{ whiteSpace: 'pre' }} />
               </div>
               <div className='splash-icons'>
-                <IconLink name='' link='https://github.com/theranbrig' icon='fab fa-github' />
-                <IconLink name='' link='https://twitter.com/wellBuilt' icon='fab fa-twitter' />
                 <IconLink
-                  name=''
+                  name='Theran Brigowatz github'
+                  link='https://github.com/theranbrig'
+                  icon='fab fa-github'
+                />
+                <IconLink
+                  name='Theran Brigowatz twitter'
+                  link='https://twitter.com/wellBuilt'
+                  icon='fab fa-twitter'
+                />
+                <IconLink
+                  name='Theran Brigowatz linked in'
                   link='https://linkedin.com/in/theran-brigowatz'
                   icon='fab fa-linkedin-in'
                 />
