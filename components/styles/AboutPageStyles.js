@@ -6,7 +6,7 @@ const AboutPageStyles = styled.div`
   width: 100%;
   margin: 0 auto;
   .about-main {
-    width: 800px;
+    width: 800px !important;
     max-width: 95%;
     margin: 0 auto;
     img {
@@ -22,7 +22,9 @@ const AboutPageStyles = styled.div`
       color: ${(props) => props.theme.blue};
       text-align: center;
     }
-
+    h1 {
+      font-weight: 100;
+    }
     h2,
     h3,
     li {
@@ -39,6 +41,7 @@ const AboutPageStyles = styled.div`
       color: ${(props) => props.theme.white};
       line-height: 2rem;
       font-weight: 300;
+      margin-bottom: 15px;
       @media (max-width: 900px) {
         width: 95%;
         margin-left: 2.5%;
@@ -81,6 +84,7 @@ const AboutPageStyles = styled.div`
       p {
         font-size: 1.4rem;
         padding: 5px;
+        margin: 0 auto 10px;
         @media (max-width: 900px) {
           font-size: 1.1rem;
         }

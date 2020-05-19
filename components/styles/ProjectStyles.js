@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const ProjectStyles = styled.div`
   background-color: ${(props) => props.theme.black};
-  width: 100%;
+  width: 900px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: min-max(180px, 1fr) 9fr;
-  max-width: 95%;
+
   margin: 0 auto;
   padding: 0 0 10vh 0;
   @media (max-width: 900px) {
@@ -37,12 +37,8 @@ const ProjectStyles = styled.div`
     }
   }
   .project-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     img {
       width: 80%;
@@ -55,6 +51,7 @@ const ProjectStyles = styled.div`
   div.project-images img {
     border: 2px solid ${(props) => props.theme.blue};
     padding: 5px;
+    margin: 10px auto;
   }
   .project-title {
     color: ${(props) => props.theme.blue};

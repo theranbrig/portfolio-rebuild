@@ -21,7 +21,7 @@ const PortfolioPageStyles = styled.div`
     margin: 0 auto 10vh;
     .individual-project {
       width: 40%;
-      margin-top: 40px;
+      margin-top: 20px;
       @media (max-width: 760px) {
         width: 100%;
       }
@@ -42,17 +42,27 @@ const PortfolioPageStyles = styled.div`
       }
       h3 {
         color: ${(props) => props.theme.blue};
+        font-weight: 100;
+        font-size: 1.6rem;
+        margin-bottom: 0;
       }
       h4 {
         color: ${(props) => props.theme.white};
         font-family: ${(props) => props.theme.firaFont};
+        margin: 5px 0 15px;
       }
-      i {
-        padding: 0 2px;
-        color: ${(props) => props.theme.white};
-        font-size: 28px;
+      .project-icons {
+        display: flex;
+        flex-wrap: wrap;
+
+        i {
+          padding: 5px 5px;
+          color: ${(props) => props.theme.white};
+          font-size: 28px;
+        }
       }
       img {
+        margin-top: 5px;
         display: inline-block;
       }
     }

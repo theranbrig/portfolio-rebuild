@@ -87,6 +87,7 @@ const ContactPageStyles = styled.div`
       font-size: 20px;
       background: none;
       margin-top: 20px;
+      font-family: ${(props) => props.theme.firaFont};
       &:hover {
         background: #40a4c874;
         color: ${(props) => props.theme.white};

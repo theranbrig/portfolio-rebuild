@@ -39,35 +39,35 @@ const ContactForm = () => {
   return (
     <div className='contact-form'>
       <h2>Send A Quick Message Directly</h2>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group widths='equal'>
-          <Form.Field stackable='true' width={8}>
-            <Form.Input
-              name='name'
-              type='text'
-              placeholder='Enter Name'
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-              required
-              label='Name'
-            />
-          </Form.Field>
-          <Form.Field stackable='true' width={8}>
-            <Form.Input
-              name='email'
-              type='email'
-              placeholder='Enter Email Address'
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              label='Email Address'
-              required
-            />
-          </Form.Field>
-        </Form.Group>
-        <Form.Group>
-          <Form.Field
+      <form onSubmit={handleSubmit}>
+        <label stackable='true' width={8}>
+          Name
+          <input
+            name='name'
+            type='text'
+            placeholder='Enter Name'
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+            required
+            label='Name'
+          />
+        </label>
+        <label stackable='true' width={8}>
+          Email Address
+          <input
+            name='email'
+            type='email'
+            placeholder='Enter Email Address'
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            label='Email Address'
+            required
+          />
+        </label>
+        <label>
+          Message
+          <textarea
             name='message'
-            control={TextArea}
             placeholder='Send a quick message to get in touch about development inquiries.'
             label='Message'
             width={16}
@@ -75,9 +75,9 @@ const ContactForm = () => {
             value={message}
             required
           />
-        </Form.Group>
-        <Button type='submit'>Submit!</Button>
-      </Form>
+        </label>
+        <button type='submit'>Submit</button>
+      </form>
       <SuccessStyles>{successMessage && <p>{successMessage}</p>}</SuccessStyles>
     </div>
   );
