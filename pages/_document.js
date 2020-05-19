@@ -24,6 +24,7 @@ class MyDocument extends Document {
       <html lang='en'>
         <Head>
           <meta charSet='utf-8' />
+          <meta name='theme-color' content='#272727' />
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https:/theran.dev' />
           <meta property='og:title' content='Theran Brigowatz - Web Developer' />
