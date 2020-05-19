@@ -6,7 +6,9 @@ const ContactPageStyles = styled.div`
   align-items: center;
   text-align: center;
   background-color: ${(props) => props.theme.black};
-
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto;
   .contact-title {
     p {
       color: ${(props) => props.theme.white};
@@ -25,16 +27,10 @@ const ContactPageStyles = styled.div`
   }
   div.social-icons {
     list-style-type: none;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    @media (max-width: 900px) {
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(5, 1fr);
-    }
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+
     a {
       width: 100%;
       font-family: ${(props) => props.theme.raleFont};
@@ -45,11 +41,14 @@ const ContactPageStyles = styled.div`
         color: ${(props) => props.theme.white};
       }
       i {
-        font-size: 5rem;
+        font-size: 4rem;
         color: ${(props) => props.theme.blue};
         &:hover {
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: ${(props) => props.theme.white};
+        }
+        @media (max-width: 900px) {
+          font-size: 2.8rem;
         }
       }
     }
@@ -64,6 +63,7 @@ const ContactPageStyles = styled.div`
       @media (max-width: 900px) {
         width: 100%;
         margin: 0;
+        font-size: 1.1rem;
       }
       a {
         color: ${(props) => props.theme.blue};

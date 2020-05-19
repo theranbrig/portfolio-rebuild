@@ -61,4 +61,4 @@ class MyDocument extends Document {
   }
 }
 
-export default withGA('UA-127054970-1', Router)(MyDocument);
+export default MyDocument;

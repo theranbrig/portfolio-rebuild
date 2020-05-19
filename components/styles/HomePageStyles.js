@@ -40,7 +40,7 @@ const HomePageStyles = styled.div`
       margin-top: 15px;
       font-size: 2rem;
       @media (max-width: 760px) {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 3rem;
       }
     }

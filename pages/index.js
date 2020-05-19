@@ -14,7 +14,7 @@ const Home = () => {
     'Thanks for checking out my site.  Check out my github @ https://github.com/theranbrig'
   );
 
-  const strings = ["I'm a Web Developer<br/> and UI Builder."];
+  const strings = ["I'm a Web Developer<br/> and UI Consultant."];
 
   const options = {
     strings,

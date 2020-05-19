@@ -3,35 +3,12 @@ import styled from 'styled-components';
 const AboutPageStyles = styled.div`
   background-color: ${(props) => props.theme.black};
   padding: 10px 0 10vh;
-  max-width: 95%;
+  width: 100%;
   margin: 0 auto;
-  .about-sidebar {
-    width: 100%;
-    align-self: start;
-    @media (max-width: 900px) {
-      align-self: center;
-    }
-    .sidebar-links {
-      a {
-        font-family: ${(props) => props.theme.raleFont};
-        color: ${(props) => props.theme.blue};
-        font-size: 1.5rem;
-        display: block;
-        padding: 20px 0;
-        width: 60%;
-        margin-left: 20%;
-        @media (max-width: 900px) {
-          text-align: center;
-        }
-      }
-    }
-    h1 {
-      @media (min-width: 900px) {
-        display: none;
-      }
-    }
-  }
   .about-main {
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto;
     img {
       border-radius: 50%;
       width: 150px;
@@ -50,13 +27,11 @@ const AboutPageStyles = styled.div`
     h3,
     li {
       font-family: ${(props) => props.theme.raleFont};
+      font-weight: 100;
       text-align: center;
     }
-    h1 {
+    h2 {
       font-family: ${(props) => props.theme.spaceFont};
-      @media (max-width: 900px) {
-        display: none;
-      }
     }
     p {
       font-size: 1.3rem;
@@ -95,14 +70,20 @@ const AboutPageStyles = styled.div`
         width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
-        padding: 10px;
+        padding: 10px 0;
       }
       i {
         font-size: 4rem;
+        @media (max-width: 900px) {
+          font-size: 3rem;
+        }
       }
       p {
         font-size: 1.4rem;
         padding: 5px;
+        @media (max-width: 900px) {
+          font-size: 1.1rem;
+        }
       }
     }
     ul.secondary-skills {
@@ -117,18 +98,24 @@ const AboutPageStyles = styled.div`
         width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 1fr);
-        padding: 10px;
+        padding: 10px 0px;
       }
 
       li {
         font-size: 1.4rem;
         font-family: ${(props) => props.theme.firaFont};
+        @media (max-width: 900px) {
+          font-size: 1.1rem;
+        }
       }
     }
     .skills-to-learn {
       p {
         text-align: center;
         padding: 3px;
+        @media (max-width: 900px) {
+          font-size: 1.1rem;
+        }
       }
     }
   }
