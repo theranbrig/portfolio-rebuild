@@ -24,6 +24,9 @@ class MyDocument extends Document {
       <html lang='en'>
         <Head>
           <meta charSet='utf-8' />
+          <meta
+            name='image'
+            content='https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg'></meta>
           <meta name='description' content='Theran Briogwatz - Web Developer Portfolio Site' />
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='/static/manifest.json' />
