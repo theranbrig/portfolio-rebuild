@@ -14,8 +14,8 @@ const Contact = () => {
       </Head>
       <ContactPageStyles>
         <motion.div
-          exit={{ opacity: 0, x: '100vw' }}
-          initial={{ opacity: 0, x: '-100vw' }}
+          exit={{ opacity: 0, x: '-100vw' }}
+          initial={{ opacity: 0, x: '100vw' }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='contact-title'>

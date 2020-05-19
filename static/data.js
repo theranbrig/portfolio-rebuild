@@ -12,9 +12,24 @@ export default [
     gitLink: 'https://github.com/theranbrig/grouper',
     deployLink: 'https://grouper-frontend.herokuapp.com/',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_New_Home.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_List.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,w_300/v1559996358/Grouper_Add_Item.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_New_Home.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996568/Grouper_New_Home.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_List.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_List.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_Add_Item.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_Add_Item.png',
+      },
     ],
     icon: 'fas fa-fish',
     tech: [
@@ -40,9 +55,24 @@ export default [
     gitLink: 'https://github.com/theranbrig/grown',
     deployLink: 'https://grownfarms.herokuapp.com/',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967944/3_-_eBabmvL.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967943/2_-_kQF1X9z.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967943/1_-_BmMq37W.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_eBabmvL.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_eBabmvL.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_kQF1X9z.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_kQF1X9z.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_BmMq37W.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_BmMq37W.png',
+      },
     ],
     icon: 'fas fa-leaf',
     tech: [
@@ -68,7 +98,12 @@ export default [
     gitLink: 'https://github.com/theranbrig/wiki-what',
     deployLink: 'https://wikiwhat-theranbrig.herokuapp.com/',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967917/MKnPtcn.jpg',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/MKnPtcn.jpg',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/MKnPtcn.jpg',
+      },
     ],
     icon: 'fas fa-globe',
     tech: [
@@ -94,9 +129,24 @@ export default [
     gitLink: 'https://github.com/theranbrig/weather-app',
     deployLink: 'https://vane.netlify.com',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967962/3_-_ucAXrQ2.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967961/1_-_rGAttGs.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551967961/2_-_rSS6yu3.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_ucAXrQ2.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_ucAXrQ2.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_rGAttGs.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_rGAttGs.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_rSS6yu3.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_rSS6yu3.png',
+      },
     ],
     icon: 'fas fa-cloud-sun-rain',
     tech: [
@@ -145,9 +195,24 @@ export default [
     gitLink: 'https://github.com/theranbrig/bloc-jams',
     deployLink: 'https://bloc-jams-theran.netlify.com/',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969057/1_-_gQ4Hrit.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969413/2_-_tsYxipW.png',
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551969059/3_-_p9Pd8c9.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_gQ4Hrit.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_gQ4Hrit.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_tsYxipW.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_tsYxipW.png',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_p9Pd8c9.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_p9Pd8c9.png',
+      },
     ],
     icon: 'fas fa-headphones-alt',
     tech: [
@@ -170,7 +235,12 @@ export default [
     gitLink: 'https://github.com/theranbrig/bloc-chat',
     deployLink: 'https://bloc-chat-theran.netlify.com',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_520/v1551968890/xTD2VWq.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/xTD2VWq.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/xTD2VWq.png',
+      },
     ],
     icon: 'far fa-comment-alt',
     tech: [
@@ -193,7 +263,12 @@ export default [
     gitLink: 'https://github.com/theranbrig/api_news_bites',
     deployLink: 'https://news-bites.netlify.com',
     screenShots: [
-      'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_80,w_600/v1551967917/oBIjR9C.png',
+      {
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/oBIjR9C.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/oBIjR9C.png',
+      },
     ],
     icon: 'fas fa-utensils',
     tech: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],

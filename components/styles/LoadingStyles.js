@@ -7,7 +7,7 @@ const LoadingStyles = styled.div`
   justify-items: center;
   align-items: center;
   min-height: calc(100vh);
-  background: #232323;
+  background: ${(props) => props.theme.black};
   h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
