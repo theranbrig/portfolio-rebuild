@@ -16,6 +16,7 @@ const PortfolioPageStyles = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0 0 30px 0;
+    width: 800px;
     max-width: 95%;
     margin: 0 auto 10vh;
     .individual-project {
@@ -47,8 +48,12 @@ const PortfolioPageStyles = styled.div`
         font-family: ${(props) => props.theme.firaFont};
       }
       i {
+        padding: 0 2px;
         color: ${(props) => props.theme.white};
         font-size: 28px;
+      }
+      img {
+        display: inline-block;
       }
     }
   }

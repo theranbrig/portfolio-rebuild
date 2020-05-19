@@ -1,4 +1,3 @@
-import { Button, Form, TextArea } from 'semantic-ui-react';
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
