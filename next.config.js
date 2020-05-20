@@ -31,4 +31,8 @@ const nextConfig = {
   },
 };
 
-module.exports = withImages(withBabelMinify(withOffline(nextConfig)));
+module.exports = withBabelMinify();
+
+module.exports = withImages();
+
+module.exports = withOffline(nextConfig);
