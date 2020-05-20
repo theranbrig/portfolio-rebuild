@@ -4,9 +4,9 @@ const withBabelMinify = require('next-babel-minify');
 
 const withOffline = require('next-offline');
 
-const nextConfig = {
-  target: 'serverless',
+const withOfflineConfig = {
   transformManifest: (manifest) => ['/'].concat(manifest), // add the homepage to the cache
+  dontAutoRegisterSw: true,
   // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
   // turn on the SW in dev mode so that we can actually test it
   generateInDevMode: true,
@@ -32,8 +32,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withOffline(nextConfig);
-
-module.exports = withBabelMinify();
-
-module.exports = withImages();
+module.exports = withImages(withBabelMinify(withOffline(withOfflineConfig)));
