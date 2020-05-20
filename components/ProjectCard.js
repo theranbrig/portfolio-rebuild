@@ -11,26 +11,15 @@ const ProjectCard = (props) => {
       <Link href={{ pathname: '/project', query: { name: slug } }}>
         <a className='project-link'>
           <div className='main-icon'>
-            <i className={icon} />
+            <img src={`../static/icons/${icon}.svg`} alt={icon} />
           </div>
           <div className='project-info'>
             <h3>{title}</h3>
             <h4>{description}</h4>
             <div className='project-icons'>
-              {tech.map((el) => {
-                if (el === 'graphql') {
-                  return (
-                    <img
-                      src={GraphQLImage}
-                      alt='graphql'
-                      className='graphql-logo'
-                      style={{ padding: '0 7px 0 5px', height: '28px' }}
-                      key={el}
-                    />
-                  );
-                }
-                return <i className={el} key={el} />;
-              })}
+              {tech.map((el) => (
+                <img src={`../static/icons/${el}.svg`} key={el} alt={el} />
+              ))}
             </div>
           </div>
         </a>

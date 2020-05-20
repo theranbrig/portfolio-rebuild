@@ -75,8 +75,10 @@ const AboutPageStyles = styled.div`
         grid-template-rows: repeat(4, 1fr);
         padding: 10px 0;
       }
-      i {
-        font-size: 4rem;
+      img {
+        height: 4rem;
+        fill: ${(props) => props.theme.white};
+        fill: ${(props) => props.theme.blue};
         @media (max-width: 900px) {
           font-size: 3rem;
         }

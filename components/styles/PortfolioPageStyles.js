@@ -43,7 +43,7 @@ const PortfolioPageStyles = styled.div`
       h3 {
         color: ${(props) => props.theme.blue};
         font-weight: 100;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-bottom: 0;
       }
       h4 {
@@ -55,15 +55,15 @@ const PortfolioPageStyles = styled.div`
         display: flex;
         flex-wrap: wrap;
 
-        i {
-          padding: 5px 5px;
-          color: ${(props) => props.theme.white};
-          font-size: 28px;
+        img {
+          padding: 5px;
+          height: 24px;
         }
       }
-      img {
-        margin-top: 5px;
+      .main-icon img {
+        height: 6rem;
         display: inline-block;
+        margin-right: 10px;
       }
     }
   }

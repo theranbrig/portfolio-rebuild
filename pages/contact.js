@@ -23,14 +23,14 @@ const Contact = () => {
             <p>Find me at the following places:</p>
           </div>
           <div className='social-icons'>
-            <ContactLink link='https://www.github.com/theranbrig' icon='fab fa-github' />
-            <ContactLink link='https://www.twitter.com/wellBuilt' icon='fab fa-twitter' />
-            <ContactLink link='https://medium.com/@theran.brigowatz' icon='fab fa-medium-m' />
+            <ContactLink link='https://www.github.com/theranbrig' icon='github-blue' />
+            <ContactLink link='https://www.twitter.com/wellBuilt' icon='twitter' />
+            <ContactLink link='https://medium.com/@theran.brigowatz' icon='medium' />
             <ContactLink
               link='https://www.linkedin.com/in/theran-brigowatz-a861b3133/'
-              icon='fab fa-linkedin-in'
+              icon='linkedin'
             />
-            <ContactLink link='mailTo:theran.brigowatz@gmail.com' icon='far fa-envelope-open' />
+            <ContactLink link='mailTo:theran.brigowatz@gmail.com' icon='mail' />
           </div>
           <div className='bottom-writing'>
             <p>

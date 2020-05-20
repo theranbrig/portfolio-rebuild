@@ -5,8 +5,7 @@ export default [
     created: 'Winter 2018',
     description: 'Realtime Group Shopping App',
     slug: 'grouper',
-    image: 'https://i.imgur.com/AdmJjnY.png',
-    logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551527103/Fish.png',
+
     extendedDescription:
       'Group shopping and lists made easy. Check them off as you go and get real-time updates as you shop. Split up and let others get items. Mark them off as you find them. This was built to utilize Next.js with React on the frontend for quick SSR React Components and caching. Apollo Boost works to connect the backend data to the client side, as well has hold local state. All GraphQL Mutations and Queries are handled through Apollo. The API uses GraphQL with a GraphQL server to connect to a Prisma database that is built using PostgreSQL. The relational data structure allows for quick querying to the server. A testing suite was built using Jest and Enzyme to make sure that everything is up and running properly. Snapshot testing was integrated as well. The app is deployed using Heroku on both the front and back ends. This was a quick five day build meant to act as a coding challenge interview, so it is far from perfect yet.',
     gitLink: 'https://github.com/theranbrig/grouper',
@@ -31,16 +30,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_Add_Item.png',
       },
     ],
-    icon: 'fas fa-fish',
-    tech: [
-      'devicon-react-original',
-      'graphql',
-      'devicon-javascript-plain',
-      'devicon-nodejs-plain',
-      'devicon-css3-plain',
-      'devicon-heroku-plain',
-      'devicon-postgresql-plain',
-    ],
+    icon: 'fish',
+    tech: ['react', 'graphql', 'javascript', 'node-dot-js', 'css3', 'heroku', 'postgresql'],
   },
   {
     title: 'Grown',
@@ -48,8 +39,6 @@ export default [
     created: 'Fall 2018',
     description: 'Farmers Market Shopping App',
     slug: 'grown-farms',
-    image: 'https://i.imgur.com/G6UWh3c.png',
-    logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Farm.png',
     extendedDescription:
       'Grown is a full-stack JavaScript project built upon React and GraphQL. It is a place for farmers to sell their products online and for consumers to order products online for later pick up at farmer markets. It is built primarily with React and Apollo on the client side, with GraphQL Yoga amd Prisma connected on the backend.As of right now the farms are available as stores where users can order products. Markets and search are planned features for the next sprint and are coming later. Also I plan on updating the styling in order to fit in more with the feel of the app and product. It is a work in progress still. I welcome feedback and suggestions.',
     gitLink: 'https://github.com/theranbrig/grown',
@@ -74,16 +63,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_BmMq37W.png',
       },
     ],
-    icon: 'fas fa-leaf',
-    tech: [
-      'devicon-react-original',
-      'graphql',
-      'devicon-javascript-plain',
-      'devicon-nodejs-plain',
-      'devicon-css3-plain',
-      'devicon-heroku-plain',
-      'devicon-postgresql-plain',
-    ],
+    icon: 'farm',
+    tech: ['react', 'graphql', 'javascript', 'node-dot-js', 'css3', 'heroku', 'postgresql'],
   },
   {
     title: 'Wiki-What',
@@ -91,8 +72,6 @@ export default [
     created: 'Summer 2018',
     description: 'RESTful Wiki Collaboration Site',
     slug: 'wiki-what',
-    image: 'https://i.imgur.com/zQDt9KE.png',
-    logo: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1551526992/Globe.png',
     extendedDescription:
       'Full RESTful API site for wiki collaboration.  Users are able to upgrade to premium features through Stripe payments.  There is full authentication and crediential checking for premium feature users.  The entire app has been unit and integration tested with Jasmine.  There are full CRUD capabilities for both users and Wikis.  It uses a markdown editor with uniform styling.  I also worked to make sure that the Wiki styling is both clean, modern and stylish; something that is often missing from most Wiki sites.  Though it is primarily meant to be used as a full desktop site, it is mobile responsive.  This was primarily an back-end project to build a complete REST API.  All back-end components are modular and separated for easy scaling and feature addition.  It uses PostgreSQL as a database for wikis and users, with validation that is handled by Passport',
     gitLink: 'https://github.com/theranbrig/wiki-what',
@@ -105,16 +84,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/MKnPtcn.jpg',
       },
     ],
-    icon: 'fas fa-globe',
-    tech: [
-      'devicon-javascript-plain',
-      'devicon-express-original',
-      'devicon-nodejs-plain',
-      'devicon-css3-plain',
-      'devicon-heroku-plain',
-      'devicon-postgresql-plain',
-      'devicon-jasmine-plain',
-    ],
+    icon: 'letter',
+    tech: ['javascript', 'express', 'node-dot-js', 'css3', 'heroku', 'postgresql', 'jest'],
   },
   {
     title: 'Vane',
@@ -148,13 +119,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_rSS6yu3.png',
       },
     ],
-    icon: 'fas fa-cloud-sun-rain',
-    tech: [
-      'devicon-javascript-plain',
-      'devicon-react-original',
-      'devicon-css3-plain',
-      'devicon-html5-plain',
-    ],
+    icon: 'sky',
+    tech: ['javascript', 'react', 'css3', 'html5'],
   },
   // {
   //   title: 'NintenDB',
@@ -214,13 +180,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_p9Pd8c9.png',
       },
     ],
-    icon: 'fas fa-headphones-alt',
-    tech: [
-      'devicon-javascript-plain',
-      'devicon-react-original',
-      'devicon-css3-plain',
-      'devicon-html5-plain',
-    ],
+    icon: 'headphones',
+    tech: ['javascript', 'react', 'css3', 'html5'],
   },
   {
     title: 'Bloc Chat',
@@ -242,13 +203,8 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/xTD2VWq.png',
       },
     ],
-    icon: 'far fa-comment-alt',
-    tech: [
-      'devicon-javascript-plain',
-      'devicon-react-original',
-      'devicon-css3-plain',
-      'devicon-html5-plain',
-    ],
+    icon: 'talk',
+    tech: ['javascript', 'react', 'css3', 'html5'],
   },
   {
     title: 'News Bites',
@@ -270,19 +226,20 @@ export default [
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/oBIjR9C.png',
       },
     ],
-    icon: 'fas fa-utensils',
-    tech: ['devicon-javascript-plain', 'devicon-css3-plain', 'devicon-html5-plain'],
+    icon: 'news',
+    tech: ['javascript', 'css3', 'html5'],
   },
 ];
 
 export const icons = [
-  { skill: 'HTML', icon: 'devicon-html5-plain' },
-  { skill: 'CSS', icon: 'devicon-css3-plain' },
-  { skill: 'JavaScript', icon: 'devicon-javascript-plain' },
-  { skill: 'React', icon: 'devicon-react-original' },
-  { skill: 'Node.js', icon: 'devicon-nodejs-plain' },
-  { skill: 'Git', icon: 'devicon-github-plain' },
-  { skill: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+  { skill: 'HTML', icon: 'html5' },
+  { skill: 'CSS', icon: 'css3' },
+  { skill: 'JavaScript', icon: 'javascript' },
+  { skill: 'React', icon: 'react' },
+  { skill: 'Node.js', icon: 'node-dot-js' },
+  { skill: 'Git', icon: 'github' },
+  { skill: 'PostgreSQL', icon: 'postgresql' },
+  { skill: 'GraphQL', icon: 'graphql' },
 ];
 
 export const skills = [
@@ -299,7 +256,7 @@ export const skills = [
   'Sass',
   'Styled Components',
   'Semantic UI',
-  'Bootstrap',
   'Material UI',
   'Heroku',
+  'Jira',
 ];

@@ -40,15 +40,18 @@ const ContactPageStyles = styled.div`
         font-size: 1rem;
         color: ${(props) => props.theme.white};
       }
-      i {
-        font-size: 4rem;
-        color: ${(props) => props.theme.blue};
+      img {
+        height: 4rem;
+        padding: 5px;
+        @media (max-width: 900px) {
+          font-size: 2.8rem;
+        }
         &:hover {
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: ${(props) => props.theme.white};
-        }
-        @media (max-width: 900px) {
-          font-size: 2.8rem;
+          fill: green !important;
+          background: #dcdcdc2f;
+          border-radius: 5px;
         }
       }
     }

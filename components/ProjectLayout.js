@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 
-import GraphQLImage from '../static/graphql.svg';
-import GraphQLImageDark from '../static/graphqldark.svg';
 import Head from 'next/head';
 import Layout from './Layout';
 import ProgressiveImage from './ProgressiveImage';
@@ -35,34 +33,23 @@ const ProjectLayout = (props) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='project-title'>
-            <h1>
-              {title} <i className={icon} />
-            </h1>
+            <div className='top-title'>
+              <h1>{title}</h1>
+              <img src={`../static/icons/${icon}.svg`} alt='github' />
+            </div>
             <p>{description}</p>
             <div className='project-links'>
               <a href={deployLink} target='_blank' rel='noopener noreferrer'>
-                Deployed Version <i className='fas fa-external-link-square-alt' />
+                <img src='../static/icons/db.svg' alt='deploy' />
+                <p>Deployed Version</p>
               </a>
               <a href={gitLink} target='_blank' rel='noopener noreferrer'>
-                Code <i className='fab fa-github' />
+                <img src='../static/icons/github-blue.svg' alt='github' />
+                <p>Code</p>
               </a>
             </div>
             <div className='project-icons'>
-              {tech &&
-                tech.map((el) => {
-                  if (el === 'graphql') {
-                    return (
-                      <img
-                        src={GraphQLImage}
-                        alt='graphql'
-                        className='graphql-logo'
-                        style={{ padding: '0 7px 0 5px', height: '28px' }}
-                        key={el}
-                      />
-                    );
-                  }
-                  return <i className={el} key={el} />;
-                })}
+              {tech && tech.map((el) => <img src={`../static/icons/${el}.svg`} key={el} />)}
             </div>
           </div>
           <div className='project-info'>
@@ -74,7 +61,8 @@ const ProjectLayout = (props) => {
                 </p>
                 <p>Started in {created}</p>
                 <a href='/portfolio'>
-                  <i className='far fa-caret-square-left' /> <span>Back To Portfolio</span>
+                  <img src='../static/icons/return.svg' alt='github' />{' '}
+                  <span>Back To Portfolio</span>
                 </a>
               </div>
             </div>

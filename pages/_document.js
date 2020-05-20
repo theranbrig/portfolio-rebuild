@@ -47,6 +47,14 @@ class MyDocument extends Document {
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='/static/manifest.json' />
           <link rel='icon' type='image/x-icon' href='../static/favicon.ico' prefetch />
+          <link
+            rel='stylesheet'
+            href='https://i.icomoon.io/public/temp/9333706c65/UntitledProject/style-svg.css'
+          />
+          <script
+            defer
+            src='https://i.icomoon.io/public/temp/9333706c65/UntitledProject/svgxuse.js'
+          />
           {this.props.styleTags}
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
@@ -66,20 +74,6 @@ class MyDocument extends Document {
                 const link = document.createElement('link');
                 link.rel = "stylesheet";
                 link.href = '//fonts.googleapis.com/css2?family=Fira+Code:wght@100;300&family=Major+Mono+Display&family=Raleway:wght@100;300&display=swap';
-                document.querySelector("head").appendChild(link);
-              })();
-              (function() {
-                const link = document.createElement('link');
-                link.rel = "stylesheet";
-                link.href = '//use.fontawesome.com/releases/v5.7.2/css/all.css';
-                link.integrity = 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr'
-                link.crossOrigin = 'anonymous'
-                document.querySelector("head").appendChild(link);
-              })();
-              (function() {
-                const link = document.createElement('link');
-                link.rel = "stylesheet";
-                link.href = '//cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css';
                 document.querySelector("head").appendChild(link);
               })();
                   `,

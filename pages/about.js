@@ -1,6 +1,7 @@
 import { icons, skills } from '../static/data';
 
 import AboutPageStyles from '../components/styles/AboutPageStyles';
+import CSSIcon from '../static/icons/css3.svg';
 import GraphQLImage from '../static/graphql.svg';
 import Head from 'next/head';
 import Layout from '../components/Layout';
@@ -54,14 +55,10 @@ const About = () => {
                 <ul className='daily-list'>
                   {icons.map((icon) => (
                     <li key={icon.icon}>
-                      <i className={icon.icon} />
+                      <img src={`../static/icons/${icon.icon}.svg`} />
                       <p>{icon.skill}</p>
                     </li>
                   ))}
-                  <li>
-                    <img src={GraphQLImage} alt='graphql' style={{ height: '55px' }} />
-                    <p>GraphQL</p>
-                  </li>
                 </ul>
               </div>
               <div className='skills-i-know'>

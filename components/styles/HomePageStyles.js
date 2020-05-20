@@ -53,8 +53,8 @@ const HomePageStyles = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      i {
-        font-size: 2.5rem;
+      img {
+        height: 2.5rem;
         margin: 0;
         &:hover {
           -webkit-text-stroke-width: 1px;

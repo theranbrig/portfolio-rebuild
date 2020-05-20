@@ -56,35 +56,37 @@ const ProjectStyles = styled.div`
   .project-title {
     color: ${(props) => props.theme.blue};
     text-align: center;
-    h1 {
-      font-size: 5rem;
-      font-family: ${(props) => props.theme.raleFont};
-      margin: 15px 0 0;
-      font-weight: 100;
-      i {
-        color: ${(props) => props.theme.white};
+    .top-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      h1 {
+        font-size: 5rem;
+        font-family: ${(props) => props.theme.raleFont};
+        font-weight: 100;
+        display: inline-block;
+        margin: 0;
+      }
+      img {
+        height: 5rem;
+        margin-left: 20px;
       }
     }
+
     p {
       font-weight: 100;
-      font-family: ${(props) => props.theme.firaFont};
+      font-family: ${(props) => props.theme.raleFont};
       font-size: 1.3rem;
       color: ${(props) => props.theme.white};
     }
     .project-icons {
-      margin-top: 20px;
-      i {
-        color: ${(props) => props.theme.white};
+      margin: 20px auto;
+      img {
+        height: 40px !important;
         padding: 3px;
         font-size: 30px;
-      }
-      img.graphql-logo {
-        width: 40px;
-        @media (max-width: 900px) {
-          height: 30px !important;
-          width: 36px;
-          margin-bottom: -6px !important;
-        }
       }
     }
   }
@@ -96,6 +98,15 @@ const ProjectStyles = styled.div`
       font-weight: 100;
       line-height: 2rem;
     }
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    a img {
+      margin-right: 20px;
+      height: 2rem;
+    }
   }
   .project-links {
     display: flex;
@@ -105,10 +116,21 @@ const ProjectStyles = styled.div`
     margin: 0 auto;
     justify-content: space-between;
     a {
-      color: ${(props) => props.theme.blue};
-      font-family: ${(props) => props.theme.raleFont};
       text-decoration: none;
       font-size: 1.3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-family: ${(props) => props.theme.raleFont};
+        color: ${(props) => props.theme.blue};
+        display: inline;
+      }
+      img {
+        height: 40px;
+        margin-right: 10px;
+      }
     }
   }
 `;
