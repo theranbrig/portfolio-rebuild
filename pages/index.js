@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { register, unregister } from 'next-offline/runtime';
 
 import Head from 'next/head';
 import HomePageStyles from '../components/styles/HomePageStyles';
@@ -24,6 +25,7 @@ const Home = () => {
   // this.el refers to the <span> in the render() method
   useEffect(() => {
     const typed = new Typed(typedRef.current, options);
+    register();
   }, []);
 
   return (
