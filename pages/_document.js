@@ -47,14 +47,6 @@ class MyDocument extends Document {
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='/static/manifest.json' />
           <link rel='icon' type='image/x-icon' href='../static/favicon.ico' prefetch />
-          <link
-            rel='stylesheet'
-            href='https://i.icomoon.io/public/temp/9333706c65/UntitledProject/style-svg.css'
-          />
-          <script
-            defer
-            src='https://i.icomoon.io/public/temp/9333706c65/UntitledProject/svgxuse.js'
-          />
           {this.props.styleTags}
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
