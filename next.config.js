@@ -3,36 +3,34 @@ const withImages = require('next-images');
 const withBabelMinify = require('next-babel-minify');
 const withOffline = require('next-offline');
 
-const nextConfig = {
-  target: 'serverless',
-  transformManifest: (manifest) => ['/'].concat(manifest), // add the homepage to the cache
-  // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
-  // turn on the SW in dev mode so that we can actually test it
-  generateInDevMode: true,
+module.exports = withOffline({
   workboxOpts: {
-    swDest: 'static/service-worker.js',
+    swDest: process.env.NEXT_EXPORT ? 'service-worker.js' : 'static/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
         handler: 'NetworkFirst',
         options: {
-          cacheName: 'https-calls',
-          networkTimeoutSeconds: 15,
+          cacheName: 'offlineCache',
           expiration: {
-            maxEntries: 150,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
+            maxEntries: 200,
           },
         },
       },
     ],
   },
-};
+  experimental: {
+    async rewrites() {
+      return [
+        {
+          source: '/service-worker.js',
+          destination: '/_next/static/service-worker.js',
+        },
+      ];
+    },
+  },
+});
 
 module.exports = withBabelMinify();
 
 module.exports = withImages();
-
-module.exports = withOffline(nextConfig);
