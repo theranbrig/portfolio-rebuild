@@ -5,6 +5,7 @@ import CSSIcon from '../static/icons/css3.svg';
 import GraphQLImage from '../static/graphql.svg';
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import ProgressiveImage from '../components/ProgressiveImage';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -22,9 +23,9 @@ const About = () => {
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='about-main'>
             <h1>About Me</h1>
-            <img
-              src='https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg'
-              alt='Theran Brigowatz Profile'
+            <ProgressiveImage
+              preview='https://res.cloudinary.com/dq7uyauun/image/upload/q_2/v1551968239/IMG_1880.jpg'
+              image='https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg'
             />
             <h2>therAn briGoWAtz</h2>
             <p>
