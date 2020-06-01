@@ -2,12 +2,8 @@ import styled from 'styled-components';
 
 const ContactPageStyles = styled.div`
   min-height: 90vh;
-  display: grid;
-  align-items: center;
-  text-align: center;
   background-color: ${(props) => props.theme.black};
-  width: 800px;
-  max-width: 95%;
+  padding-top: 10px;
   margin: 0 auto;
   .contact-title {
     p {
@@ -19,10 +15,12 @@ const ContactPageStyles = styled.div`
       color: ${(props) => props.theme.blue};
       font-family: ${(props) => props.theme.raleFont};
       font-weight: 100;
+      text-align: center;
     }
     p {
       font-size: 1.5rem;
       font-family: ${(props) => props.theme.firaFont};
+      text-align: center;
     }
   }
   div.social-icons {
@@ -30,18 +28,21 @@ const ContactPageStyles = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
     a {
       width: 100%;
       font-family: ${(props) => props.theme.raleFont};
       text-decoration: none;
+      text-align: center;
       p {
         padding: 5px;
         font-size: 1rem;
         color: ${(props) => props.theme.white};
       }
       img {
-        height: 4rem;
+        height: 3rem;
         padding: 5px;
         @media (max-width: 900px) {
           font-size: 2.8rem;
@@ -57,6 +58,9 @@ const ContactPageStyles = styled.div`
     }
   }
   .bottom-writing {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
     p {
       color: ${(props) => props.theme.white};
       font-size: 1.3rem;
@@ -78,9 +82,11 @@ const ContactPageStyles = styled.div`
     margin: 20px 20%;
     padding-bottom: 10vh;
     font-family: ${(props) => props.theme.firaFont};
+    text-align: center;
     h2 {
       color: ${(props) => props.theme.blue};
       font-family: ${(props) => props.theme.firaFont};
+      text-align: center;
     }
     button {
       color: ${(props) => props.theme.blue};

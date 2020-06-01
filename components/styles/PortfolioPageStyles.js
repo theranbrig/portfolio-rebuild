@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const PortfolioPageStyles = styled.div`
   background-color: ${(props) => props.theme.black};
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+
   justify-items: center;
   align-items: center;
   padding: 30px 0 0;
@@ -17,7 +15,7 @@ const PortfolioPageStyles = styled.div`
     flex-direction: row;
     padding: 0 0 30px 0;
     width: 800px;
-    max-width: 95%;
+    max-width: 85%;
     margin: 0 auto 10vh;
     .individual-project {
       width: 40%;
