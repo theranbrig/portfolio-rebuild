@@ -22,66 +22,50 @@ const ProjectLayout = (props) => {
   } = props.project;
 
   return (
-    <Layout>
-      <Head>
-        <title>Theran Brigowatz | Project</title>
-      </Head>
-      <ProjectStyles>
-        <motion.div
-          exit={{ opacity: 0, x: '-100vw' }}
-          initial={{ opacity: 0, x: '100vw' }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
-          <div className='project-title'>
-            <div className='top-title'>
-              <h1>{title}</h1>
-              <img src={`../static/icons/${icon}.svg`} alt='github' />
-            </div>
-            <p>{description}</p>
-            <div className='project-links'>
-              <a href={deployLink} target='_blank' rel='noopener noreferrer'>
-                <img src='../static/icons/db.svg' alt='deploy' />
-                <p>Deployed Version</p>
-              </a>
-              <a href={gitLink} target='_blank' rel='noopener noreferrer'>
-                <img src='../static/icons/github-blue.svg' alt='github' />
-                <p>Code</p>
-              </a>
-            </div>
-            <div className='project-icons'>
-              {tech && tech.map((el) => <img src={`../static/icons/${el}.svg`} key={el} />)}
-            </div>
+    <ProjectStyles>
+      <div className='project-title'>
+        <div className='top-title'>
+          <h1>{title}</h1>
+          <img src={`icons/${icon}.svg`} alt='github' />
+        </div>
+        <p>{description}</p>
+        <div className='project-links'>
+          <a href={deployLink} target='_blank' rel='noopener noreferrer'>
+            <img src='icons/db.svg' alt='deploy' />
+            <p>Deployed Version</p>
+          </a>
+          <a href={gitLink} target='_blank' rel='noopener noreferrer'>
+            <img src='icons/github-blue.svg' alt='github' />
+            <p>Code</p>
+          </a>
+        </div>
+        <div className='project-icons'>
+          {tech && tech.map((el) => <img src={`icons/${el}.svg`} key={el} />)}
+        </div>
+      </div>
+      <div className='project-info'>
+        <div className='project-left'>
+          <div className='project-writing'>
+            <p>{extendedDescription}</p>
+            <p>
+              Built with: <strong>{technology}</strong>
+            </p>
+            <p>Started in {created}</p>
+            <a href='/portfolio'>
+              <img src='icons/return.svg' alt='github' /> <span>Back To Portfolio</span>
+            </a>
           </div>
-          <div className='project-info'>
-            <div className='project-left'>
-              <div className='project-writing'>
-                <p>{extendedDescription}</p>
-                <p>
-                  Built with: <strong>{technology}</strong>
-                </p>
-                <p>Started in {created}</p>
-                <a href='/portfolio'>
-                  <img src='../static/icons/return.svg' alt='github' />{' '}
-                  <span>Back To Portfolio</span>
-                </a>
-              </div>
-            </div>
-            <div className='project-right'>
-              <div className='project-images'>
-                {screenShots &&
-                  screenShots.map((photo) => (
-                    <ProgressiveImage
-                      preview={photo.preview}
-                      image={photo.image}
-                      key={photo.image}
-                    />
-                  ))}
-              </div>
-            </div>
+        </div>
+        <div className='project-right'>
+          <div className='project-images'>
+            {screenShots &&
+              screenShots.map((photo) => (
+                <ProgressiveImage preview={photo.preview} image={photo.image} key={photo.image} />
+              ))}
           </div>
-        </motion.div>
-      </ProjectStyles>
-    </Layout>
+        </div>
+      </div>
+    </ProjectStyles>
   );
 };
 

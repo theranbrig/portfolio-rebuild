@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import PortfolioPageStyles from '../components/styles/PortfolioPageStyles';
 import ProjectCard from '../components/ProjectCard';
-import data from '../static/data';
+import data from '../public/data';
 import { motion } from 'framer-motion';
 
 const Portfolio = () => (
@@ -12,9 +12,9 @@ const Portfolio = () => (
     </Head>
     <PortfolioPageStyles>
       <motion.div
-        exit={{ opacity: 0, x: '100vw' }}
-        initial={{ opacity: 0, x: '-100vw' }}
-        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, scale: 0 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
         <h1>Portfolio</h1>
         <h2>See some code and screenshots.</h2>

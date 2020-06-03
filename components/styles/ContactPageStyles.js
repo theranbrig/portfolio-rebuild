@@ -28,8 +28,8 @@ const ContactPageStyles = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    width: 90%;
-    max-width: 800px;
+    width: 800;
+    max-width: 90%;
     margin: 0 auto;
     a {
       width: 100%;

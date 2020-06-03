@@ -1,7 +1,8 @@
-import { withRouter } from 'next/router';
-import Link from 'next/link';
 import React, { Children } from 'react';
+
+import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { withRouter } from 'next/router';
 
 const ActiveLink = ({ router, children, ...props }) => {
   const child = Children.only(children);
@@ -10,11 +11,7 @@ const ActiveLink = ({ router, children, ...props }) => {
     className = `${className !== null ? className : ''} ${props.activeClassName}`.trim();
   }
   delete props.activeClassName;
-  return (
-    <Link {...props} prefetch>
-      {React.cloneElement(child, { className })}
-    </Link>
-  );
+  return <Link {...props}>{React.cloneElement(child, { className })}</Link>;
 };
 
 ActiveLink.propTypes = {

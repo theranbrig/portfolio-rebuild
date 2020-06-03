@@ -1,8 +1,6 @@
-import { icons, skills } from '../static/data';
+import { icons, skills } from '../public/data';
 
 import AboutPageStyles from '../components/styles/AboutPageStyles';
-import CSSIcon from '../static/icons/css3.svg';
-import GraphQLImage from '../static/graphql.svg';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import ProgressiveImage from '../components/ProgressiveImage';
@@ -17,9 +15,9 @@ const About = () => {
       </Head>
       <AboutPageStyles>
         <motion.div
-          exit={{ opacity: 0, x: '100vw' }}
-          initial={{ opacity: 0, x: '-100vw' }}
-          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, scale: 0 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='about-main'>
             <h1>About Me</h1>
@@ -56,7 +54,7 @@ const About = () => {
                 <ul className='daily-list'>
                   {icons.map((icon) => (
                     <li key={icon.icon}>
-                      <img src={`../static/icons/${icon.icon}.svg`} />
+                      <img src={`icons/${icon.icon}.svg`} />
                       <p>{icon.skill}</p>
                     </li>
                   ))}

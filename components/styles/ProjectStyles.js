@@ -2,23 +2,22 @@ import styled from 'styled-components';
 
 const ProjectStyles = styled.div`
   background-color: ${(props) => props.theme.black};
-  width: 900px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-max(180px, 1fr) 9fr;
 
   margin: 0 auto;
-  padding: 0 0 10vh 0;
+  padding-top: 20px;
+  max-width: 90%;
+  width: 800px;
   @media (max-width: 900px) {
     padding: 20px;
   }
+
   .project-info {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
     padding-bottom: 10vh;
+    padding-top: 30px;
     @media (max-width: 900px) {
       width: 100%;
       grid-template-columns: 1fr;
@@ -51,7 +50,7 @@ const ProjectStyles = styled.div`
   div.project-images img {
     border: 2px solid ${(props) => props.theme.blue};
     padding: 5px;
-    margin: 10px auto;
+    margin: 0 auto 10px;
   }
   .project-title {
     color: ${(props) => props.theme.blue};
@@ -97,6 +96,7 @@ const ProjectStyles = styled.div`
       font-family: ${(props) => props.theme.firaFont};
       font-weight: 100;
       line-height: 2rem;
+      margin: 0 0 30px;
     }
     a {
       display: flex;
@@ -111,8 +111,8 @@ const ProjectStyles = styled.div`
   .project-links {
     display: flex;
     flex-direction: row;
-    max-width: 500px;
-    width: 50%;
+    max-width: 100%;
+    width: 400px;
     margin: 0 auto;
     justify-content: space-between;
     a {

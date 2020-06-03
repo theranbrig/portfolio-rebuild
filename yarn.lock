@@ -4895,7 +4895,7 @@ next-babel-minify@^1.0.0:
   dependencies:
     babel-minify-webpack-plugin "0.3.1"
 
-next-images@^1.0.4:
+next-images@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/next-images/-/next-images-1.4.0.tgz#be21d20e9437debe2dd3b5d0ef5847dd6fc77cec"
   integrity sha512-r5PMMyv5Nrbq93IutIpB0arApPQUer42dfKU/vjlc2u8n3PBib8Pvv9eRH/Eco0Akg5hitp8E125GBZ+isWSsA==

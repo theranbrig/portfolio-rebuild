@@ -1,4 +1,3 @@
-import GraphQLImage from '../static/graphql.svg';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -11,14 +10,14 @@ const ProjectCard = (props) => {
       <Link href={{ pathname: '/project', query: { name: slug } }}>
         <a className='project-link'>
           <div className='main-icon'>
-            <img src={`../static/icons/${icon}.svg`} alt={icon} />
+            <img src={`icons/${icon}.svg`} alt={icon} />
           </div>
           <div className='project-info'>
             <h3>{title}</h3>
             <h4>{description}</h4>
             <div className='project-icons'>
               {tech.map((el) => (
-                <img src={`../static/icons/${el}.svg`} key={el} alt={el} />
+                <img src={`icons/${el}.svg`} key={el} alt={el} />
               ))}
             </div>
           </div>

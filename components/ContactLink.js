@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ContactLink = ({ link, icon, name }) => (
   <a href={link} target='_blank' rel='noopener noreferrer' aria-label={name} rel='preload'>
-    <img src={`../static/icons/${icon}.svg`} alt={icon} className='contact-icon' />
+    <img src={`icons/${icon}.svg`} alt={icon} className='contact-icon' />
     <p>{name}</p>
   </a>
 );

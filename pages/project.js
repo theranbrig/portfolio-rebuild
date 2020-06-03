@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
-import ErrorPage from './_error';
+import Layout from '../components/Layout';
 import ProjectLayout from '../components/ProjectLayout';
 import PropTypes from 'prop-types';
-import data from '../static/data';
+import data from '../public/data';
+import { motion } from 'framer-motion';
 
 const Project = ({ query, projectInfo }) => {
   const [project] = useState(projectInfo ? projectInfo : {});
 
-  if (!projectInfo) return <ErrorPage />;
-
-  return <ProjectLayout project={project} />;
+  return (
+    <Layout>
+      <motion.div
+        exit={{ opacity: 0, scale: 0 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
+        <ProjectLayout project={project} />
+      </motion.div>
+    </Layout>
+  );
 };
 
 Project.propTypes = {

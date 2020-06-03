@@ -5,7 +5,7 @@ const PortfolioPageStyles = styled.div`
 
   justify-items: center;
   align-items: center;
-  padding: 30px 0 0;
+  padding: 30px 0 10px;
   min-height: 90vh;
   .project-list {
     justify-content: space-around;
