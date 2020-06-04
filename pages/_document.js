@@ -54,7 +54,7 @@ class MyDocument extends Document {
           {this.props.styleTags}
         </Head>
         <body style={{ margin: '0', width: '100%' }}>
-          <form name='contact' netlify netlify-honeypot='bot-field' hidden>
+          <form name='contact' netlify='true' netlify-honeypot='bot-field' hidden>
             <input type='text' name='title' />
             <input type='email' name='email' />
             <textarea name='message' />

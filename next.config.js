@@ -2,4 +2,14 @@
 const withImages = require('next-images');
 const withBabelMinify = require('next-babel-minify');
 
-module.exports = withImages(withBabelMinify());
+const withPWA = require('next-pwa');
+
+module.exports = withPWA(
+  withImages(
+    withBabelMinify({
+      pwa: {
+        dest: 'public',
+      },
+    })
+  )
+);
