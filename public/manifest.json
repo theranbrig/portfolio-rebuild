@@ -1,6 +1,6 @@
 {
-  "short_name": "Brigowatz",
-  "name": "Theran Brigowtz - Web Developer",
+  "short_name": "Theran Brigowatz",
+  "name": "Theran Brigowatz - Web Developer",
   "start_url": "/",
   "background_color": "#232323",
   "theme_color": "#40a4c8",
@@ -8,12 +8,12 @@
   "description": "Theran Brigowatz - Full Stack Web Developer",
   "icons": [
     {
-      "src": "../static/android-chrome-192x192.png",
+      "src": "./public/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../static/android-chrome-512x512.png",
+      "src": "./public/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
