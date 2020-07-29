@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <meta property='og:description' content='Theran Brigowatz - Web Developer Portfolio' />
           <meta
             property='og:image'
-            content='https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg'
+            content='https://res.cloudinary.com/dq7uyauun/image/upload/v1595982803/Screen_Shot_2020-07-29_at_9.28.54_AM.png'
           />
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:url' content='https://theran.dev' />
@@ -42,7 +42,7 @@ class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='https://res.cloudinary.com/dq7uyauun/image/upload/q_auto/v1551968239/IMG_1880.jpg'></meta>
+            content='https://res.cloudinary.com/dq7uyauun/image/upload/v1595982803/Screen_Shot_2020-07-29_at_9.28.54_AM.png'></meta>
           <meta name='description' content='Theran Brigowatz - Web Developer Portfolio Site' />
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='manifest.json' />
