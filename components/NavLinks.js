@@ -8,10 +8,13 @@ const NavLinks = () => {
         <a>Home</a>
       </Link>
       <Link activeClassName='active' href='/portfolio'>
-        <a>Portfolio</a>
+        <a>Work</a>
+      </Link>
+      <Link activeClassName='active' href='/blog'>
+        <a>Blog</a>
       </Link>
       <Link activeClassName='active' href='/about'>
-        <a> About Me</a>
+        <a> About</a>
       </Link>
       <Link activeClassName='active' href='/contact'>
         <a>Contact</a>

@@ -16,12 +16,15 @@ const NavStyles = styled.div`
     margin: 0 auto;
     a {
       font-family: ${(props) => props.theme.raleFont};
-      font-weight: 100;
+      font-weight: 300;
       font-size: 1.3rem;
       color: ${(props) => props.theme.blue};
       text-decoration: none;
       @media (max-width: 760px) {
         font-size: 1.1rem;
+      }
+      &:hover {
+        color: ${(props) => props.theme.white};
       }
     }
     .active {

@@ -36,7 +36,7 @@ const AboutPageStyles = styled.div`
       font-family: ${(props) => props.theme.spaceFont};
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-family: ${(props) => props.theme.firaFont};
       color: ${(props) => props.theme.white};
       line-height: 2rem;

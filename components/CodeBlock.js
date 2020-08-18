@@ -1,14 +1,23 @@
+import PropTypes from 'prop-types';
 // components/CodeBlock.js
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-const CodeBlock = (props) => {
-  const { language, value } = props;
+const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter language={language} style={dracula} useInline>
+    <SyntaxHighlighter
+      language={language}
+      style={dracula}
+      useInlineStyles
+      customStyle={{ fontFamily: "'Fira Code', monospace" }}>
       {value}
     </SyntaxHighlighter>
   );
 };
 
 export default CodeBlock;
+
+CodeBlock.propTypes = {
+  language: PropTypes.string.isRequired,
+  value: PropTypes.node.isRequired,
+};

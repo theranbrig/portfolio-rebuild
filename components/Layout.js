@@ -14,6 +14,7 @@ const darkTheme = {
   robFont: 'Roboto',
   spaceFont: "'Major Mono Display', monospace",
   firaFont: "'Fira Code', monospace",
+  openFont: '"Open Sans", sans-serif',
 };
 
 const GlobalStyle = createGlobalStyle`

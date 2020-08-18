@@ -67,7 +67,7 @@ class MyDocument extends Document {
               (function() {
                 const link = document.createElement('link');
                 link.rel = "stylesheet";
-                link.href = '//fonts.googleapis.com/css2?family=Fira+Code:wght@100;300&family=Major+Mono+Display&family=Raleway:wght@100;300&display=swap';
+                link.href = '//fonts.googleapis.com/css2?family=Fira+Code:wght@100;300&family=Major+Mono+Display&family=Raleway:wght@100;300;400&family=Roboto:wght@100;300;400;500&display=swap';
                 document.querySelector("head").appendChild(link);
               })();
                   `,
