@@ -4,10 +4,10 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { blogPosts } from '../public/data';
 import Link from 'next/link';
+
 const Blogs = () => {
-  console.log(blogPosts);
   const posts = blogPosts.sort((a, b) => b.unix - a.unix);
-  console.log(posts);
+
   return (
     <Layout>
       <Head>

@@ -8,12 +8,16 @@ import ReactMarkdown from 'react-markdown';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { blogPosts } from '../../../public/data';
 
 const blogId = ({ document }) => {
+  const router = useRouter();
+  const post = blogPosts.filter((post) => post.slug === router.query.id);
+  const { title } = post[0];
   return (
     <Layout>
       <Head>
-        <title>theran.dev - blog</title>
+        <title>Theran Brigowatz | {title}</title>
       </Head>
       <BlogPageStyles>
         <motion.div
