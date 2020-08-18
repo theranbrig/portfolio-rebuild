@@ -1,14 +1,3 @@
-<div class="hero-section">
-    <div class="hero-image-container">
-        <img class="hero-image" src="https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="blurred chalkboard"/>
-    </div>
-    <div class="hero-text-container">
-        <h1 class="hero-text">How to build a calculator with React Hooks and the React Context API</h1>
-    </div>
-</div>
-
-Author: Theran Brigowatz
-
 Originally Published March 15, 2019 for [FreeCodeCamp.org](https://medium.com/free-code-camp/building-a-calculator-with-react-hooks-and-react-context-api-debcabbc5f54)
 
 If you are like me, when you first heard of React Hooks you were maybe a little bit ambivalent or confused by what all the hype was about. What’s the big deal if I don’t have to write out class components anymore? However, once I dove in and got to using them, I couldn’t really see myself going back to my pre-Hook days. In the immortal words of Blues Traveller, “The hook brings you back. I ain’t tellin’ you no lie.”
@@ -433,5 +422,3 @@ If you would like to see the entire code for this project it can be found over i
 #### [GitHub Repo](https://github.com/theranbrig/calculator.)
 
 #### [Calc-U-Later Deploy](https://calc-u-later.netlify.com/)
-
-Check out more of my articles, projects, and other content at [theran.dev](https://theran.dev/blog) or on [twitter](https://twitter.com/wellBuilt).

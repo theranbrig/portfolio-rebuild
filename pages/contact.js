@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -43,12 +44,9 @@ const Contact = () => {
                 resume.
               </a>{' '}
               Please get in touch with me, or check out my{' '}
-              <a
-                href='https://medium.com/@theran.brigowatz'
-                target='_blank'
-                rel='noopener noreferrer'>
-                blog
-              </a>
+              <Link href='/blog'>
+                <a>blog</a>
+              </Link>
               , with any questions, comments, or biting criticism that you may have.
             </p>
           </div>

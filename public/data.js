@@ -294,4 +294,15 @@ export const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
   },
+  {
+    slug: 'stop-coding',
+    year: 2020,
+    unix: 1597747716,
+    dateString: 'August 20, 2019',
+    title: 'Stop Coding and be a Better Developer',
+    description:
+      'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+    image:
+      'https://images.unsplash.com/photo-1519834411415-51492bcd6027?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2224&q=80',
+  },
 ];

@@ -27,10 +27,10 @@ const ContactPageStyles = styled.div`
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    width: 800;
+    width: 800px;
     max-width: 90%;
     margin: 0 auto;
+    margin-top: 40px;
     a {
       width: 100%;
       font-family: ${(props) => props.theme.raleFont};
@@ -63,14 +63,13 @@ const ContactPageStyles = styled.div`
     max-width: 800px;
     p {
       color: ${(props) => props.theme.white};
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-family: ${(props) => props.theme.firaFont};
       width: 80%;
       margin-left: 10%;
       @media (max-width: 900px) {
         width: 100%;
         margin: 0;
-        font-size: 1.1rem;
       }
       a {
         color: ${(props) => props.theme.blue};

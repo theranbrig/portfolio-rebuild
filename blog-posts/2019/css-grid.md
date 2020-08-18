@@ -1,14 +1,3 @@
-<div class="hero-section">
-    <div class="hero-image-container">
-        <img class="hero-image" src="https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="group of windows"/>
-    </div>
-    <div class="hero-text-container">
-        <h1 class="hero-text">Gettin' Griddy With It: an Introduction to CSS Grid</h1>
-    </div>
-</div>
-
-Author: Theran Brigowatz
-
 Originally Published March 15, 2019 for [FreeCodeCamp.org](https://medium.com/free-code-camp/gettin-griddy-with-it-build-your-own-css-grid-and-drop-the-frameworks-7d8c498c8b1b)
 
 Just about every front end developer’s journey starts with the basic HTML, CSS, JavaScript path. You start with the structure, make it look decent, and then make it do something. However, somewhere along the journey it is easy to get caught up in the world of CSS frameworks and gloss over some of the finer details.
@@ -71,8 +60,13 @@ The CSS for the container is as below:
 Below you can see how the same code is responsive for mobile, tablet, and desktop views.
 
 <img src="https://cdn-images-1.medium.com/max/2000/1*HIgyPXzE7rG8oqQH5eFbGA.png" alt="mobile grid" class="full-size-image"/>
+<p class="photo-caption">Mobile View</p>
+
 <img src="https://cdn-images-1.medium.com/max/3658/1*i_f847yDQqbM9chT4lPz9A.png" alt="tablet grid" class="full-size-image"/>
+<p class="photo-caption">Tablet View</p>
+
 <img src="https://cdn-images-1.medium.com/max/5044/1*LP7pngcVvqhgfbH-egw9eA.png" alt="desktop grid" class="full-size-image"/>
+<p class="photo-caption">Desktop View</p>
 
 As you can see, you can create a simple responsive grid from just four lines of code. Couldn’t be easier, and all of your content is free to move around and shuffle as needed. No media queries are even necessary in this instance. From here you are free to customize the individual boxes in the Grid. It’s quite flexible for responsive layouts and sizes. Play around with it and watch the boxes move magically.
 
@@ -182,5 +176,3 @@ This simple post definitely just scratches the surface of what you can do with C
 For more information on CSS Grid I highly recommend checking [http://cssgrid.io](http://cssgrid.io.) taught by Wes Bos. It is a fantastic tutorial CSS Grid.
 
 Also as you have questions be sure to check out the CSS Tricks site at [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/) to learn more about the grid.
-
-Check out more of my articles, projects, and other content at [theran.dev](https://theran.dev/blog) or on [twitter](https://twitter.com/wellBuilt).

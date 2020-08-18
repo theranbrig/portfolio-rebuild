@@ -1,12 +1,3 @@
-<div class="hero-section">
-    <div class="hero-image-container">
-        <img class="hero-image" src="https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80" alt="group of windows"/>
-    </div>
-    <div class="hero-text-container">
-        <h1 class="hero-text">ES6 Object and Array Methods</h1>
-    </div>
-</div>
-
 Below are a list of JavaScript features and methods that I wish I knew about when I started my coding journey (or they were not available in ES5 when I began my foray into coding.) I hope you can learn something new, and can use them in your JavaScript journey.
 
 ## Object Destructuring
@@ -165,6 +156,3 @@ console.log(numbers.every((num) => num >= 5)); // true
 ## Thank You
 
 Thank you for taking the time to read through this little list of JavaScript tips. I hope you found something useful that you can use in your code and maybe make your life a bit easier.
-
-Check out more of my articles, projects, and other content at [theran.dev](https://theran.dev/blog) or on [twitter](https://twitter.com/wellBuilt).
-

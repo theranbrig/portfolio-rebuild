@@ -16,6 +16,7 @@ const BlogPageStyles = styled.div`
   code,
   pre,
   ul,
+  ol,
   .content-image {
     width: 900px;
     margin: 0 auto !important;
@@ -137,6 +138,9 @@ const BlogPageStyles = styled.div`
     display: block;
     max-width: 80%;
     margin: 20px auto;
+  }
+  .photo-caption {
+    text-align: center;
   }
 `;
 
