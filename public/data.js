@@ -261,37 +261,37 @@ export const skills = [
 ];
 
 export const blogPosts = [
-         {
-           slug: 'hooks-calculator',
-           year: 2019,
-           unix: 1552608000,
-           dateString: 'March 15, 2019',
-           title: 'Build a calculator with React Hooks and the React Context API',
-           description:
-             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
-           image:
-             'https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-         },
-         {
-           slug: 'css-grid',
-           year: 2019,
-           unix: 1547424000,
-           dateString: 'January 16, 2019',
-           title: "Gettin' Griddy with it. The basics of CSS Grid.",
-           description:
-             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
-           image:
-             'https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
-         },
-         {
-           slug: 'js-tips',
-           year: 2019,
-           unix: 1546732800,
-           dateString: 'January 6, 2019',
-           title: 'ES6 Object and Array Methods',
-           description:
-             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
-           image:
-             'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
-         },
-       ];
+  {
+    slug: 'hooks-calculator',
+    year: 2019,
+    unix: 1552608000,
+    dateString: 'March 15, 2019',
+    title: 'Build a calculator with React Hooks and the React Context API',
+    description:
+      'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+    image:
+      'https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  },
+  {
+    slug: 'css-grid',
+    year: 2019,
+    unix: 1547424000,
+    dateString: 'January 16, 2019',
+    title: "Gettin' Griddy with it. The basics of CSS Grid.",
+    description:
+      'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+    image:
+      'https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
+  },
+  {
+    slug: 'js-tips',
+    year: 2019,
+    unix: 1546732800,
+    dateString: 'January 6, 2019',
+    title: 'ES6 Object and Array Methods',
+    description:
+      'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+    image:
+      'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
+  },
+];
