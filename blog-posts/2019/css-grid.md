@@ -21,7 +21,7 @@ That’s where CSS Grid comes in. CSS Grid is a relatively new addition to CSS3 
 
 1.  Increased files size. The more you import the larger your app becomes. At a point when speed is key, reducing your app file size is an incredibly important idea to consider. Rather than importing a framework, or relying on a slow CDN, you can build your own.
 
-2.  Less readable code. Those of you who have used a framework know the increasingly complex and vague class names that come along with it. Who doesn’t immediately recognize whatclass="col-6 col-md-4 col-sm-12" stands for? Or who wants to end up writing div.ui.segment.inverted.stackable.desktop.twelve.mobile.sixteen in their CSS?
+2.  Less readable code. Those of you who have used a framework know the increasingly complex and vague class names that come along with it. Who doesn’t immediately recognize whatclass="col-6 col-md-4 col-sm-12" stands for? Or who wants to end up writing long lines of ambiguously named classes in their CSS?
 
 3.  Less customization. The built in rules of a framework can be difficult to override. You may end up with long class names to get to the correct specificity, or end up with line after line of !important tags to create custom styles that override the framework. The magic of CSS Grid is that you can make your own, and customize it to your needs, rather than rely on others who didn’t have your project specifics in mind.
 

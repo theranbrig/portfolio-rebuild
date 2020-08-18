@@ -23,7 +23,7 @@ const Blogs = () => {
           {posts.map((post) => (
             <Link href={`/blog/${post.year}/${post.slug}`} key={post.slug}>
               <div className='post-container'>
-                <img src={post.image} />
+                <img src={post.image} alt={post.title} />
                 <div className='post-description'>
                   <h2>{post.title}</h2>
                   <div>
