@@ -11,7 +11,7 @@ const Blogs = () => {
   return (
     <Layout>
       <Head>
-        <title>Theran Brigowatz | Contact</title>
+        <title>Theran Brigowatz | Blog</title>
       </Head>
       <BlogsStyles>
         <motion.div
