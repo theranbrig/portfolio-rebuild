@@ -7,8 +7,11 @@ import React from 'react';
 const darkTheme = {
   darkBlack: '#131313',
   black: '#181818',
-  white: 'gainsboro',
+  white: '#fefefe',
+  lightBlue: '#ebf5f9',
   blue: '#40a4c8',
+  darkBlue: '#2c728c',
+  orange: '#ffb86c',
   transparent: '#13131394',
   raleFont: 'Raleway',
   robFont: 'Roboto',

@@ -7,6 +7,7 @@ import Layout from '../../../components/Layout';
 import ReactMarkdown from 'react-markdown';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 const blogId = ({ document }) => {
   console.log(document);
@@ -15,6 +16,9 @@ const blogId = ({ document }) => {
 
   return (
     <Layout>
+      <Head>
+        <title>theran.dev - blog</title>
+      </Head>
       <BlogPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}
