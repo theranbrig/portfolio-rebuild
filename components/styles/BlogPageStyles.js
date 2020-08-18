@@ -132,6 +132,12 @@ const BlogPageStyles = styled.div`
   li {
     margin-left: 20px;
   }
+  .full-size-image {
+    width: 500px;
+    display: block;
+    max-width: 80%;
+    margin: 20px auto;
+  }
 `;
 
 export default BlogPageStyles;

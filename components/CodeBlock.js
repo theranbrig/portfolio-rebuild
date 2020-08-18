@@ -18,6 +18,6 @@ const CodeBlock = ({ language, value }) => {
 export default CodeBlock;
 
 CodeBlock.propTypes = {
-  language: PropTypes.string.isRequired,
+  language: PropTypes.string,
   value: PropTypes.node.isRequired,
 };

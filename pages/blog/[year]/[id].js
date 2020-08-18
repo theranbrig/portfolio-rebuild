@@ -10,10 +10,6 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 const blogId = ({ document }) => {
-  console.log(document);
-  const [markdown, setMarkdown] = useState('');
-  const [loading, setLoading] = useState(true);
-
   return (
     <Layout>
       <Head>

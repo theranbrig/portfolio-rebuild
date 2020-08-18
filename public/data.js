@@ -5,7 +5,6 @@ export default [
     created: 'Winter 2018',
     description: 'Realtime Group Shopping App',
     slug: 'grouper',
-
     extendedDescription:
       'Group shopping and lists made easy. Check them off as you go and get real-time updates as you shop. Split up and let others get items. Mark them off as you find them. This was built to utilize Next.js with React on the frontend for quick SSR React Components and caching. Apollo Boost works to connect the backend data to the client side, as well has hold local state. All GraphQL Mutations and Queries are handled through Apollo. The API uses GraphQL with a GraphQL server to connect to a Prisma database that is built using PostgreSQL. The relational data structure allows for quick querying to the server. A testing suite was built using Jest and Enzyme to make sure that everything is up and running properly. Snapshot testing was integrated as well. The app is deployed using Heroku on both the front and back ends. This was a quick five day build meant to act as a coding challenge interview, so it is far from perfect yet.',
     gitLink: 'https://github.com/theranbrig/grouper',
@@ -260,3 +259,39 @@ export const skills = [
   'Heroku',
   'Jira',
 ];
+
+export const blogPosts = [
+         {
+           slug: 'hooks-calculator',
+           year: 2019,
+           unix: 1552608000,
+           dateString: 'March 15, 2019',
+           title: 'Build a calculator with React Hooks and the React Context API',
+           description:
+             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+           image:
+             'https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+         },
+         {
+           slug: 'css-grid',
+           year: 2019,
+           unix: 1547424000,
+           dateString: 'January 16, 2019',
+           title: "Gettin' Griddy with it. The basics of CSS Grid.",
+           description:
+             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+           image:
+             'https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
+         },
+         {
+           slug: 'js-tips',
+           year: 2019,
+           unix: 1546732800,
+           dateString: 'January 6, 2019',
+           title: 'ES6 Object and Array Methods',
+           description:
+             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+           image:
+             'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
+         },
+       ];
