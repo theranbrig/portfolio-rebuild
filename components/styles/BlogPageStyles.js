@@ -17,6 +17,7 @@ const BlogPageStyles = styled.div`
   pre,
   ul,
   ol,
+  .back-link,
   .content-image {
     width: 900px;
     margin: 0 auto !important;
@@ -140,6 +141,14 @@ const BlogPageStyles = styled.div`
   }
   .photo-caption {
     text-align: center;
+  }
+  .back-link {
+    display: flex;
+    align-items: center;
+    img {
+      height: 1rem;
+      margin-right: 5px;
+    }
   }
 `;
 

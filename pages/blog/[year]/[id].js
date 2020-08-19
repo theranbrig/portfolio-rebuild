@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 
 import AppMarkdown from '../../../blog-posts/2019/hooks-calculator.md';
+import Return from '../../../public/icons/return_dark.svg';
 import BlogPageStyles from '../../../components/styles/BlogPageStyles';
 import CodeBlock from '../../../components/CodeBlock';
 import Layout from '../../../components/Layout';
@@ -39,6 +40,12 @@ const blogId = ({ document }) => {
               <h1 class='hero-text'>{title}</h1>
             </div>
           </div>
+          <Link href='/blog'>
+            <a className='back-link'>
+              <img src={Return} alt='back arrow' />
+              Back
+            </a>
+          </Link>
           <p style={{ textAlign: 'right' }}>Author: Theran Brigowatz</p>
           <ReactMarkdown source={document} renderers={{ code: CodeBlock }} escapeHtml={false} />
           <p>
@@ -52,6 +59,12 @@ const blogId = ({ document }) => {
             </a>
             .
           </p>
+          <Link href='/blog'>
+            <a className='back-link'>
+              <img src={Return} alt='back arrow' />
+              Back
+            </a>
+          </Link>
         </motion.div>
       </BlogPageStyles>
     </Layout>

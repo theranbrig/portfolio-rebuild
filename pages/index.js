@@ -46,16 +46,19 @@ const Home = () => {
                   name='Theran Brigowatz github'
                   link='https://github.com/theranbrig'
                   icon='github-blue'
+                  alt='Link to GitHub'
                 />
                 <IconLink
                   name='Theran Brigowatz twitter'
                   link='https://twitter.com/wellBuilt'
                   icon='twitter'
+                  alt='Link to Twitter'
                 />
                 <IconLink
                   name='Theran Brigowatz linked in'
                   link='https://linkedin.com/in/theran-brigowatz'
                   icon='linkedin'
+                  alt='Link to Linkedin'
                 />
               </div>
             </div>

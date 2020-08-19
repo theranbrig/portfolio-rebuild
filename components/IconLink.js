@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const IconLink = ({ link, icon, name }) => (
+const IconLink = ({ link, icon, name, alt }) => (
   <a href={link} target='_blank' rel='noopener noreferrer' aria-label={name}>
-    <img src={`icons/${icon}.svg`} alt={icon} />
+    <img src={`icons/${icon}.svg`} alt={alt} />
   </a>
 );
 
