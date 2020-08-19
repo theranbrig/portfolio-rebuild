@@ -12,10 +12,6 @@ const ProjectStyles = styled.div`
   }
 
   .project-info {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
     padding-bottom: 10vh;
     padding-top: 30px;
     @media (max-width: 900px) {
@@ -38,19 +34,27 @@ const ProjectStyles = styled.div`
   .project-images {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    img {
-      width: 80%;
-      justify-self: end;
-      @media (max-width: 900px) {
-        justify-self: center;
-      }
-    }
+    width: 100%;
   }
   div.project-images img {
+    max-width: 90%;
     border: 2px solid ${(props) => props.theme.blue};
     padding: 5px;
-    margin: 0 auto 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .project-images.mobile {
+    flex-direction: row;
+    img {
+      max-width: 30%;
+    }
+  }
+  div.project-images.solo-photo img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
   .project-title {
     color: ${(props) => props.theme.blue};
@@ -84,7 +88,7 @@ const ProjectStyles = styled.div`
       margin: 20px auto;
       img {
         height: 40px !important;
-        padding: 3px;
+        padding: 5px;
         font-size: 30px;
       }
     }
@@ -104,6 +108,7 @@ const ProjectStyles = styled.div`
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-bottom: 30px;
     }
     a img {
       margin-right: 20px;
@@ -116,7 +121,7 @@ const ProjectStyles = styled.div`
     max-width: 100%;
     width: 400px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     a {
       text-decoration: none;
       font-size: 1.3rem;
@@ -133,6 +138,9 @@ const ProjectStyles = styled.div`
         height: 40px;
         margin-right: 10px;
       }
+    }
+    .git-link {
+      margin-left: 30px;
     }
   }
 `;

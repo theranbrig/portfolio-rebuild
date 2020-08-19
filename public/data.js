@@ -1,5 +1,35 @@
 export default [
   {
+    title: 'YZED',
+    technology: 'Next.js React, Firebase, WebGL Modeling, AR',
+    created: 'Spring 2020',
+    description: 'AR & 3D Model Fashion Experience',
+    slug: 'yzed',
+    extendedDescription:
+      "YZED was conceived as a fashion platform that utilized 3D WebGl models and AR. Using Google's Model Viewer we were able to display 3D models on desktop and mobile devices. On mobile users were able to have experiences that utilized iOS Quick Look and Android Scene Viewer to display augmented reality scenes. Since it was a prototype we chose to use Firebase for a BAAS, however we are looking at a traditional REST API as it moves towards production.",
+    gitLink: null,
+    deployLink: 'https://yzed.me',
+    screenShots: [
+      {
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_New_Home.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996568/Grouper_New_Home.png',
+      },
+      {
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_List.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_List.png',
+      },
+      {
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_Add_Item.png',
+        preview:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_Add_Item.png',
+      },
+    ],
+    icon: 'dress',
+    tech: ['react', 'javascript', 'node-dot-js', 'html5', 'css3', 'firebase', 'jest'],
+  },
+  {
     title: 'Grouper',
     technology: 'Next.js React, Graphql, Prisma',
     created: 'Winter 2018',
@@ -11,26 +41,24 @@ export default [
     deployLink: 'https://grouper-frontend.herokuapp.com/',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_New_Home.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_New_Home.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996568/Grouper_New_Home.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_List.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_List.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_List.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/Grouper_Add_Item.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_Add_Item.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_Add_Item.png',
       },
     ],
     icon: 'fish',
     tech: ['react', 'graphql', 'javascript', 'node-dot-js', 'css3', 'heroku', 'postgresql'],
+    mobile: true,
   },
   {
     title: 'Grown',
@@ -44,20 +72,17 @@ export default [
     deployLink: 'https://grownfarms.herokuapp.com/',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_eBabmvL.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/3_-_eBabmvL.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_eBabmvL.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_kQF1X9z.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/2_-_kQF1X9z.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_kQF1X9z.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_BmMq37W.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/1_-_BmMq37W.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_BmMq37W.png',
       },
@@ -77,8 +102,7 @@ export default [
     deployLink: 'https://wikiwhat-theranbrig.herokuapp.com/',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/MKnPtcn.jpg',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/MKnPtcn.jpg',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/MKnPtcn.jpg',
       },
@@ -100,26 +124,24 @@ export default [
     deployLink: 'https://vane.netlify.com',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_ucAXrQ2.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/3_-_ucAXrQ2.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_ucAXrQ2.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_rGAttGs.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/1_-_rGAttGs.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_rGAttGs.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_rSS6yu3.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/2_-_rSS6yu3.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_rSS6yu3.png',
       },
     ],
     icon: 'sky',
-    tech: ['javascript', 'react', 'css3', 'html5'],
+    tech: ['javascript', 'react', 'css3', 'html5', 'firebase'],
+    mobile: true,
   },
   // {
   //   title: 'NintenDB',
@@ -161,20 +183,17 @@ export default [
     deployLink: 'https://bloc-jams-theran.netlify.com/',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/1_-_gQ4Hrit.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/1_-_gQ4Hrit.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/1_-_gQ4Hrit.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/2_-_tsYxipW.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/2_-_tsYxipW.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/2_-_tsYxipW.png',
       },
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/3_-_p9Pd8c9.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/3_-_p9Pd8c9.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/3_-_p9Pd8c9.png',
       },
@@ -196,14 +215,13 @@ export default [
     deployLink: 'https://bloc-chat-theran.netlify.com',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/xTD2VWq.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/xTD2VWq.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/xTD2VWq.png',
       },
     ],
     icon: 'talk',
-    tech: ['javascript', 'react', 'css3', 'html5'],
+    tech: ['javascript', 'react', 'css3', 'html5', 'firebase'],
   },
   {
     title: 'News Bites',
@@ -219,8 +237,7 @@ export default [
     deployLink: 'https://news-bites.netlify.com',
     screenShots: [
       {
-        image:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_thumb,w_200,g_face/v1559996358/oBIjR9C.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/oBIjR9C.png',
         preview:
           'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/oBIjR9C.png',
       },

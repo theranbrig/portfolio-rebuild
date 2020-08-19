@@ -19,6 +19,7 @@ const ProjectLayout = (props) => {
     icon,
     screenShots,
     tech,
+    mobile,
   } = props.project;
 
   return (
@@ -34,10 +35,12 @@ const ProjectLayout = (props) => {
             <img src='../icons/db.svg' alt='deploy' />
             <p>Deployed Version</p>
           </a>
-          <a href={gitLink} target='_blank' rel='noopener noreferrer'>
-            <img src='../icons/github-blue.svg' alt='github' />
-            <p>Code</p>
-          </a>
+          {gitLink ? (
+            <a href={gitLink} target='_blank' rel='noopener noreferrer' className='git-link'>
+              <img src='../icons/github-blue.svg' alt='github' />
+              <p>Code</p>
+            </a>
+          ) : null}
         </div>
         <div className='project-icons'>
           {tech && tech.map((el) => <img src={`../icons/${el}.svg`} key={el} />)}
@@ -52,12 +55,15 @@ const ProjectLayout = (props) => {
             </p>
             <p>Started in {created}</p>
             <a href='/portfolio'>
-              <img src='../icons/return.svg' alt='github' /> <span>Back To Portfolio</span>
+              <img src='../icons/return.svg' alt='return' /> <span>Back To Portfolio</span>
             </a>
           </div>
         </div>
         <div className='project-right'>
-          <div className='project-images'>
+          <div
+            className={`project-images ${mobile ? 'mobile' : ''} ${
+              screenShots.length === 1 ? 'solo-photo' : ''
+            }`}>
             {screenShots &&
               screenShots.map((photo) => (
                 <ProgressiveImage preview={photo.preview} image={photo.image} key={photo.image} />
