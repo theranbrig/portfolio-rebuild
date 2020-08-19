@@ -32,7 +32,7 @@ const PortfolioPageStyles = styled.div`
       font-family: ${(props) => props.theme.raleFont};
       .main-icon i {
         color: ${(props) => props.theme.white};
-        font-size: 6rem;
+        font-size: 4rem;
         text-align: center;
         margin-right: 20px;
         width: 7rem;
@@ -59,9 +59,9 @@ const PortfolioPageStyles = styled.div`
         }
       }
       .main-icon img {
-        height: 6rem;
+        height: 4rem;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 40px;
       }
     }
   }
