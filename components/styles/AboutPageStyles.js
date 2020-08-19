@@ -6,7 +6,7 @@ const AboutPageStyles = styled.div`
   width: 100%;
   margin: 0 auto;
   .about-main {
-    width: 800px !important;
+    width: 900px !important;
     max-width: 95%;
     margin: 0 auto;
     img {
@@ -36,11 +36,13 @@ const AboutPageStyles = styled.div`
       font-family: ${(props) => props.theme.spaceFont};
     }
     p {
-      font-size: 1.1rem;
-      font-family: ${(props) => props.theme.firaFont};
-      color: ${(props) => props.theme.white};
-      line-height: 2rem;
+      font-family: ${(props) => props.theme.robFont};
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      font-size: 1rem;
+      margin: 1.2rem auto !important;
       font-weight: 300;
+      color: ${(props) => props.theme.white};
       margin-bottom: 15px;
       @media (max-width: 900px) {
         width: 95%;
@@ -87,6 +89,7 @@ const AboutPageStyles = styled.div`
         font-size: 1.4rem;
         padding: 5px;
         margin: 0 auto 10px;
+        font-family: ${(props) => props.theme.firaFont};
         @media (max-width: 900px) {
           font-size: 1.1rem;
         }
@@ -96,7 +99,8 @@ const AboutPageStyles = styled.div`
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-gap: 20px;
+      grid-row-gap: 50px;
+      grid-column-gap: 40px;
       justify-items: center;
       align-items: center;
       text-align: center;

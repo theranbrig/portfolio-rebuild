@@ -22,12 +22,12 @@ const Contact = () => {
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='contact-title'>
             <h1>Contact Info</h1>
-            <p>Find me at the following places:</p>
+            <p>Find me at the following</p>
           </div>
           <div className='social-icons'>
             <ContactLink link='https://www.github.com/theranbrig' icon='github-blue' />
             <ContactLink link='https://www.twitter.com/wellBuilt' icon='twitter' />
-            <ContactLink link='https://medium.com/@theran.brigowatz' icon='medium' />
+            <ContactLink link='https://dev.to/theranbrig' icon='dev' />
             <ContactLink
               link='https://www.linkedin.com/in/theran-brigowatz-a861b3133/'
               icon='linkedin'

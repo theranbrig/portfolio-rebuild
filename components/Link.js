@@ -7,8 +7,6 @@ import { withRouter } from 'next/router';
 const ActiveLink = ({ router, children, ...props }) => {
   const child = Children.only(children);
   let className = child.props.className || null;
-  console.log('ROUTER', router.pathname);
-  console.log('PATH', props.href);
   if (
     (router.pathname === props.href && props.activeClassName) ||
     (router.pathname.includes(props.href) && props.href !== '/')

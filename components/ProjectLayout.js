@@ -26,21 +26,21 @@ const ProjectLayout = (props) => {
       <div className='project-title'>
         <div className='top-title'>
           <h1>{title}</h1>
-          <img src={`icons/${icon}.svg`} alt='github' />
+          <img src={`../icons/${icon}.svg`} alt='github' />
         </div>
         <p>{description}</p>
         <div className='project-links'>
           <a href={deployLink} target='_blank' rel='noopener noreferrer'>
-            <img src='icons/db.svg' alt='deploy' />
+            <img src='../icons/db.svg' alt='deploy' />
             <p>Deployed Version</p>
           </a>
           <a href={gitLink} target='_blank' rel='noopener noreferrer'>
-            <img src='icons/github-blue.svg' alt='github' />
+            <img src='../icons/github-blue.svg' alt='github' />
             <p>Code</p>
           </a>
         </div>
         <div className='project-icons'>
-          {tech && tech.map((el) => <img src={`icons/${el}.svg`} key={el} />)}
+          {tech && tech.map((el) => <img src={`../icons/${el}.svg`} key={el} />)}
         </div>
       </div>
       <div className='project-info'>
@@ -52,7 +52,7 @@ const ProjectLayout = (props) => {
             </p>
             <p>Started in {created}</p>
             <a href='/portfolio'>
-              <img src='icons/return.svg' alt='github' /> <span>Back To Portfolio</span>
+              <img src='../icons/return.svg' alt='github' /> <span>Back To Portfolio</span>
             </a>
           </div>
         </div>

@@ -58,8 +58,8 @@ const HomePageStyles = styled.div`
         height: 2.5rem;
         margin: 0;
         &:hover {
-          background: #ffffff34;
-          border-radius: 10px;
+           background: #dcdcdc2;
+          border-radius: 5px;
         }
       }
     }

@@ -10,10 +10,7 @@ import { NextSeo } from 'next-seo';
 const About = () => {
   return (
     <Layout>
-      <NextSeo
-        title='Theran Brigowatz | About'
-        description='Learn more about my journey as a developer'
-      />
+      <NextSeo title='Theran Brigowatz | About' description='Learn more about my journey as a developer' />
       <AboutPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}

@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
-import Layout from '../components/Layout';
-import ProjectLayout from '../components/ProjectLayout';
+import Layout from '../../components/Layout';
+import ProjectLayout from '../../components/ProjectLayout';
 import PropTypes from 'prop-types';
-import data from '../public/data';
+import data from '../../public/data';
 import { NextSeo } from 'next-seo';
 import { motion } from 'framer-motion';
 
 const Project = ({ query, projectInfo }) => {
+  console.log(projectInfo);
   const [project] = useState(projectInfo ? projectInfo : {});
-  console.log(project);
+
   return (
     <Layout>
       <NextSeo
@@ -36,8 +37,9 @@ Project.propTypes = {
 };
 
 Project.getInitialProps = async ({ query }) => {
+  const { slug } = query;
   const projectInfo = data.filter((item) => {
-    return item.slug === query.name;
+    return item.slug === slug;
   });
   return { projectInfo: projectInfo[0] };
 };

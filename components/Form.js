@@ -38,45 +38,51 @@ const ContactForm = () => {
 
   return (
     <div className='contact-form'>
-      <h2>Send A Quick Message Directly</h2>
+      <h2>Send A Quick Message Now</h2>
       <form onSubmit={handleSubmit}>
-        <label stackable='true' width={8}>
-          Name
-          <input
-            name='name'
-            type='text'
-            placeholder='Enter Name'
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            required
-            label='Name'
-          />
-        </label>
-        <label stackable='true' width={8}>
-          Email Address
-          <input
-            name='email'
-            type='email'
-            placeholder='Enter Email Address'
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            label='Email Address'
-            required
-          />
-        </label>
-        <label>
-          Message
-          <textarea
-            name='message'
-            placeholder='Send a quick message to get in touch about development inquiries.'
-            label='Message'
-            width={16}
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-            required
-          />
-        </label>
-        <button type='submit'>Submit</button>
+        <div className='flex-container'>
+          <div className='input-container'>
+            <label stackable='true' width={8}>
+              Name
+              <input
+                name='name'
+                type='text'
+                placeholder='Enter Name'
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                required
+                label='Name'
+              />
+            </label>
+            <label stackable='true' width={8}>
+              Email Address
+              <input
+                name='email'
+                type='email'
+                placeholder='Enter Email Address'
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                label='Email Address'
+                required
+              />
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea
+              name='message'
+              placeholder='Send a quick message to get in touch about development inquiries.'
+              label='Message'
+              rows='6'
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              required
+            />
+          </label>
+        </div>
+        <button disabled={!name.length || !email.length || !message.length} type='submit'>
+          Submit
+        </button>
       </form>
       <SuccessStyles>{successMessage && <p>{successMessage}</p>}</SuccessStyles>
     </div>

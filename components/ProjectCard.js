@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
 
   return (
     <div className='individual-project'>
-      <Link href={{ pathname: '/project', query: { name: slug } }}>
+      <Link href={`/portfolio/${slug}`}>
         <a className='project-link'>
           <div className='main-icon'>
             <img src={`icons/${icon}.svg`} alt={icon} />

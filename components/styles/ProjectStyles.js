@@ -91,11 +91,13 @@ const ProjectStyles = styled.div`
   }
   .project-writing {
     p {
-      font-size: 1.3rem;
+      font-family: ${(props) => props.theme.robFont};
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      font-size: 1rem;
+      margin: 1.2rem auto !important;
+      font-weight: 300;
       color: ${(props) => props.theme.white};
-      font-family: ${(props) => props.theme.firaFont};
-      font-weight: 100;
-      line-height: 2rem;
       margin: 0 0 30px;
     }
     a {

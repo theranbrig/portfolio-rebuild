@@ -43,19 +43,25 @@ const Home = () => {
               </div>
               <div className='splash-icons'>
                 <IconLink
-                  name='Theran Brigowatz github'
+                  name='Theran Brigowatz Github'
                   link='https://github.com/theranbrig'
                   icon='github-blue'
                   alt='Link to GitHub'
                 />
                 <IconLink
-                  name='Theran Brigowatz twitter'
+                  name='Theran Brigowatz linked in'
+                  link='https://dev.to/theranbrig'
+                  icon='dev'
+                  alt='Link to Dev.to'
+                />
+                <IconLink
+                  name='Theran Brigowatz Twitter'
                   link='https://twitter.com/wellBuilt'
                   icon='twitter'
                   alt='Link to Twitter'
                 />
                 <IconLink
-                  name='Theran Brigowatz linked in'
+                  name='Theran Brigowatz Linkedin'
                   link='https://linkedin.com/in/theran-brigowatz'
                   icon='linkedin'
                   alt='Link to Linkedin'

@@ -242,9 +242,9 @@ export const icons = [
 ];
 
 export const skills = [
+  'Express',
   'Python',
   'Dart',
-  'Express',
   'Flutter',
   'Firebase',
   'CS Fundamentals',

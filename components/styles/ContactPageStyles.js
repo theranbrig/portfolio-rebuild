@@ -27,7 +27,7 @@ const ContactPageStyles = styled.div`
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 600px;
     max-width: 90%;
     margin: 0 auto;
     margin-top: 40px;
@@ -48,9 +48,6 @@ const ContactPageStyles = styled.div`
           font-size: 2.8rem;
         }
         &:hover {
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: ${(props) => props.theme.white};
-          fill: green !important;
           background: #dcdcdc2f;
           border-radius: 5px;
         }
@@ -60,11 +57,13 @@ const ContactPageStyles = styled.div`
   .bottom-writing {
     width: 90%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
     p {
       color: ${(props) => props.theme.white};
+      font-family: ${(props) => props.theme.robFont};
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
       font-size: 1rem;
-      font-family: ${(props) => props.theme.firaFont};
       width: 80%;
       margin-left: 10%;
       @media (max-width: 900px) {
@@ -73,12 +72,14 @@ const ContactPageStyles = styled.div`
       }
       a {
         color: ${(props) => props.theme.blue};
+        text-decoration: none;
       }
     }
   }
   .form-area {
-    width: 60%;
-    margin: 20px 20%;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
     padding-bottom: 10vh;
     font-family: ${(props) => props.theme.firaFont};
     text-align: center;
@@ -96,26 +97,31 @@ const ContactPageStyles = styled.div`
       background: none;
       margin-top: 20px;
       font-family: ${(props) => props.theme.firaFont};
+      border-radius: 5px;
+      border: 2px solid ${(props) => props.theme.blue};
       &:hover {
         background: #40a4c874;
         color: ${(props) => props.theme.white};
       }
+      &:disabled {
+        background: #dcdcdc2f;
+      }
     }
-    textarea {
-      height: 200px;
-    }
+
     textarea,
     input {
       background-color: ${(props) => props.theme.white} !important;
       font-family: ${(props) => props.theme.firaFont};
       box-shadow: none;
       border: none;
-      width: 300px;
+      width: 350px;
       max-width: 90%;
       margin: 10px auto;
       display: block;
       margin: 0 auto;
       padding: 5px;
+      border-radius: 5px;
+      border: 2px solid ${(props) => props.theme.blue};
     }
     @media (max-width: 900px) {
       width: 90%;
@@ -129,6 +135,18 @@ const ContactPageStyles = styled.div`
     }
     label::after {
       color: ${(props) => props.theme.blue} !important;
+    }
+    .flex-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: 1024px) {
+        grid-template-columns: none;
+      }
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 `;
