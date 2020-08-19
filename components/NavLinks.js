@@ -7,11 +7,11 @@ const NavLinks = () => {
       <Link activeClassName='active' href='/'>
         <a>Home</a>
       </Link>
-      <Link activeClassName='active' href='/portfolio'>
-        <a>Work</a>
-      </Link>
       <Link activeClassName='active' href='/blog'>
         <a>Blog</a>
+      </Link>
+      <Link activeClassName='active' href='/portfolio'>
+        <a>Work</a>
       </Link>
       <Link activeClassName='active' href='/about'>
         <a> About</a>

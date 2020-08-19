@@ -85,7 +85,6 @@ const BlogPageStyles = styled.div`
     margin-left: -10px;
     margin-top: -25%;
     border: none;
-    filter: blur(4px);
     @media (max-width: 1024px) {
       width: auto;
       height: 100%;
