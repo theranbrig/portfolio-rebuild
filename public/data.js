@@ -11,19 +11,23 @@ export default [
     deployLink: 'https://yzed.me',
     screenShots: [
       {
-        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_New_Home.png',
+        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1597819380/pjimage.jpg',
         preview:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996568/Grouper_New_Home.png',
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1597819380/pjimage.jpg',
       },
       {
-        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_List.png',
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/v1597818878/Screen_Shot_2020-08-19_at_2.18.51_PM.png',
+
         preview:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_List.png',
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1597818878/Screen_Shot_2020-08-19_at_2.18.51_PM.png',
       },
       {
-        image: 'https://res.cloudinary.com/dq7uyauun/image/upload/v1559996358/Grouper_Add_Item.png',
+        image:
+          'https://res.cloudinary.com/dq7uyauun/image/upload/v1597818878/Screen_Shot_2020-08-19_at_2.19.30_PM.png',
+
         preview:
-          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1559996358/Grouper_Add_Item.png',
+          'https://res.cloudinary.com/dq7uyauun/image/upload/c_scale,q_10,w_10/v1597818878/Screen_Shot_2020-08-19_at_2.19.30_PM.png',
       },
     ],
     icon: 'dress',
