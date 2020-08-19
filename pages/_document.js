@@ -1,9 +1,11 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 
+import { DefaultSeo } from 'next-seo';
+import { GA_TRACKING_ID } from '../lib/gtag';
 import Router from 'next/router';
+import SEO from '../seo.config';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
-import { GA_TRACKING_ID } from '../lib/gtag';
 
 class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -26,25 +28,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet='utf-8' />
           <meta name='theme-color' content='#272727' />
-          <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://theran.dev' />
-          <meta property='og:title' content='Theran Brigowatz - Web Developer' />
-          <meta property='og:description' content='Theran Brigowatz - Web Developer Portfolio' />
-          <meta
-            property='og:image'
-            content='https://res.cloudinary.com/dq7uyauun/image/upload/v1595982803/Screen_Shot_2020-07-29_at_9.28.54_AM.png'
-          />
-          <meta property='twitter:card' content='summary_large_image' />
-          <meta property='twitter:url' content='https://theran.dev' />
-          <meta property='twitter:title' content='Theran Brigowatz - Web Developer' />
-          <meta
-            property='twitter:description'
-            content='Theran Brigowatz - Web Developer Portfolio'
-          />
-          <meta
-            property='twitter:image'
-            content='https://res.cloudinary.com/dq7uyauun/image/upload/v1595982803/Screen_Shot_2020-07-29_at_9.28.54_AM.png'></meta>
-          <meta name='description' content='Theran Brigowatz - Web Developer Portfolio Site' />
+          <DefaultSeo {...SEO} />
           <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           <link rel='manifest' href='manifest.json' />
           <link rel='icon' type='image/x-icon' href='favicon.ico' />
@@ -59,7 +43,6 @@ class MyDocument extends Document {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-
                     gtag('config', '${GA_TRACKING_ID}', {
                       page_path: window.location.pathname,
                     });

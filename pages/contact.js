@@ -1,18 +1,19 @@
 import ContactLink from '../components/ContactLink';
 import ContactPageStyles from '../components/styles/ContactPageStyles';
 import Form from '../components/Form';
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 const Contact = () => {
   return (
     <Layout>
-      <Head>
-        <title>Theran Brigowatz | Contact</title>
-      </Head>
+      <NextSeo
+        title='Theran Brigowatz | Home'
+        description='Get in touch with me about work opportunities'
+      />
       <ContactPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}

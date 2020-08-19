@@ -1,18 +1,19 @@
 import { icons, skills } from '../public/data';
 
 import AboutPageStyles from '../components/styles/AboutPageStyles';
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import ProgressiveImage from '../components/ProgressiveImage';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { NextSeo } from 'next-seo';
 
 const About = () => {
   return (
     <Layout>
-      <Head>
-        <title>Theran Brigowatz | About Me</title>
-      </Head>
+      <NextSeo
+        title='Theran Brigowatz | About'
+        description='Learn more about my journey as a developer'
+      />
       <AboutPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}

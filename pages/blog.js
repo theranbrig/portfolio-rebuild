@@ -1,18 +1,19 @@
 import BlogsStyles from '../components/styles/BlogsStyles';
-import Head from 'next/head';
 import Layout from '../components/Layout';
-import { motion } from 'framer-motion';
-import { blogPosts } from '../public/data';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
+import { blogPosts } from '../public/data';
+import { motion } from 'framer-motion';
 
 const Blogs = () => {
   const posts = blogPosts.sort((a, b) => b.unix - a.unix);
 
   return (
     <Layout>
-      <Head>
-        <title>Theran Brigowatz | Blog</title>
-      </Head>
+      <NextSeo
+        title='Theran Brigowatz | Blog'
+        description='A collection of development blog posts.'
+      />
       <BlogsStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}

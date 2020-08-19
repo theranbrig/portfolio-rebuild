@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 
-import Head from 'next/head';
 import HomePageStyles from '../components/styles/HomePageStyles';
 import IconLink from '../components/IconLink';
 import Layout from '../components/Layout';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
+import { NextSeo } from 'next-seo';
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -28,9 +28,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <Head>
-        <title>Theran Brigowatz | Web Developer</title>
-      </Head>
+      <NextSeo title='Theran Brigowatz | Home' description='Web Developer and UI Consultant' />
       <motion.div
         exit={{ opacity: 0, scale: 0 }}
         initial={{ opacity: 0, scale: 0.8 }}

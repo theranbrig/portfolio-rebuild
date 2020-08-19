@@ -54,11 +54,12 @@ const HomePageStyles = styled.div`
       flex-direction: row;
       justify-content: space-around;
       img {
+        padding: 5px;
         height: 2.5rem;
         margin: 0;
         &:hover {
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: ${(props) => props.theme.white};
+          background: #ffffff34;
+          border-radius: 10px;
         }
       }
     }

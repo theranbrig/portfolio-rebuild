@@ -4,22 +4,27 @@ import AppMarkdown from '../../../blog-posts/2019/hooks-calculator.md';
 import BlogPageStyles from '../../../components/styles/BlogPageStyles';
 import CodeBlock from '../../../components/CodeBlock';
 import Layout from '../../../components/Layout';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import ReactMarkdown from 'react-markdown';
+import { blogPosts } from '../../../public/data';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
-import { blogPosts } from '../../../public/data';
-import Link from 'next/link';
 
 const blogId = ({ document }) => {
   const router = useRouter();
   const post = blogPosts.filter((post) => post.slug === router.query.id);
-  const { title, image, alt } = post[0];
+  const { title, image, alt, description, year, slug } = post[0];
   return (
     <Layout>
-      <Head>
-        <title>Theran Brigowatz | {title}</title>
-      </Head>
+      <NextSeo
+        title={`Theran Brigowatz | ${title}`}
+        description={description}
+        openGraph={{
+          url: `https://theran.dev/blog/${year}/${slug}`,
+          images: [{ url: image, alt }],
+        }}
+      />
       <BlogPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}

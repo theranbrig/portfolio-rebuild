@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
 import PortfolioPageStyles from '../components/styles/PortfolioPageStyles';
 import ProjectCard from '../components/ProjectCard';
@@ -7,9 +7,10 @@ import { motion } from 'framer-motion';
 
 const Portfolio = () => (
   <Layout>
-    <Head>
-      <title>Theran Brigowatz | Portfolio</title>
-    </Head>
+    <NextSeo
+      title='Theran Brigowatz | Portfolio'
+      description='Check out some of the work that I have done.'
+    />
     <PortfolioPageStyles>
       <motion.div
         exit={{ opacity: 0, scale: 0 }}
