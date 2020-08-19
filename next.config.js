@@ -2,13 +2,8 @@
 const withImages = require('next-images');
 const withBabelMinify = require('next-babel-minify');
 
-const withPWA = require('next-pwa');
-
-module.exports = withPWA(
+module.exports = withImages(
   {
-    pwa: {
-      dest: 'public',
-    },
     webpack: (config) => {
       config.module.rules.push({
         test: /\.md$/,
@@ -18,5 +13,5 @@ module.exports = withPWA(
       return config;
     },
   },
-  withImages(withBabelMinify())
+  withBabelMinify()
 );
