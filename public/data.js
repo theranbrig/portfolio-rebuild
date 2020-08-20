@@ -304,48 +304,59 @@ export const skills = [
 ];
 
 export const blogPosts = [
-  {
-    slug: 'hooks-calculator',
-    year: 2019,
-    unix: 1552608000,
-    dateString: 'March 15, 2019',
-    title: 'Build a calculator with React Hooks and the React Context API',
-    description:
-      'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
-    image:
-      'https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-  },
-  {
-    slug: 'css-grid',
-    year: 2019,
-    unix: 1547424000,
-    dateString: 'January 16, 2019',
-    title: "Gettin' Griddy with it: an Introduction to CSS Grid",
-    description:
-      'One of my first articles for FreeCodeCamp as I finished up bootcamp. Explains some of the basics of CSS grid that will make sure you never have to reach for bootstrap again.',
-    image:
-      'https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
-  },
-  {
-    slug: 'js-tips',
-    year: 2019,
-    unix: 1546732800,
-    dateString: 'January 6, 2019',
-    title: 'ES6 Object and Array Methods',
-    description:
-      'Some common Javascript methods for objects and arrays explained. Many you might not have used before that will make your workflow a little easier.',
-    image:
-      'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
-  },
-  {
-    slug: 'stop-coding',
-    year: 2020,
-    unix: 1597747716,
-    dateString: 'August 19, 2019',
-    title: 'Stop Coding and be a Better Developer',
-    description:
-      'Coding more is not always the answer. Some reasons that you might want to take a break from the editor and make sure you are working to your full potential.',
-    image:
-      'https://images.unsplash.com/photo-1474022650697-7624c32312fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
-  },
-];
+         {
+           slug: 'hooks-calculator',
+           year: 2019,
+           unix: 1552608000,
+           dateString: 'March 15, 2019',
+           title: 'Build a calculator with React Hooks and the React Context API',
+           description:
+             'Learn to unlock the the power of hooks in React if you are mainly familiar with class components.  Also learn about persisting data with the use of the Context API.',
+           image:
+             'https://images.unsplash.com/photo-1510222755157-fc26750f1199?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+         },
+         {
+           slug: 'css-grid',
+           year: 2019,
+           unix: 1547424000,
+           dateString: 'January 16, 2019',
+           title: "Gettin' Griddy with it: an Introduction to CSS Grid",
+           description:
+             'One of my first articles for FreeCodeCamp as I finished up bootcamp. Explains some of the basics of CSS grid that will make sure you never have to reach for bootstrap again.',
+           image:
+             'https://images.unsplash.com/photo-1515266569482-860c46d1deff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
+         },
+         {
+           slug: 'js-tips',
+           year: 2019,
+           unix: 1546732800,
+           dateString: 'January 6, 2019',
+           title: 'ES6 Object and Array Methods',
+           description:
+             'Some common Javascript methods for objects and arrays explained. Many you might not have used before that will make your workflow a little easier.',
+           image:
+             'https://images.unsplash.com/photo-1579620586506-fb462d7443fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2294&q=80',
+         },
+         {
+           slug: 'stop-coding',
+           year: 2020,
+           unix: 1597536000,
+           dateString: 'August 18, 2019',
+           title: 'Stop Coding and be a Better Developer',
+           description:
+             'Coding more is not always the answer. Some reasons that you might want to take a break from the editor and make sure you are working to your full potential.',
+           image:
+             'https://images.unsplash.com/photo-1474022650697-7624c32312fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+         },
+         {
+           slug: 'lazy-image',
+           year: 2020,
+           unix: 1597968000,
+           dateString: 'August 21, 2019',
+           title: 'Lazy Loading Blurry React Images',
+           description:
+             'Create a React component that uses lazy loading images. Start with an ultra small version that comes into focus as your full-size image loads.',
+           image:
+             'https://images.unsplash.com/photo-1415025148099-17fe74102b28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+         },
+       ];

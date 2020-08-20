@@ -46,6 +46,7 @@ const HomePageStyles = styled.div`
     }
     .typed-content {
       text-align: center;
+      min-height: 96px;
     }
     .splash-icons {
       margin: 50px auto 0;
@@ -58,7 +59,7 @@ const HomePageStyles = styled.div`
         height: 2.5rem;
         margin: 0;
         &:hover {
-           background: #dcdcdc2;
+          background: #dcdcdc2;
           border-radius: 5px;
         }
       }
