@@ -22,7 +22,7 @@ const Blogs = () => {
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <h1>Blog</h1>
           {posts.map((post) => (
-            <Link href={`/blog/${post.year}/${post.slug}`} key={post.slug}>
+            <Link href='/blog/[year]/[id]' as={`/blog/${post.year}/${post.slug}`} key={post.slug}>
               <div className='post-container'>
                 <img src={post.image} alt={post.title} />
                 <div className='post-description'>
