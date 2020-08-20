@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 
 import AppMarkdown from '../../../blog-posts/2019/hooks-calculator.md';
-import Return from '../../../public/icons/return_dark.svg';
 import BlogPageStyles from '../../../components/styles/BlogPageStyles';
 import CodeBlock from '../../../components/CodeBlock';
 import Layout from '../../../components/Layout';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import ReactMarkdown from 'react-markdown';
+import Return from '../../../public/icons/return_dark.svg';
 import { blogPosts } from '../../../public/data';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
@@ -32,12 +32,12 @@ const blogId = ({ document }) => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
-          <div class='hero-section'>
-            <div class='hero-image-container'>
-              <img class='hero-image' src={image} alt='sitting in a hammock' />
+          <div className='hero-section'>
+            <div className='hero-image-container'>
+              <img className='hero-image' src={image} alt='sitting in a hammock' />
             </div>
-            <div class='hero-text-container'>
-              <h1 class='hero-text'>{title}</h1>
+            <div className='hero-text-container'>
+              <h1 className='hero-text'>{title}</h1>
             </div>
           </div>
           <Link href='/blog'>

@@ -49,7 +49,9 @@ const ProjectLayout = (props) => {
       <div className='project-info'>
         <div className='project-left'>
           <div className='project-writing'>
-            <p>{extendedDescription}</p>
+            {extendedDescription.map((description) => (
+              <p>{description}</p>
+            ))}
             <p>
               Built with: <strong>{technology}</strong>
             </p>

@@ -1,11 +1,8 @@
 import App from 'next/app';
 import React from 'react';
 import Router from 'next/router';
-
-import * as gtag from '../lib/gtag';
-
-Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
-export default class MyApp extends App {
+import withGA from 'next-ga';
+class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 
@@ -22,3 +19,5 @@ export default class MyApp extends App {
     return <Component {...pageProps} />;
   }
 }
+
+export default withGA('UA-127054970-2', Router)(MyApp);

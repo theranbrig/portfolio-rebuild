@@ -3,12 +3,30 @@ import React, { useEffect, useRef } from 'react';
 import HomePageStyles from '../components/styles/HomePageStyles';
 import IconLink from '../components/IconLink';
 import Layout from '../components/Layout';
+import { NextSeo } from 'next-seo';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
-import { NextSeo } from 'next-seo';
 
 const Home = () => {
   const typedRef = useRef(null);
+  console.log(
+    '  d8   888                                                     888                    '
+  );
+  console.log(
+    '_d88__ 888-~88e  e88~~8e  888-~    /~~~8e  888-~88e        e88~888  e88~~8e  Y88b    /'
+  );
+  console.log(
+    ' 888   888  888 d888  88b 888          88b 888  888      d888  888 d888  88b  Y88b  / '
+  );
+  console.log(
+    ' 888   888  888 8888__888 888     e88~-888 888  888      8888  888 8888__888   Y88b/  '
+  );
+  console.log(
+    ' 888   888  888 Y888    , 888    C888  888 888  888 d88b Y888  888 Y888    ,    Y8/   '
+  );
+  console.log(
+    '  88_/ 888  888  "88___/  888     "88_-888 888  888 Y88P  "88_/888  "88___/      Y    '
+  );
   console.log('Welcome to the the Console.  Hopefully you see no red.');
   console.log(
     'Thanks for checking out my site.  Check out my github @ https://github.com/theranbrig'

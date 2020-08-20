@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
 import Layout from '../../components/Layout';
+import { NextSeo } from 'next-seo';
 import ProjectLayout from '../../components/ProjectLayout';
 import PropTypes from 'prop-types';
 import data from '../../public/data';
-import { NextSeo } from 'next-seo';
 import { motion } from 'framer-motion';
 
 const Project = ({ query, projectInfo }) => {
-  console.log(projectInfo);
   const [project] = useState(projectInfo ? projectInfo : {});
 
   return (
