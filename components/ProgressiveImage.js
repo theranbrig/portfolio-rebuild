@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ProgressiveImage = ({ preview, image }) => {
+const ProgressiveImage = ({ preview, image, alt }) => {
   const [currentImage, setCurrentImage] = useState(preview);
   const [loading, setLoading] = useState(false);
 
@@ -16,23 +16,6 @@ const ProgressiveImage = ({ preview, image }) => {
   useEffect(() => {
     fetchImage(image);
   }, []);
-  // componentDidMount() {
-  //   this.fetchImage(this.props.image);
-  // }
-
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.image !== this.props.image) {
-  //     this.setState({ currentImage: nextProps.preview, loading: true }, () => {
-  //       this.fetchImage(nextProps.image);
-  //     });
-  //   }
-  // }
-
-  // componentWillUnmount() {
-  //   if (this.loadingImage) {
-  //     this.loadingImage.onload = null;
-  //   }
-  // }
 
   const style = (loading) => {
     return {
@@ -41,9 +24,7 @@ const ProgressiveImage = ({ preview, image }) => {
     };
   };
 
-  // const { currentImage, loading } = this.state;
-  // const { alt } = this.props;
-  return <img style={{ style }} src={currentImage} alt={currentImage} />;
+  return <img style={{ style }} src={currentImage} alt={alt} />;
 };
 
 export default ProgressiveImage;

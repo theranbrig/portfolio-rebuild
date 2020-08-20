@@ -43,7 +43,8 @@ const ProjectLayout = (props) => {
           ) : null}
         </div>
         <div className='project-icons'>
-          {tech && tech.map((el) => <img src={`../icons/${el}.svg`} key={el} />)}
+          {tech &&
+            tech.map((el, idx) => <img src={`../icons/${el}.svg`} key={el} alt={`${el} tech`} />)}
         </div>
       </div>
       <div className='project-info'>
@@ -67,8 +68,13 @@ const ProjectLayout = (props) => {
               screenShots.length === 1 ? 'solo-photo' : ''
             }`}>
             {screenShots &&
-              screenShots.map((photo) => (
-                <ProgressiveImage preview={photo.preview} image={photo.image} key={photo.image} />
+              screenShots.map((photo, idx) => (
+                <ProgressiveImage
+                  preview={photo.preview}
+                  image={photo.image}
+                  key={photo.image}
+                  alt={`${title} screenshot ${idx}`}
+                />
               ))}
           </div>
         </div>

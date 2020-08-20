@@ -44,6 +44,7 @@ const ProjectStyles = styled.div`
     padding: 5px;
     margin: 0 auto;
     margin-bottom: 20px;
+    width: 1000px;
   }
   .project-images.mobile {
     flex-direction: row;
