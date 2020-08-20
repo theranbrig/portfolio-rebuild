@@ -61,7 +61,7 @@ const ContactPageStyles = styled.div`
     p {
       color: ${(props) => props.theme.white};
       font-family: ${(props) => props.theme.robFont};
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.05rem;
       line-height: 1.7;
       font-size: 1rem;
       width: 80%;

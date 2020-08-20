@@ -97,7 +97,7 @@ const ProjectStyles = styled.div`
   .project-writing {
     p {
       font-family: ${(props) => props.theme.robFont};
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.05rem;
       line-height: 1.7;
       font-size: 1rem;
       margin: 1.2rem auto !important;
