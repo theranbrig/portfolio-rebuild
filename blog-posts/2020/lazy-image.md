@@ -1,6 +1,6 @@
 ## Overview
 
-A good UX allows users to see some UI even as a page loads. Sometimes with large network payloads this time can be significant, and allowing for UI elements and a good UX, users won't be as frustrated, as they would with a white page.
+A good UX allows users to see some UI elements even as we load data from our API. Sometimes with large network payloads this time can be significant. By allowing for UI elements to show and a good UX, users won't be as frustrated, as they would with a white page. This is perceived loading time can be a big difference maker.
 
 While working on a project that needed huge high-resolution 3D images this image loading technique became a life saver. It allows you to load a tiny version of the image, while you wait for the high-resolution one to load. It displays a blurry image in place of the large one, and focuses in once it has loaded.
 
@@ -11,11 +11,11 @@ This is done for images on Medium and allows users to see instantly loaded image
 
 ## Notes on Images
 
-- One thing that developers often overlook is their image size, while they are one of the heaviest parts of your network payload. For the full size images I strive to never go beyond 150k on any image if possible. 1,280px wide should be your upper limit for the majority of screen sizes and most use cases. If you are working with ultra high-definition images you will have to adjust accordingly.
+- One thing that developers often overlook is their image size, even though they are one of the heaviest parts of your network payload. For the full size images I strive to never go beyond 150k on any image if possible. 1,280px wide should be your upper limit for the majority of screen sizes and most use cases. If you are working with ultra high-definition images you will have to adjust accordingly.
 
-- This image takes in an ultra small image on first load and they transitions to the larger full size image. When doing this I would strive to keep an image to about 30px high and size of around 500b (Yes that is bytes). I would also turn down the quality to about 10% in the compressor. You want just a rough outline of colors and shapes.
+- This image takes in an ultra small image on first load and they transitions to the larger full size image. When doing this I would strive to keep an image to about 30px high and size of around 500b (Yes that is bytes). I would also turn down the quality to about 10% in the JPG compressor. You want just a rough outline of colors and shapes. Below you can see what the tiny image looks like under heavy compression.
 
-- There are services like Cloudinary that allow you to work with the full-size image and then pass in transformations as query parameters in the URL for the small size images. However, be wary that they do have a limit on the amount of transformations you can make before you do get charged.
+- There are services like Cloudinary that allow you to work with the full-size image and then pass in transformations as query parameters in the URL for the small size images. This means you only have to load one image up to your provider.  However, be wary that they do have a limit on the amount of transformations you can make before you do get charged.
 
 <img class="content-image" src="https://res.cloudinary.com/dq7uyauun/image/upload/v1597891312/Screen_Shot_2020-08-20_at_11.28.56_AM.png" alt="scaled down pixelated image"/>
 <p class="photo-caption">A blown up version of the small image after compression. This is 500b</p>
