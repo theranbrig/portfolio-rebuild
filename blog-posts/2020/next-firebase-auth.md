@@ -205,5 +205,3 @@ export default async (req, res) => {
 You now have `user` available as `props` on any page route. User validation is now a snap and now can be consumed by any other component.
 
 This type of pattern comes in handy for any server side data fetching that you want to do. It is one of the great features of Next.js that you should try to utilize throughout your applications.
-
-If you have any questions, do not hesitate to reach out at [theran.dev](https://theran.dev) or on Twitter at [wellBuilt](https://twitter.com/wellBuilt)
