@@ -364,7 +364,7 @@ export const blogPosts = [
     year: 2020,
     unix: 1598927709,
     dateString: 'September 2, 2020',
-    title: 'Next.js and Firebase User Authentication using getIntialProps',
+    title: 'Server Side User Authentication with Next.js and Firebase',
     description:
       'Utilize Next.js and getInitialProps to do your user authentication on the server side while using Firebase. Increase load time and UX',
     image:
