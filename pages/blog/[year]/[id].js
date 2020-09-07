@@ -73,7 +73,6 @@ const blogId = ({ document }) => {
 
 export async function getStaticPaths() {
   const paths = blogPosts.map((post) => {
-    console.log(post.year);
     return {
       params: {
         year: `${post.year}`,
@@ -81,7 +80,7 @@ export async function getStaticPaths() {
       },
     };
   });
-  console.log(paths);
+
   return {
     paths,
     fallback: false,

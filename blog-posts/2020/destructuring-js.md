@@ -2,7 +2,7 @@ Object destructuring is one of those terms that sounds a lot fancier than what i
 
 ## Object Destructuring
 
-The basics of destructuring are that you can pull apart an object use the parts as their own variables. Let's look at a basic example.
+The basics of destructuring are that you can pull apart an object, or array, and use the parts as their own variables. Let's look at a basic example.
 
 ```javascript
 // Basic javascript Object
@@ -12,13 +12,14 @@ const muppet = {
   address: '123 Sesame Street',
   nicknames: ['Super Grover', 'The Blue Monster'],
 };
+
 const { name, color } = muppet;
 
 console.log(name); // Grover
 console.log(color); // blue
 ```
 
-Rather than having to use `muppet.name` or `muppet.color` you now simply have them as variables `name` and `color`. You can continue to access the other properties like address by simply adding it to your destructuring statement.
+Rather than having to use `muppet.name` or `muppet.color` you now simply have them as variables `name` and `color`. You can continue to access the other properties like address by simply adding it to your destructuring statement. You can start to see how this makes your code more readable.
 
 For a simple object like the one above it might not be the biggest deal to destructure your object. After all we are only going one level deep.
 
@@ -62,7 +63,32 @@ Order does not matter, but the name does as it is accessing the name key. To ren
 const { homeName: hName, homePoints: hPoints } = game.teams.home;
 ```
 
-Your variables are now available as `hName` and `hPoints`. Though this is not a great use case, it gives you an idea of how to use it.
+Your variables are now available as `hName` and `hPoints`. Though this is not a great use case in this example, it gives you an idea of how to use it, especially once you start to work with more complex data structures.
+
+You might already be doing this when you write functions. If you pass in a object as parameters, you can destructure the parameters:
+
+Take the following:
+
+```javascript
+const muppet = {
+  name: 'Grover',
+  color: 'blue',
+  address: '123 Sesame Street',
+  nicknames: ['Super Grover', 'The Blue Monster'],
+};
+
+function printMuppetInformation(muppet) {
+  console.log(`${muppet.name} lives at ${muppet.address}.`);
+}
+```
+
+Now with destructuring we can make the syntax more readable:
+
+```javascript
+function printMuppetInformation({ name, address }) {
+  console.log(`${name} lives at ${address}.`);
+}
+```
 
 ## Arrays
 
@@ -100,3 +126,5 @@ console.log(remainingItems); // [3,4,5,6]
 ```
 
 This usage is not as common, but it does have use cases in certain situations.
+
+There is a lot more to touch on like destructuring assignments and mixed destructuring, but it gives you a basic blueprint for more readable javascript.
