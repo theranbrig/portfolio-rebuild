@@ -89,7 +89,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params);
   const { year, id } = params;
   const post = await import(`../../../blog-posts/${year}/${id}.md`);
   return {

@@ -459,4 +459,15 @@ export const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1549927455-67cc16cc490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
   },
+  {
+    slug: 'destructuring-js',
+    year: 2020,
+    unix: 1599451147,
+    dateString: 'September 7, 2020',
+    title: 'How to Destructure Objects and Arrays in JavaScript',
+    description:
+      'The basics of how to destructure objects and arrays for cleaner and easier to read code.',
+    image:
+      'https://images.unsplash.com/photo-1549927455-67cc16cc490c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+  },
 ];
