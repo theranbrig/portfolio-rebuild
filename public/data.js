@@ -34,7 +34,7 @@ export default [
       },
     ],
     icon: 'dress',
-    tech: ['react', 'javascript', 'node-dot-js', 'html5', 'css3', 'firebase', 'jest'],
+    tech: ['react', 'next', 'javascript', 'node-dot-js', 'html5', 'css3', 'firebase', 'jest'],
   },
   {
     title: 'GStreet101',
