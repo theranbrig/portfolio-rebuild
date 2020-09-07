@@ -1,5 +1,5 @@
-import { NextSeo } from 'next-seo';
 import Layout from '../components/Layout';
+import { NextSeo } from 'next-seo';
 import PortfolioPageStyles from '../components/styles/PortfolioPageStyles';
 import ProjectCard from '../components/ProjectCard';
 import data from '../public/data';
@@ -23,6 +23,22 @@ const Portfolio = () => (
           {data.map((project) => (
             <ProjectCard project={project} key={project.title} />
           ))}
+          <p>
+            <span>Note:</span> Most of my code from the past 18 months is in private repos. Snippets
+            or samples are available upon request.
+          </p>
+          <div className='icons'>
+            <p>
+              Icons made by{' '}
+              <a href='https://www.flaticon.com/authors/freepik' title='Freepik'>
+                Freepik
+              </a>{' '}
+              from{' '}
+              <a href='https://www.flaticon.com/' title='Flaticon'>
+                www.flaticon.com
+              </a>
+            </p>
+          </div>
         </div>
       </motion.div>
     </PortfolioPageStyles>

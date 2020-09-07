@@ -34,7 +34,7 @@ const blogId = ({ document }) => {
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <div className='hero-section'>
             <div className='hero-image-container'>
-              <img className='hero-image' src={image} alt='sitting in a hammock' />
+              <img className='hero-image' src={image} alt={`${title} background`} />
             </div>
             <div className='hero-text-container'>
               <h1 className='hero-text'>{title}</h1>
@@ -71,11 +71,31 @@ const blogId = ({ document }) => {
   );
 };
 
-blogId.getInitialProps = async ({ query }) => {
-  const { year, id } = query;
+export async function getStaticPaths() {
+  const paths = blogPosts.map((post) => {
+    console.log(post.year);
+    return {
+      params: {
+        year: `${post.year}`,
+        id: post.slug,
+      },
+    };
+  });
+  console.log(paths);
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  console.log(params);
+  const { year, id } = params;
   const post = await import(`../../../blog-posts/${year}/${id}.md`);
   return {
-    document: post.default,
+    props: {
+      document: post.default,
+    },
   };
-};
+}
 export default blogId;

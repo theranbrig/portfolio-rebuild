@@ -21,6 +21,9 @@ const Blogs = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
           <h1>Blog</h1>
+          <p className='dev'>
+            All blog posts can also be found over at <a href="https://dev.to/theranbrig" target='_blank' rel='noopener noreferrer'>dev.to</a>
+          </p>
           {posts.map((post) => (
             <Link href='/blog/[year]/[id]' as={`/blog/${post.year}/${post.slug}`} key={post.slug}>
               <div className='post-container'>

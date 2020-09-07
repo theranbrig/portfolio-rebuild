@@ -144,6 +144,9 @@ const ProjectStyles = styled.div`
       margin-left: 30px;
     }
   }
+  .private {
+    color: ${(props) => props.theme.orange} !important;
+  }
 `;
 
 export default ProjectStyles;

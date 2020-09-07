@@ -5,6 +5,14 @@ const BlogsStyles = styled.div`
   margin: 0 auto;
   padding-bottom: 15vh;
   color: ${(props) => props.theme.black};
+  p.dev {
+    text-align: center;
+      font-size: 1.2rem;
+    a {
+      color: ${(props) => props.theme.darkBlue};
+      text-decoration: none;
+    }
+  }
   .post-container {
     width: 900px;
     max-width: 80%;

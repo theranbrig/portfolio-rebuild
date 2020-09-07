@@ -27,24 +27,30 @@ const ProjectLayout = (props) => {
       <div className='project-title'>
         <div className='top-title'>
           <h1>{title}</h1>
-          <img src={`../icons/${icon}.svg`} alt='github' />
+          <img src={`../icons/${icon}.svg`} alt={icon} />
         </div>
         <p>{description}</p>
         <div className='project-links'>
-          <a href={deployLink} target='_blank' rel='noopener noreferrer'>
-            <img src='../icons/db.svg' alt='deploy' />
-            <p>Deployed Version</p>
-          </a>
+          {deployLink ? (
+            <a href={deployLink} target='_blank' rel='noopener noreferrer'>
+              <img src='../icons/db.svg' alt='deploy' />
+              <p>Deployed Version</p>
+            </a>
+          ) : (
+            <p className='private'>No external link available.</p>
+          )}
           {gitLink ? (
             <a href={gitLink} target='_blank' rel='noopener noreferrer' className='git-link'>
               <img src='../icons/github-blue.svg' alt='github' />
               <p>Code</p>
             </a>
-          ) : null}
+          ) : (
+            <p className='private'>Code is in private repo.</p>
+          )}
         </div>
         <div className='project-icons'>
           {tech &&
-            tech.map((el, idx) => <img src={`../icons/${el}.svg`} key={el} alt={`${el} tech`} />)}
+            tech.map((el, idx) => <img src={`../icons/${el}.svg`} key={el} alt={`${el} icon`} />)}
         </div>
       </div>
       <div className='project-info'>

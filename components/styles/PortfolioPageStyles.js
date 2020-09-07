@@ -46,7 +46,10 @@ const PortfolioPageStyles = styled.div`
       }
       h4 {
         color: ${(props) => props.theme.white};
-        font-family: ${(props) => props.theme.firaFont};
+        font-family: ${(props) => props.theme.raleFont};
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        font-size: 1.1rem;
         margin: 5px 0 15px;
       }
       .project-icons {
@@ -77,11 +80,35 @@ const PortfolioPageStyles = styled.div`
   h2 {
     font-weight: 100;
     color: ${(props) => props.theme.white};
-    font-family: ${(props) => props.theme.raleFont};
     max-width: 90%;
     margin: 0 auto;
-    font-family: ${(props) => props.theme.firaFont};
+    font-family: ${(props) => props.theme.raleFont};
     text-align: center;
+  }
+  p {
+    color: ${(props) => props.theme.white};
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-family: ${(props) => props.theme.raleFont};
+    span {
+      color: ${(props) => props.theme.orange};
+    }
+  }
+  .icons {
+    color: ${(props) => props.theme.white};
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    font-family: ${(props) => props.theme.raleFont};
+    a {
+      color: ${(props) => props.theme.blue};
+      text-decoration: none;
+    }
   }
 `;
 
