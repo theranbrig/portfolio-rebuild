@@ -2,10 +2,10 @@ import ContactLink from '../components/ContactLink';
 import ContactPageStyles from '../components/styles/ContactPageStyles';
 import Form from '../components/Form';
 import Layout from '../components/Layout';
-import React from 'react';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
@@ -39,7 +39,7 @@ const Contact = () => {
               I am available to discuss freelance, contract, and full-time work opportunities. Check
               out my{' '}
               <a
-                href='https://docs.google.com/document/d/1xbvJL0i9CCPQBiuo_AGV14oMrCAU48uie-A7xXhxPWo/edit'
+                href='https://drive.google.com/file/d/1aLnWlQi99yQiJics-bb_t74q1iW26QuS/view'
                 target='_blank'
                 rel='noopener noreferrer'>
                 resume.
