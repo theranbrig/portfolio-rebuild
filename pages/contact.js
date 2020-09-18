@@ -39,7 +39,7 @@ const Contact = () => {
               I am available to discuss freelance, contract, and full-time work opportunities. Check
               out my{' '}
               <a
-                href='https://drive.google.com/file/d/1aLnWlQi99yQiJics-bb_t74q1iW26QuS/view'
+                href='https://drive.google.com/file/d/1pMhmgXGa_L5b9aBfkklDAN-UPwomUJGM/view?usp=sharing'
                 target='_blank'
                 rel='noopener noreferrer'>
                 resume.
