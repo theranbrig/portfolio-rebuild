@@ -430,7 +430,7 @@ export const blogPosts = [
     slug: 'stop-coding',
     year: 2020,
     unix: 1597536000,
-    dateString: 'August 18, 2019',
+    dateString: 'August 18, 2020',
     title: 'Stop Coding and be a Better Developer',
     description:
       'Coding more is not always the answer. Some reasons that you might want to take a break from the editor and make sure you are working to your full potential.',
@@ -441,7 +441,7 @@ export const blogPosts = [
     slug: 'lazy-image',
     year: 2020,
     unix: 1597968000,
-    dateString: 'August 21, 2019',
+    dateString: 'August 21, 2020',
     title: 'Lazy Loading Blurry React Images',
     description:
       'Create a React component that uses lazy loading images. Start with an ultra small version that comes into focus as your full-size image loads.',
