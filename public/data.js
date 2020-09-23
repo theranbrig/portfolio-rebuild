@@ -481,4 +481,15 @@ export const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80',
   },
+  {
+    slug: 'tailwind-points',
+    year: 2020,
+    unix: 1600838034,
+    dateString: 'September 22, 2020',
+    title: 'TailwindCSS: The Awesome and Annoying',
+    description:
+      'A review of what I love and could leave from TailwindCSS after using it for a few months.',
+    image:
+      'https://images.unsplash.com/photo-1505672678657-cc7037095e60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2500&q=80',
+  },
 ];
