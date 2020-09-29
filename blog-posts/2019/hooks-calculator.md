@@ -419,6 +419,6 @@ Please let me know your thoughts or if there are any issues that you come across
 
 If you would like to see the entire code for this project it can be found over in:
 
-#### [GitHub Repo](https://github.com/theranbrig/calculator.)
+#### [GitHub Repo](https://github.com/theranbrig/calculator)
 
 #### [Calc-U-Later Deploy](https://calc-u-later.netlify.com/)
