@@ -492,4 +492,15 @@ export const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1505672678657-cc7037095e60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2500&q=80',
   },
+  {
+    slug: 'refactoring-old-code',
+    year: 2020,
+    unix: 1601356756,
+    dateString: 'September 29, 2020',
+    title: 'Refactoring My First JavaScript Boot Camp Algorithms',
+    description:
+      'I went back to code that I wrote more than three years ago and looked at what I could improve and refactor.',
+    image:
+      'https://images.unsplash.com/photo-1559394452-087c19c260ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+  },
 ];

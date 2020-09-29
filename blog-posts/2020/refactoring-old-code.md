@@ -4,7 +4,7 @@ It's kind of like looking at your middle school year book photos. It's still you
 
 However, unlike those photos that are engraved into the annals of history, with code we have the opportunity to go back and optimize it. We can improve upon our past selves, and better yet, learn from it. I decided to go back to some JavaScript exercise I did when I first used. They are just basic algorithms like reverse a string, but I wanted to see what I could do to improve them and see how I would optimize them as a more seasoned developer.
 
-If you have any other ways that you would refactor them, leave it in the comments below. I would like to see how others would optimize my code as well.
+Check out the old spaghetti, and see how we could improve this outdated code.  If you have any other ways that you would refactor them, leave it in the comments below. I would like to see how others would optimize my code as well.
 
 ## 1 - isVowel
 
