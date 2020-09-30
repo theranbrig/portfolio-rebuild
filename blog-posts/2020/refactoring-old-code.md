@@ -152,8 +152,12 @@ const longestOfThree = (...arguments) => {
 };
 ```
 
-In this case, it is the same length, but it does scale better if we add a more arguments. We have refactored it to allow for any number of arguments, rather than just the three that we were taking in.  In addition, but iterating over the items we can scale this and get rid of the if and if else statements.  There are definitely other methods that we could do to refactor this even further.  We could have the return chain with the 0 array index and the string property, but sometimes it is better to have your code broken up to be more readable for other developers.
+In this case, the function is the same length, but it does scale better if we add a more arguments.
+
+We have refactored it to allow for any number of arguments, rather than just the three that we were taking in.  In addition, but iterating over the items we can scale this and get rid of the if and if else statements.
+
+There are definitely other methods that we could do to refactor this even further. We could have the return chain with the 0 array index and the string property, but sometimes it is better to have your code broken up to be more readable for other developers.
 
 When refactoring your code you should be thinking about three things.  It should be a simpler way of doing the same action, easier to read and convey the message of your code, and it should scale for growth.  Don't be afraid to go back.  Look at what you have learned, and apply it to see how you would change your first code.
 
-We're not still rocking the bootcut jeans, so it is never too late to change.
+We're not still rocking the bootcut jeans, it is also never to late to refactor your old code.
