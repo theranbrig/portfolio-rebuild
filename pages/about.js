@@ -10,13 +10,17 @@ import { NextSeo } from 'next-seo';
 const About = () => {
   return (
     <Layout>
-      <NextSeo title='Theran Brigowatz | About' description='Learn more about my journey as a developer' />
+      <NextSeo
+        title='Theran Brigowatz | About'
+        description='Learn more about my journey as a developer'
+      />
       <AboutPageStyles>
         <motion.div
           exit={{ opacity: 0, scale: 0 }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}>
+          transition={{ type: 'spring', ease: 'easeIn', duration: 1, mass: 0.5 }}
+        >
           <div className='about-main'>
             <h1>About Me</h1>
             <ProgressiveImage
@@ -41,9 +45,9 @@ const About = () => {
               Minnesota Golden Gophers.
             </p>
             <p>
-              I am open to work in South Korea, the United States, or remote work or open-source
-              projects. With a young son who doesn't sleep much, I am always up. Drop me a line and
-              get in touch about collaboration opportunities.
+              I am open to work in South Korea, the United States, or remote. With a young son who
+              doesn't sleep much, I am always up. Drop me a line and get in touch about
+              collaboration opportunities.
             </p>
             <div className='skills-box'>
               <h3>My Tech Stack</h3>

@@ -9,7 +9,7 @@ Check out the old spaghetti of long, and see how we could improve this code with
 ## 1 - isVowel
 
 ### Algorithm
-
+x
 ```js
 // Define a function named isVowel that takes one argument
 //    letter (string)

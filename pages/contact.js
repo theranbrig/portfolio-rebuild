@@ -29,7 +29,7 @@ const Contact = () => {
             <ContactLink link='https://www.twitter.com/wellBuilt' icon='twitter' />
             <ContactLink link='https://dev.to/theranbrig' icon='dev' />
             <ContactLink
-              link='https://www.linkedin.com/in/theran-brigowatz-a861b3133/'
+              link='https://www.linkedin.com/in/theran-brigowatz/'
               icon='linkedin'
             />
             <ContactLink link='mailTo:theran.brigowatz@gmail.com' icon='mail' />
