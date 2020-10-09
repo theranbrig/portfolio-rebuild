@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const ProjectStyles = styled.div`
   background-color: ${(props) => props.theme.black};
-
   margin: 0 auto;
   padding-top: 20px;
   max-width: 90%;
@@ -10,7 +9,6 @@ const ProjectStyles = styled.div`
   @media (max-width: 900px) {
     padding: 20px;
   }
-
   .project-info {
     padding-bottom: 10vh;
     padding-top: 30px;
@@ -72,10 +70,16 @@ const ProjectStyles = styled.div`
         font-weight: 100;
         display: inline-block;
         margin: 0;
+        @media (max-width: 900px) {
+          font-size: 2.5rem;
+        }
       }
       img {
         height: 5rem;
         margin-left: 20px;
+        @media (max-width: 900px) {
+          height: 2.5rem;
+        }
       }
     }
 
@@ -88,9 +92,12 @@ const ProjectStyles = styled.div`
     .project-icons {
       margin: 20px auto;
       img {
-        height: 40px !important;
+        height: 40px;
         padding: 5px;
         font-size: 30px;
+        @media (max-width: 900px) {
+          height: 30px;
+        }
       }
     }
   }
