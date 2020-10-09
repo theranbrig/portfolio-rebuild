@@ -503,4 +503,15 @@ export const blogPosts = [
     image:
       'https://images.unsplash.com/photo-1559394452-087c19c260ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
   },
+  {
+    slug: '3d-model',
+    year: 2020,
+    unix: 1602227541,
+    dateString: 'October 8, 2020',
+    title: 'Add AR and 3D Models to Any Site in Minutes',
+    description:
+      "Learn about Google's ModelViewer component. You can add AR to any site in just few minutes and with a few lines of code.",
+    image:
+      'https://images.unsplash.com/photo-1533310266094-8898a03807dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80',
+  },
 ];
