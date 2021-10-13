@@ -361,7 +361,7 @@ export default [
 export const icons = [
     { skill: 'HTML', icon: 'html5' },
     { skill: 'CSS', icon: 'css3' },
-    { skill: 'JavaScript / Typescript', icon: 'javascript' },
+    { skill: 'JavaScript / TypeScript', icon: 'javascript' },
     { skill: 'React', icon: 'react' },
     { skill: 'Node.js', icon: 'node-dot-js' },
     { skill: 'Git', icon: 'github' },
