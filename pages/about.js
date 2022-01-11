@@ -29,23 +29,22 @@ const About = () => {
             />
             <h2>therAn briGoWAtz</h2>
             <p>
-              I am a Full Stack Web Developer with an eye for design who decided to make a career
-              change after more than a decade in the education industry. I took the self-taught and
-              online bootcamp route before taking a position as a developer at 101Global. I work on
-              web and mobile development platforms. I have a passion and obsession for all things
+              I am a Web Developer with an eye for design who decided to make a career
+              change after more than a decade in the education industry. I work on
+              web and mobile application development platforms. I have a passion and obsession for all things
               code and development.
             </p>
             <p>
               After a decade of energetic kids and stacks of essays to grade, while teaching in
-              South Korea, coding has given me a new enthusiasm for a career that I love,. Since my
-              childhood, I have had a passion to create, whether it be art, food, or DIY. My
+              South Korea, coding has given me a new enthusiasm for a career that I love. Since my
+              childhood, starting with Lego, I have had a passion to create, whether it be art, food, or DIY. My
               interest in new technology is something that I have always had a great curiosity in
               pursuing and learning. I am constantly pushing myself to learn and grow as programmer.
               I enjoy spending time with my family, traveling, cooking, brewing craft beer, and the
               Minnesota Golden Gophers.
             </p>
             <p>
-              I am open to work in South Korea, the United States, or remote. With a young son who
+              I am open to work remote opportunities. With a young son who
               doesn't sleep much, I am always up. Drop me a line and get in touch about
               collaboration opportunities.
             </p>

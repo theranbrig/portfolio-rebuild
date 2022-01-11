@@ -31,14 +31,6 @@ const ProjectLayout = (props) => {
         </div>
         <p>{description}</p>
         <div className='project-links'>
-          {deployLink ? (
-            <a href={deployLink} target='_blank' rel='noopener noreferrer'>
-              <img src='../icons/db.svg' alt='deploy' />
-              <p>Deployed Version</p>
-            </a>
-          ) : (
-            <p className='private'>No external link available.</p>
-          )}
           {gitLink ? (
             <a href={gitLink} target='_blank' rel='noopener noreferrer' className='git-link'>
               <img src='../icons/github-blue.svg' alt='github' />

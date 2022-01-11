@@ -51,9 +51,6 @@ const Contact = () => {
               , with any questions, comments, or biting criticism that you may have.
             </p>
           </div>
-          <div className='form-area'>
-            <Form />
-          </div>
         </motion.div>
       </ContactPageStyles>
     </Layout>
