@@ -10,11 +10,14 @@ const AboutPageStyles = styled.div`
     max-width: 95%;
     margin: 0 auto;
     img {
-      border-radius: 50%;
+
       width: 150px;
       margin-left: calc(50% - 75px);
-      border: 2px solid ${(props) => props.theme.blue};
-      padding: 4px;
+    }
+    .my-face img {
+        border: 2px solid ${(props) => props.theme.blue};
+        padding: 4px;
+        border-radius: 50%;
     }
     width: 100%;
     color: ${(props) => props.theme.white};
@@ -33,6 +36,10 @@ const AboutPageStyles = styled.div`
       font-family: ${(props) => props.theme.raleFont};
       font-weight: 100;
       text-align: center;
+      img {
+          margin-left: 0px;
+
+      }
     }
     h2 {
       font-family: ${(props) => props.theme.spaceFont};
