@@ -13,6 +13,8 @@ const AboutPageStyles = styled.div`
       border-radius: 50%;
       width: 150px;
       margin-left: calc(50% - 75px);
+      border: 2px solid ${(props) => props.theme.blue};
+      padding: 4px;
     }
     width: 100%;
     color: ${(props) => props.theme.white};
